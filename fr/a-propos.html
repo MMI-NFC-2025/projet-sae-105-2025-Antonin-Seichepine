@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="À propos de Lumina : un projet de mémoire et de lumière autour des femmes de science." />
+
+    <title>À propos — Lumina</title>
+
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body class="page page--about">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <!-- HEADER -->
+    <header class="header header--solid">
+        <div class="header__inner">
+            <nav class="lang" aria-label="Sélecteur de langue">
+                <a class="lang__link lang__link--active" href="/fr/a-propos.html" aria-current="page">FR</a>
+                <span class="lang__sep" aria-hidden="true">/</span>
+                <a class="lang__link" href="/en/about.html">EN</a>
+            </nav>
+
+            <a class="header__brand" href="/fr/index.html" aria-label="Retour à l’accueil Lumina">
+                <span class="brand">LUMINA</span>
+            </a>
+
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="mainNav">
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav class="menu" id="mainNav" hidden>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/fr/index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html">L’effet Matilda</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html" aria-current="page">À propos</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+            </ul>
+
+            <div class="menu__media" aria-hidden="true">
+                <img class="menu__img" src="/assets/img/menu-placeholder.jpg" alt="" loading="lazy" />
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="contenu" class="main">
+        <!-- INTRO -->
+        <section class="hero hero--simple" aria-labelledby="titre-page">
+            <div class="hero__inner">
+                <header class="hero__header">
+                    <h1 id="titre-page" class="hero__title">À propos</h1>
+                    <p class="hero__subtitle">
+                        Un projet de mémoire et de lumière.<br />
+                        Né de l’histoire de Lise Meitner, Lumina éclaire la trace laissée par les femmes de science.
+                    </p>
+                </header>
+            </div>
+        </section>
+
+        <!-- MOTIF SEPARATOR (même système que les autres pages, tu remplaces le SVG) -->
+        <div class="separator" aria-hidden="true">
+            <img class="separator__img" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
+        </div>
+
+        <!-- L’ESPRIT DU PROJET -->
+        <section class="section section--wrapper section--panel" aria-labelledby="esprit">
+            <header class="section__header">
+                <h2 id="esprit" class="section__title">L’esprit du projet</h2>
+            </header>
+
+            <div class="panel panel--primary">
+                <div class="panel__content richtext">
+                    <p>
+                        Né au sein du département MMI de Montbéliard, Lumina est un projet mêlant vulgarisation et
+                        engagement.
+                        Son objectif&nbsp;: éclairer les chercheuses oubliées, leurs découvertes et les valeurs qu’elles
+                        transmettent
+                        aujourd’hui en s’appuyant sur le parcours de Lise Meitner.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOTIF SEPARATOR (tu peux mettre un autre SVG ici, comme sur ta maquette) -->
+        <div class="separator" aria-hidden="true">
+            <img class="separator__img" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
+        </div>
+
+        <!-- LES AUTRES PROJETS -->
+        <section class="section section--wrapper section--panel" aria-labelledby="autres-projets">
+            <header class="section__header">
+                <h2 id="autres-projets" class="section__title">Les autres projets</h2>
+            </header>
+
+            <div class="panel panel--primary">
+                <div class="panel__content richtext">
+                    <p>
+                        Ce site fait partie d’une série de projets étudiants autour des figures de la science et de la
+                        transmission du savoir.
+                    </p>
+                </div>
+
+                <footer class="panel__footer">
+                    <a class="btn btn--primary" href="/fr/les-autres-projets.html">Voir les autres projets</a>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <a class="footer__brand" href="/fr/index.html" aria-label="Retour à l’accueil Lumina">
+                <span class="brand brand--footer">LUMINA</span>
+            </a>
+
+            <p class="footer__note">
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span class="u-italic">MMI
+                    de Montbéliard</span>.
+            </p>
+
+            <nav class="footer__nav" aria-label="Navigation de pied de page">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="/fr/index.html">Accueil</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
+                            science</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet Matilda</a>
+                    </li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html" aria-current="page">À
+                            propos</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <small class="footer__credits">Antonin Seichepine — MMI</small>
+        </div>
+    </footer>
+</body>
+
+</html>
