@@ -9,52 +9,48 @@
         content="Physicienne autrichienne d’origine juive, Lise Meitner a joué un rôle clé dans la découverte de la fission nucléaire. Un article Lumina." />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
 </head>
 
 <body class="page page--article page--article-lise">
-    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="header header--solid">
+        <div class="header__inner">
+            <nav class="lang" aria-label="Sélecteur de langue">
+                <a class="lang__link lang__link--active" href="/fr/article-lise.html" aria-current="page">FR</a>
+                <span class="lang__sep" aria-hidden="true">/</span>
+                <a class="lang__link" href="/en/article-lise.html" lang="en">EN</a>
+            </nav>
 
-    <!-- HEADER -->
-    <header class="site-header" role="banner">
-        <div class="site-header__inner">
-            <div class="site-header__lang" aria-label="Choix de langue">
-                <a class="site-header__lang-link site-header__lang-link--is-active" href="../fr/article-lise.html"
-                    aria-current="page">FR</a>
-                <span class="site-header__lang-sep" aria-hidden="true">/</span>
-                <a class="site-header__lang-link" href="../en/article-lise.html">EN</a>
-            </div>
-
-            <a class="site-header__brand" href="../fr/index.html" aria-label="Retour à l’accueil Lumina (FR)">
-                LUMINA
+            <a class="header__brand" href="/fr/" aria-label="Retour à l'accueil Lumina">
+                <span class="brand">LUMINA</span>
             </a>
 
-            <button class="site-header__menu-btn" type="button" aria-label="Ouvrir le menu"
-                aria-controls="menu-principal" aria-expanded="false">
-                <span class="site-header__menu-icon" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="site-menu">
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+                <span class="menu-btn__bar" aria-hidden="true"></span>
             </button>
         </div>
 
-        <!-- Menu (affiché en overlay via CSS/JS si tu veux) -->
-        <nav class="site-nav" id="menu-principal" aria-label="Navigation principale">
-            <ul class="site-nav__list">
-                <li class="site-nav__item"><a class="site-nav__link" href="../fr/index.html">Accueil</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="../fr/lise-meitner.html">Lise Meitner</a>
+        <nav class="menu" id="site-menu" hidden>
+            <ul class="menu__list u-list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
                 </li>
-                <li class="site-nav__item"><a class="site-nav__link" href="../fr/femmes-de-science.html">Femmes de
-                        science</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="../fr/effet-matilda.html">Effet Matilda</a>
-                </li>
-                <li class="site-nav__item"><a class="site-nav__link" href="../fr/glossaire.html">Glossaire</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="../fr/autres-projets.html">Les autres
-                        projets</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="../fr/a-propos.html">À propos</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="../fr/contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html">Effet Matilda</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
+
+            <div class="menu__media" aria-hidden="true">
+                <img class="menu__img" src="/assets/img/logosite.svg" alt="" loading="lazy" />
+            </div>
         </nav>
     </header>
 
-    <main class="main" id="contenu">
+    <main class="main" id="main">
         <!-- HERO ARTICLE -->
         <header class="article-hero">
             <div class="article-hero__inner">
@@ -63,7 +59,7 @@
 
                 <figure class="article-hero__media">
                     <!-- Remplace par ta photo -->
-                    <img class="article-hero__image" src="../assets/img/PLACEHOLDER-article-lise-hero.jpg"
+                    <img class="article-hero__image" src="/assets/img/PLACEHOLDER-article-lise-hero.jpg"
                         alt="Lise Meitner et Otto Hahn dans un laboratoire." />
                     <figcaption class="article-hero__caption">Lise Meitner et Otto Hahn dans leur laboratoire
                     </figcaption>
@@ -108,7 +104,7 @@
                     </div>
 
                     <figure class="article-figure">
-                        <img class="article-figure__image" src="../assets/img/PLACEHOLDER-article-lise-1.jpg"
+                        <img class="article-figure__image" src="/assets/img/PLACEHOLDER-article-lise-1.jpg"
                             alt="Bâtiment du Kaiser-Wilhelm-Institut à Berlin." />
                         <figcaption class="article-figure__caption">Kaiser-Wilhelm-Institut — Berlin</figcaption>
                     </figure>
@@ -169,7 +165,7 @@
                     </div>
 
                     <figure class="article-figure">
-                        <img class="article-figure__image" src="../assets/img/PLACEHOLDER-article-lise-2.jpg"
+                        <img class="article-figure__image" src="/assets/img/PLACEHOLDER-article-lise-2.jpg"
                             alt="Portrait de Lise Meitner âgée, en Suède." />
                         <figcaption class="article-figure__caption">Lise Meitner, en Suède — vers la fin de sa vie
                         </figcaption>
@@ -204,70 +200,65 @@
             <div class="section__inner">
                 <h2 class="section__title" id="voir-aussi">Voir aussi</h2>
 
-                <div class="cards">
-                    <article class="card card--article">
-                        <a class="card__link" href="../fr/article-atomic-power.html"
-                            aria-label="Lire l’article : Atomic Power — Quand la science devient propagande">
-                            <figure class="card__media">
-                                <img class="card__image" src="../assets/img/PLACEHOLDER-card-atomic-power.jpg" alt="" />
-                            </figure>
-                            <div class="card__content">
-                                <h3 class="card__title">Atomic Power — Quand la science devient propagande</h3>
-                                <p class="card__cta">Voir l’article</p>
-                            </div>
-                        </a>
-                    </article>
+                <ul class="cards u-list-unstyled">
+                    <li class="cards__item">
+                        <article class="card-article">
+                            <a class="card-article__link" href="/fr/atomic-power.html"
+                                aria-label="Lire l’article : Atomic Power — Quand la science devient propagande">
+                                <img class="card-article__img" src="/assets/img/PLACEHOLDER-card-atomic-power.jpg"
+                                    alt="" loading="lazy" width="328" height="169" />
+                                <h3 class="card-article__title">Atomic Power — Quand la science devient propagande</h3>
+                                <span class="card-article__cta">Voir l’article</span>
+                            </a>
+                        </article>
+                    </li>
 
-                    <article class="card card--article">
-                        <a class="card__link" href="../fr/article-femmes-oubliees.html"
-                            aria-label="Lire l’article : Les femmes oubliées — La littérature répare l’histoire">
-                            <figure class="card__media">
-                                <img class="card__image" src="../assets/img/PLACEHOLDER-card-femmes-oubliees.jpg"
-                                    alt="" />
-                            </figure>
-                            <div class="card__content">
-                                <h3 class="card__title">Les femmes oubliées — La littérature répare l’histoire</h3>
-                                <p class="card__cta">Voir l’article</p>
-                            </div>
-                        </a>
-                    </article>
-                </div>
+                    <li class="cards__item">
+                        <article class="card-article">
+                            <a class="card-article__link" href="/fr/article-femme-de-science.html"
+                                aria-label="Lire l’article : Les femmes oubliées — La littérature répare l’histoire">
+                                <img class="card-article__img" src="/assets/img/PLACEHOLDER-card-femmes-oubliees.jpg"
+                                    alt="" loading="lazy" width="328" height="169" />
+                                <h3 class="card-article__title">Les femmes oubliées — La littérature répare l’histoire
+                                </h3>
+                                <span class="card-article__cta">Voir l’article</span>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer" role="contentinfo">
-        <div class="site-footer__inner">
-            <a class="site-footer__brand" href="../fr/index.html" aria-label="Retour à l’accueil Lumina (FR)">LUMINA</a>
+    <footer class="footer">
+        <div class="footer__inner wrapper">
+            <a class="footer__brand" href="/fr/" aria-label="Retour à l’accueil Lumina">
+                <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
+            </a>
 
-            <p class="site-footer__meta">
-                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span
-                    class="site-footer__meta-em">MMI</span> de Montbéliard
+            <p class="footer__note">
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span class="u-italic">MMI
+                    de Montbéliard</span>.
             </p>
 
-            <nav class="site-footer__nav" aria-label="Navigation de pied de page">
-                <ul class="site-footer__list">
-                    <li class="site-footer__item"><a class="site-footer__link" href="../fr/index.html">Accueil</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="../fr/lise-meitner.html">Lise
-                            Meitner</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link"
-                            href="../fr/femmes-de-science.html">Femmes de science</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="../fr/effet-matilda.html">Effet
-                            Matilda</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="../fr/a-propos.html">À propos</a>
+            <nav class="footer__nav" aria-label="Navigation de pied de page">
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item"><a class="footer__link" href="/fr/">Accueil</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
+                            science</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet Matilda</a>
                     </li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="../fr/contact.html">Contact</a>
-                    </li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">À propos</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
                 </ul>
             </nav>
 
-            <p class="site-footer__credit">Antonin Seichepine MMI1B1</p>
+            <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
 
-    <!-- JS (optionnel) -->
-    <script src="../src/js/menu.js" defer></script>
+    <script type="module" src="/src/js/script.js" defer></script>
 </body>
 
 </html>

@@ -7,43 +7,45 @@
     <title>Women in Science — How literature restores forgotten women | Lumina</title>
     <meta name="description"
         content="How literature restores forgotten women in science: biographies, novels, graphic novels, and collective memory.">
-    <link rel="stylesheet" href="../src/css/style.css">
-    <script src="../src/js/menu.js" defer></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--article page--article-women-in-science">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header header--solid">
+        <div class="header__inner">
+            <nav class="lang" aria-label="Language selector">
+                <a class="lang__link" href="/fr/article-femme-de-science.html">FR</a>
+                <span class="lang__sep" aria-hidden="true">/</span>
+                <a class="lang__link lang__link--active" href="/en/article-femme-de-science.html" aria-current="page"
+                    lang="en">EN</a>
+            </nav>
 
-    <header class="site-header">
-        <div class="site-header__inner wrapper">
-            <div class="site-header__lang" aria-label="Language selection">
-                <a class="lang-switch__link" href="../fr/article-femmes-de-science.html">FR</a>
-                <span class="lang-switch__sep" aria-hidden="true">/</span>
-                <a class="lang-switch__link is-active" href="../en/women-in-science-article.html"
-                    aria-current="page">EN</a>
-            </div>
+            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
+                <span class="brand">LUMINA</span>
+            </a>
 
-            <a class="site-header__brand" href="../en/index.html" aria-label="Back to Lumina home">LUMINA</a>
-
-            <button class="site-header__toggle" type="button" aria-label="Open menu" aria-controls="site-menu"
-                aria-expanded="false">
-                <span class="burger" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="site-menu">
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+                <span class="menu-btn__bar" aria-hidden="true"></span>
             </button>
         </div>
 
-        <nav class="site-menu" id="site-menu" aria-label="Main menu">
-            <ul class="site-menu__list">
-                <li class="site-menu__item"><a class="site-menu__link" href="../en/index.html">Home</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="../en/lise-meitner.html">Lise Meitner</a>
-                </li>
-                <li class="site-menu__item"><a class="site-menu__link" href="../en/women-in-science.html">Women in
-                        science</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="../en/matilda-effect.html">Matilda
-                        effect</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="../en/glossary.html">Glossary</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="../en/about.html">About</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="../en/contact.html">Contact</a></li>
+        <nav class="menu" id="site-menu" hidden>
+            <ul class="menu__list u-list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/femmes-de-science.html">Women in Science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/effet-matilda.html">Matilda Effect</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossaire.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/a-propos.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
             </ul>
+
+            <div class="menu__media" aria-hidden="true">
+                <img class="menu__img" src="/assets/img/menu-placeholder.jpg" alt="" loading="lazy" />
+            </div>
         </nav>
     </header>
 
@@ -54,7 +56,7 @@
                 <h1 class="article-hero__title">How literature restores forgotten women</h1>
 
                 <figure class="article-hero__media">
-                    <img class="article-hero__image" src="../assets/img/placeholder-article-books.jpg"
+                    <img class="article-hero__image" src="/assets/img/placeholder-article-books.jpg"
                         alt="A stack of books and documents on a table.">
                     <figcaption class="article-hero__caption">Books as archives of memory.</figcaption>
                 </figure>
@@ -107,7 +109,7 @@
                     </aside>
 
                     <div class="article-section__cta">
-                        <a class="button button--primary" href="../en/glossary.html">Glossary: key terms</a>
+                        <a class="button button--primary" href="/en/glossaire.html">Glossary: key terms</a>
                     </div>
                 </section>
 
@@ -139,7 +141,7 @@
                     </blockquote>
 
                     <div class="article-section__cta">
-                        <a class="button button--secondary" href="../en/matilda-effect.html">Read: Matilda effect</a>
+                        <a class="button button--secondary" href="/en/effet-matilda.html">Read: Matilda effect</a>
                     </div>
                 </section>
 
@@ -159,7 +161,7 @@
                     </ul>
 
                     <figure class="article-figure">
-                        <img class="article-figure__image" src="../assets/img/placeholder-article-writing.jpg"
+                        <img class="article-figure__image" src="/assets/img/placeholder-article-writing.jpg"
                             alt="A hand writing on paper, symbol of transmission.">
                         <figcaption class="article-figure__caption">Writing as repair and transmission.</figcaption>
                     </figure>
@@ -187,47 +189,52 @@
                     </p>
 
                     <div class="article-section__cta">
-                        <a class="button button--secondary" href="../en/timeline.html">See also: the timeline</a>
+                        <a class="button button--secondary" href="/en/timeline.html">See also: the timeline</a>
                     </div>
 
-                    <article class="card card--article">
-                        <a class="card__link" href="../en/lise-meitner.html">
-                            <figure class="card__media">
-                                <img class="card__img" src="../assets/img/placeholder-card-lise-meitner.jpg" alt="">
-                            </figure>
-                            <div class="card__body">
-                                <h3 class="card__title">Lise Meitner: the scientist behind nuclear fission</h3>
-                                <p class="card__meta">Read the article</p>
-                            </div>
-                        </a>
-                    </article>
+                    <ul class="cards u-list-unstyled">
+                        <li class="cards__item">
+                            <article class="card-article">
+                                <a class="card-article__link" href="/en/lise-meitner.html">
+                                    <img class="card-article__img" src="/assets/img/placeholder-card-lise-meitner.jpg"
+                                        alt="" loading="lazy" width="328" height="169" />
+                                    <h3 class="card-article__title">Lise Meitner: the scientist behind nuclear fission
+                                    </h3>
+                                    <span class="card-article__cta">Read article</span>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
                 </section>
 
             </div>
         </article>
     </main>
 
-    <footer class="site-footer">
-        <div class="site-footer__inner wrapper">
-            <a class="site-footer__brand" href="../en/index.html">LUMINA</a>
-            <p class="site-footer__credits">
-                Project created in 2025 as part of an educational exercise at the MMI department in Montbéliard.
+    <footer class="footer">
+        <div class="footer__inner wrapper">
+            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
+                <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
+            </a>
+
+            <p class="footer__note">
+                Project made in 2025 as part of an educational MMI program in Montbéliard.
             </p>
-            <nav class="site-footer__nav" aria-label="Site links">
-                <ul class="footer-nav">
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="../en/index.html">Home</a></li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="../en/lise-meitner.html">Lise
-                            Meitner</a></li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="../en/women-in-science.html">Women in
+
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item"><a class="footer__link" href="/en/">Home</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/femmes-de-science.html">Women in
                             science</a></li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="../en/matilda-effect.html">Matilda
+                    <li class="footer__item"><a class="footer__link" href="/en/effet-matilda.html">The Matilda
                             effect</a></li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="../en/glossary.html">Glossary</a>
-                    </li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="../en/contact.html">Contact</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/a-propos.html">About</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <p class="site-footer__signature">Antonin Seichepine — MMI/B1</p>
+
+            <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
 </body>

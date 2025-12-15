@@ -7,46 +7,48 @@
     <title>Lumina — Other projects</title>
     <meta name="description" content="Discover the creations of other BUT MMi Montbéliard students." />
 
-    <link rel="stylesheet" href="../src/css/style.css" />
-    <script src="../src/js/menu.js" defer></script>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--others">
+    <header class="header header--solid">
+        <div class="header__inner">
+            <nav class="lang" aria-label="Language selector">
+                <a class="lang__link" href="/fr/autres-projets.html" lang="fr">FR</a>
+                <span class="lang__sep" aria-hidden="true">/</span>
+                <a class="lang__link lang__link--active" href="/en/autres-projets.html" aria-current="page">EN</a>
+            </nav>
 
-    <header class="site-header">
-        <div class="site-header__inner">
-
-            <a class="site-header__lang" href="../fr/autres-projets.html" lang="fr" aria-label="Passer en français">
-                FR / EN
+            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
+                <span class="brand">LUMINA</span>
             </a>
 
-            <a class="site-header__brand" href="./index.html" aria-label="Back to Lumina home">
-                <span class="site-header__brand-text">LUMINA</span>
-            </a>
-
-            <button class="site-header__menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
                 aria-controls="site-menu">
-                <span class="site-header__menu-icon" aria-hidden="true"></span>
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+                <span class="menu-btn__bar" aria-hidden="true"></span>
             </button>
-
         </div>
 
-        <nav class="site-menu" id="site-menu" aria-label="Main navigation">
-            <ul class="site-menu__list">
-                <li class="site-menu__item"><a class="site-menu__link" href="./index.html">Home</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="./lise-meitner.html">Lise Meitner</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="./women-in-science.html">Women in
-                        science</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="./matilda-effect.html">Matilda effect</a>
-                </li>
-                <li class="site-menu__item"><a class="site-menu__link" href="./glossary.html">Glossary</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="./about.html">About</a></li>
-                <li class="site-menu__item"><a class="site-menu__link" href="./contact.html">Contact</a></li>
+        <nav class="menu" id="site-menu" hidden>
+            <ul class="menu__list u-list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/femmes-de-science.html">Women in science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/effet-matilda.html">The Matilda effect</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossaire.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/a-propos.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
             </ul>
+
+            <div class="menu__media" aria-hidden="true">
+                <img class="menu__img" src="/assets/img/menu-placeholder.jpg" alt="" loading="lazy" />
+            </div>
         </nav>
     </header>
 
-    <main class="site-main">
+    <main id="main" class="site-main">
 
         <section class="hero hero--simple" aria-labelledby="hero-title">
             <div class="hero__inner">
@@ -181,40 +183,31 @@
 
     </main>
 
-    <footer class="site-footer">
-        <div class="site-footer__inner">
-            <a class="site-footer__brand" href="./index.html" aria-label="Back to Lumina home">
-                <span class="site-footer__brand-text">LUMINA</span>
+    <footer class="footer">
+        <div class="footer__inner wrapper">
+            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
+                <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
             </a>
 
-            <p class="site-footer__credits">
-                Project made in 2025 as part of an educational exercise at the MMI department of Montbéliard.
+            <p class="footer__note">
+                Project made in 2025 as part of an educational MMI program in Montbéliard.
             </p>
 
-            <nav class="site-footer__nav" aria-label="Footer navigation">
-                <ul class="site-footer__list">
-                    <li class="site-footer__item"><a class="site-footer__link" href="./index.html">Home</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="./lise-meitner.html">Lise
-                            Meitner</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="./women-in-science.html">Women in
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item"><a class="footer__link" href="/en/">Home</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/femmes-de-science.html">Women in
                             science</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="./matilda-effect.html">Matilda
+                    <li class="footer__item"><a class="footer__link" href="/en/effet-matilda.html">The Matilda
                             effect</a></li>
-
-                    <li class="site-footer__item">
-                        <a class="site-footer__link site-footer__link--active" href="./other-projects.html"
-                            aria-current="page">
-                            Other projects
-                        </a>
-                    </li>
-
-                    <li class="site-footer__item"><a class="site-footer__link" href="./glossary.html">Glossary</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="./about.html">About</a></li>
-                    <li class="site-footer__item"><a class="site-footer__link" href="./contact.html">Contact</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/glossaire.html">Glossary</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/a-propos.html">About</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/contact.html">Contact</a></li>
                 </ul>
             </nav>
 
-            <p class="site-footer__author">Antonin Seichepine MMIb1</p>
+            <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
 

@@ -24,40 +24,42 @@
 </head>
 
 <body class="page page--home">
-    <!-- HEADER -->
-    <header class="header">
-        <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
-            <span class="header__logo">LUMINA</span>
-        </a>
+    <header class="header header--solid">
+        <div class="header__inner">
+            <nav class="lang" aria-label="Language selector">
+                <a class="lang__link" href="/fr/" lang="fr">FR</a>
+                <span class="lang__sep" aria-hidden="true">/</span>
+                <a class="lang__link lang__link--active" href="/en/" aria-current="page">EN</a>
+            </nav>
 
-        <!-- Language switch -->
-        <a class="header__lang" href="/fr/" lang="fr" aria-label="Passer en français">FR</a>
+            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
+                <span class="brand">LUMINA</span>
+            </a>
 
-        <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
-            aria-controls="mainNav">
-            <span class="menu-btn__bar" aria-hidden="true"></span>
-            <span class="menu-btn__bar" aria-hidden="true"></span>
-        </button>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="site-menu">
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+            </button>
+        </div>
 
-        <nav class="header__nav menu" id="mainNav" hidden>
+        <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/" aria-current="page">Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in science</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/femmes-de-science.html">Women in science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/effet-matilda.html">The Matilda effect</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/a-propos.html">About</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
             </ul>
 
-            <p class="menu__credits">
-                Project produced in 2025 as part of a pedagogical assignment at
-                <em>MMI Montbéliard</em>.
-            </p>
-            <p class="menu__author">Antonin Seichepine — MMI1B1</p>
+            <div class="menu__media" aria-hidden="true">
+                <img class="menu__img" src="/assets/img/menu-placeholder.jpg" alt="" loading="lazy" />
+            </div>
         </nav>
     </header>
 
-    <!-- MAIN -->
-    <main class="main">
+    <main id="main" class="main">
         <!-- HERO -->
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero__inner wrapper">
@@ -99,7 +101,7 @@
                         who were forgotten.
                     </p>
 
-                    <a class="btn" href="/en/women-in-science.html">Discover the portraits</a>
+                    <a class="btn" href="/en/femmes-de-science.html">Discover the portraits</a>
                 </article>
             </div>
         </section>
@@ -210,30 +212,35 @@
                     Designed by an MMI student, it combines research, design, and storytelling.
                 </p>
 
-                <a class="btn btn--outline" href="/en/about.html">Learn more</a>
+                <a class="btn btn--outline" href="/en/a-propos.html">Learn more</a>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__inner wrapper">
-            <a class="footer__brand" href="/en/" aria-label="Lumina home">LUMINA</a>
+            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
+                <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
+            </a>
+
+            <p class="footer__note">
+                Project made in 2025 as part of an educational MMI program in Montbéliard.
+            </p>
 
             <nav class="footer__nav" aria-label="Footer navigation">
                 <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item"><a class="footer__link" href="/en/">Home</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/" aria-current="page">Home</a></li>
                     <li class="footer__item"><a class="footer__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/en/women-in-science.html">Women in
+                    <li class="footer__item"><a class="footer__link" href="/en/femmes-de-science.html">Women in
                             science</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/en/about.html">About</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/effet-matilda.html">The Matilda
+                            effect</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/en/a-propos.html">About</a></li>
                     <li class="footer__item"><a class="footer__link" href="/en/contact.html">Contact</a></li>
                 </ul>
             </nav>
 
-            <p class="footer__meta">
-                Project produced in 2025 as part of a pedagogical assignment — MMI Montbéliard.
-            </p>
+            <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
 </body>
