@@ -1,23 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Fission nucléaire — Comprendre comment un atome libère de l’énergie | Lumina</title>
     <meta name="description"
-        content="Comprendre la fission nucléaire : atome, uranium 235, réaction en chaîne, centrale nucléaire, et enjeux éthiques.">
-    <link rel="stylesheet" href="../src/css/style.css">
-    <script src="../src/js/menu.js" defer></script>
+        content="Comprendre la fission nucléaire : atome, uranium 235, réaction en chaîne, centrale nucléaire, et enjeux éthiques." />
+
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--article page--article-fission">
+
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
-                <a class="lang__link lang__link--active" href="/fr/vulgarisation.html" aria-current="page">FR</a>
+                <a class="lang__link lang__link--active" href="/fr/article-fission-nucleaire.html"
+                    aria-current="page">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link" href="/en/vulgarisation.html" lang="en">EN</a>
+                <a class="lang__link" href="/en/article-fission-nucleaire.html" lang="en">EN</a>
             </nav>
 
             <a class="header__brand" href="/fr/" aria-label="Retour à l'accueil Lumina">
@@ -35,11 +43,8 @@
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html">Effet Matilda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">A propos</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
 
@@ -50,14 +55,15 @@
     </header>
 
     <main id="main" class="main">
+
         <header class="article-hero">
             <div class="article-hero__inner wrapper">
                 <p class="article-hero__kicker">Fission nucléaire</p>
                 <h1 class="article-hero__title">Comprendre comment un atome libère de l’énergie</h1>
 
                 <figure class="article-hero__media">
-                    <img class="article-hero__image" src="../assets/img/placeholder-article-uranium.jpg"
-                        alt="Minerai d’uraninite utilisé pour produire de l’uranium.">
+                    <img class="article-hero__image" src="/assets/img/placeholder-article-uranium.jpg"
+                        alt="Minerai d’uraninite utilisé pour produire de l’uranium." />
                     <figcaption class="article-hero__caption">Minerai d’uraninite — une source d’uranium.</figcaption>
                 </figure>
 
@@ -76,8 +82,9 @@
             </div>
         </header>
 
-        <div class="separator" aria-hidden="true">
-            <div class="separator__motif"></div>
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
         </div>
 
         <article class="article">
@@ -115,12 +122,13 @@
                     </aside>
 
                     <div class="article-section__cta">
-                        <a class="button button--primary" href="../fr/glossaire.html">Glossaire : les notions clés</a>
+                        <a class="btn btn--primary" href="/fr/glossaire.html">Glossaire : les notions clés</a>
                     </div>
                 </section>
 
-                <div class="separator" aria-hidden="true">
-                    <div class="separator__motif"></div>
+                <!-- DIVIDER -->
+                <div class="divider" aria-hidden="true">
+                    <img class="divider__svg" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
                 </div>
 
                 <section class="article-section" aria-labelledby="sec-chain">
@@ -138,8 +146,8 @@
                     </p>
 
                     <figure class="article-figure">
-                        <img class="article-figure__image" src="../assets/img/placeholder-article-dominos.jpg"
-                            alt="Illustration d’un effet domino représentant une réaction en chaîne.">
+                        <img class="article-figure__image" src="/assets/img/placeholder-article-dominos.jpg"
+                            alt="Illustration d’un effet domino représentant une réaction en chaîne." />
                         <figcaption class="article-figure__caption">Réaction en chaîne : l’effet domino.</figcaption>
                     </figure>
                 </section>
@@ -162,15 +170,16 @@
                     </ol>
 
                     <figure class="article-figure">
-                        <img class="article-figure__image" src="../assets/img/placeholder-article-centrale.jpg"
-                            alt="Illustration d’une centrale nucléaire.">
+                        <img class="article-figure__image" src="/assets/img/placeholder-article-centrale.jpg"
+                            alt="Illustration d’une centrale nucléaire." />
                         <figcaption class="article-figure__caption">La chaleur de la fission peut produire de
                             l’électricité.</figcaption>
                     </figure>
                 </section>
 
-                <div class="separator" aria-hidden="true">
-                    <div class="separator__motif"></div>
+                <!-- DIVIDER -->
+                <div class="divider" aria-hidden="true">
+                    <img class="divider__svg" src="/assets/icons/motif-separator-03.svg" alt="" loading="lazy" />
                 </div>
 
                 <section class="article-section" aria-labelledby="sec-ethics">
@@ -203,14 +212,14 @@
                     </p>
 
                     <div class="article-section__cta">
-                        <a class="button button--secondary" href="../fr/article-atomic-power.html">Voir aussi</a>
+                        <a class="btn btn--outline" href="/fr/article-atomic-power.html">Voir aussi</a>
                     </div>
 
                     <ul class="cards u-list-unstyled">
                         <li class="cards__item">
                             <article class="card-article">
-                                <a class="card-article__link" href="../fr/article-atomic-power.html">
-                                    <img class="card-article__img" src="../assets/img/placeholder-card-atomic-power.jpg"
+                                <a class="card-article__link" href="/fr/article-atomic-power.html">
+                                    <img class="card-article__img" src="/assets/img/placeholder-card-atomic-power.jpg"
                                         alt="" loading="lazy" width="328" height="169" />
                                     <h3 class="card-article__title">Atomic Power : quand la science devient propagande
                                     </h3>
@@ -225,6 +234,7 @@
         </article>
     </main>
 
+    <!-- FOOTER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
             <a class="footer__brand" href="/fr/" aria-label="Retour à l’accueil Lumina">
@@ -232,26 +242,63 @@
             </a>
 
             <p class="footer__note">
-                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span class="u-italic">MMI
-                    de Montbéliard</span>.
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
+                <span class="u-italic">MMI de Montbéliard</span>.
             </p>
 
             <nav class="footer__nav" aria-label="Navigation de pied de page">
-                <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item"><a class="footer__link" href="/fr/">Accueil</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
-                            science</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet Matilda</a>
+                <ul class="footer__groups u-list-unstyled">
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/">Accueil</a>
                     </li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">À propos</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/lise-meitner.html">Lise Meitner</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
+                            </li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/article-fission-nucleaire.html"
+                                    aria-current="page">Fission nucléaire</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/article-atomic-power.html">Cinéma
+                                    et science</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/femmes-de-science.html">Femme de science</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-litterature-repare-histoire.html">Dans la littérature</a></li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-marie-curie-livre.html">Lumière féminine</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet
+                                    Matilda</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/a-propos.html">A propos</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">Le projet</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html#autres-projets">Les
+                                    autres projets</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
 
             <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
+
 </body>
 
-</html>
+</html><!

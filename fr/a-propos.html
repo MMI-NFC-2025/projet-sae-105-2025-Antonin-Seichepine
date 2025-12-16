@@ -1,21 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
-        content="À propos de Lumina : un projet de mémoire et de lumière autour des femmes de science." />
+        content="À propos de Lumina : un projet de mémoire et de lumière dédié aux femmes de science." />
 
-    <title>À propos — Lumina</title>
+    <title>A propos — Lumina</title>
 
     <link rel="icon" href="/assets/favicons/favicon.ico" />
-
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--about">
+
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
@@ -39,10 +42,8 @@
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html">L’effet Matilda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html" aria-current="page">À propos</a>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html" aria-current="page">A propos</a>
                 </li>
                 <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
@@ -55,69 +56,76 @@
 
     <!-- MAIN -->
     <main id="main" class="main">
-        <!-- INTRO -->
-        <section class="hero hero--simple" aria-labelledby="titre-page">
-            <div class="hero__inner">
+
+        <section class="hero hero--simple" aria-labelledby="page-title">
+            <div class="hero__inner wrapper">
                 <header class="hero__header">
-                    <h1 id="titre-page" class="hero__title">À propos</h1>
+                    <h1 id="page-title" class="hero__title">A propos</h1>
                     <p class="hero__subtitle">
                         Un projet de mémoire et de lumière.<br />
-                        Né de l’histoire de Lise Meitner, Lumina éclaire la trace laissée par les femmes de science.
+                        Né de l’histoire de Lise Meitner, Lumina met en avant l’héritage laissé par les femmes de
+                        science.
                     </p>
                 </header>
             </div>
         </section>
 
-        <!-- MOTIF SEPARATOR (même système que les autres pages, tu remplaces le SVG) -->
-        <div class="separator" aria-hidden="true">
-            <img class="separator__img" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
+        <!-- DIVIDER (FORMAT VERROUILLÉ) -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- L’ESPRIT DU PROJET -->
-        <section class="section section--wrapper section--panel" aria-labelledby="esprit">
-            <header class="section__header">
-                <h2 id="esprit" class="section__title">L’esprit du projet</h2>
-            </header>
+        <section class="section section--wrapper section--panel" aria-labelledby="project-spirit">
+            <div class="section__inner wrapper">
+                <header class="section__header">
+                    <h2 id="project-spirit" class="section__title">L’esprit du projet</h2>
+                </header>
 
-            <div class="panel panel--primary">
-                <div class="panel__content richtext">
-                    <p>
-                        Né au sein du département MMI de Montbéliard, Lumina est un projet mêlant vulgarisation et
-                        engagement.
-                        Son objectif&nbsp;: éclairer les chercheuses oubliées, leurs découvertes et les valeurs qu’elles
-                        transmettent
-                        aujourd’hui en s’appuyant sur le parcours de Lise Meitner.
-                    </p>
+                <div class="panel panel--primary">
+                    <div class="panel__content richtext">
+                        <p>
+                            Réalisé au sein du département MMI de Montbéliard, Lumina est un projet qui mêle
+                            communication scientifique et engagement.
+                            Son objectif est de mettre en lumière des chercheuses oubliées, leurs découvertes et les
+                            valeurs
+                            qu’elles transmettent encore aujourd’hui,
+                            en s’appuyant sur le parcours de Lise Meitner.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- MOTIF SEPARATOR (tu peux mettre un autre SVG ici, comme sur ta maquette) -->
-        <div class="separator" aria-hidden="true">
-            <img class="separator__img" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
+        <!-- DIVIDER (FORMAT VERROUILLÉ) -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- LES AUTRES PROJETS -->
         <section class="section section--wrapper section--panel" aria-labelledby="autres-projets">
-            <header class="section__header">
-                <h2 id="autres-projets" class="section__title">Les autres projets</h2>
-            </header>
+            <div class="section__inner wrapper">
+                <header class="section__header">
+                    <h2 id="autres-projets" class="section__title">Les autres projets</h2>
+                </header>
 
-            <div class="panel panel--primary">
-                <div class="panel__content richtext">
-                    <p>
-                        Ce site fait partie d’une série de projets étudiants autour des figures de la science et de la
-                        transmission du savoir.
-                    </p>
+                <div class="panel panel--primary">
+                    <div class="panel__content richtext">
+                        <p>
+                            Ce site s’inscrit dans une série de projets étudiants centrés sur de grandes figures
+                            scientifiques
+                            et la transmission des savoirs.
+                        </p>
+                    </div>
+
+                    <footer class="panel__footer">
+                        <a class="btn btn--primary" href="/fr/autres-projets.html">Voir les autres projets</a>
+                    </footer>
                 </div>
-
-                <footer class="panel__footer">
-                    <a class="btn btn--primary" href="/fr/autres-projets.html">Voir les autres projets</a>
-                </footer>
             </div>
         </section>
+
     </main>
 
+    <!-- FOOTER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
             <a class="footer__brand" href="/fr/" aria-label="Retour à l’accueil Lumina">
@@ -125,27 +133,63 @@
             </a>
 
             <p class="footer__note">
-                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span class="u-italic">MMI
-                    de Montbéliard</span>.
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
+                <span class="u-italic">MMI de Montbéliard</span>.
             </p>
 
             <nav class="footer__nav" aria-label="Navigation de pied de page">
-                <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item"><a class="footer__link" href="/fr/">Accueil</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
-                            science</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet Matilda</a>
+                <ul class="footer__groups u-list-unstyled">
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/">Accueil</a>
                     </li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html" aria-current="page">À
-                            propos</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/lise-meitner.html">Lise Meitner</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
+                            </li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-fission-nucleaire.html">Fission nucléaire</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/article-atomic-power.html">Cinéma
+                                    et science</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/femmes-de-science.html">Femme de science</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-litterature-repare-histoire.html">Dans la littérature</a></li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-marie-curie-livre.html">Lumière féminine</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet
+                                    matilda</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/a-propos.html" aria-current="page">A propos</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">Le projet</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html#autres-projets">Les
+                                    autres projets</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
 
             <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
+
 </body>
 
 </html>

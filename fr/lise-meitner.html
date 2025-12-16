@@ -15,6 +15,8 @@
 </head>
 
 <body class="page page--lise-meitner">
+
+    <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
@@ -27,8 +29,8 @@
                 <span class="brand">LUMINA</span>
             </a>
 
-            <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
-                aria-controls="site-menu">
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu"
+                aria-expanded="false" aria-controls="site-menu">
                 <span class="menu-btn__bar" aria-hidden="true"></span>
                 <span class="menu-btn__bar" aria-hidden="true"></span>
             </button>
@@ -36,15 +38,21 @@
 
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html" aria-current="page">Lise
-                        Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/">Accueil</a>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html">Effet Matilda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">À propos</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/lise-meitner.html" aria-current="page">Lise Meitner</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/a-propos.html">A propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/contact.html">Contact</a>
+                </li>
             </ul>
 
             <div class="menu__media" aria-hidden="true">
@@ -55,15 +63,20 @@
 
     <!-- MAIN -->
     <main id="main" class="main">
+
         <!-- HERO -->
         <section class="hero hero--profile" aria-labelledby="hero-title">
             <div class="hero__inner wrapper">
                 <figure class="hero__figure">
-                    <img class="hero__img" src="/assets/img/heros/hero2_Lise.webp" alt="Portrait de Lise Meitner"
-                        width="240" height="240" />
+                    <img class="hero__portrait"
+                        src="/assets/img/heros/hero2_Lise.webp"
+                        alt="Portrait de Lise Meitner"
+                        width="240"
+                        height="240" />
                 </figure>
 
                 <h1 id="hero-title" class="hero__title">Lise Meitner</h1>
+
                 <p class="hero__subtitle">
                     Elle a découvert la fission nucléaire.<br />
                     Mais l’histoire a écrit un autre nom.
@@ -75,7 +88,7 @@
             </div>
         </section>
 
-        <!-- DIVIDER (composant unique) -->
+        <!-- DIVIDER -->
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
@@ -89,6 +102,9 @@
 
                 <p class="section__text">
                     Une chercheuse qui a changé la science sans jamais faire débat.
+                </p>
+
+                <p class="section__text">
                     Lise Meitner incarne la face oubliée de la découverte et de la conscience du savoir.
                 </p>
             </div>
@@ -113,9 +129,14 @@
                     <li class="cards__item">
                         <article class="card-article">
                             <a class="card-article__link" href="/fr/article-lise-meitner-fission.html">
-                                <img class="card-article__img" src="/assets/img/articles/article-01.webp" alt=""
-                                    loading="lazy" width="328" height="169" />
-                                <h3 class="card-article__title">Lise Meitner, la femme derrière la fission nucléaire
+                                <img class="card-article__img"
+                                    src="/assets/img/articles/article-01.webp"
+                                    alt=""
+                                    loading="lazy"
+                                    width="328"
+                                    height="169" />
+                                <h3 class="card-article__title">
+                                    Lise Meitner, la femme derrière la fission nucléaire
                                 </h3>
                                 <span class="card-article__cta">Voir l’article</span>
                             </a>
@@ -141,9 +162,14 @@
                     <li class="cards__item">
                         <article class="card-article">
                             <a class="card-article__link" href="/fr/article-atomic-power.html">
-                                <img class="card-article__img" src="/assets/img/articles/article-02.webp" alt=""
-                                    loading="lazy" width="328" height="169" />
-                                <h3 class="card-article__title">Atomic Power&nbsp;: quand la science devient propagande
+                                <img class="card-article__img"
+                                    src="/assets/img/articles/article-02.webp"
+                                    alt=""
+                                    loading="lazy"
+                                    width="328"
+                                    height="169" />
+                                <h3 class="card-article__title">
+                                    Atomic Power&nbsp;: quand la science devient propagande
                                 </h3>
                                 <span class="card-article__cta">Voir l’article</span>
                             </a>
@@ -175,8 +201,10 @@
                 </a>
             </div>
         </section>
+
     </main>
 
+    <!-- FOOTER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
             <a class="footer__brand" href="/fr/" aria-label="Retour à l’accueil Lumina">
@@ -184,28 +212,78 @@
             </a>
 
             <p class="footer__note">
-                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span class="u-italic">MMI
-                    de Montbéliard</span>.
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
+                <span class="u-italic">MMI de Montbéliard</span>.
             </p>
 
             <nav class="footer__nav" aria-label="Navigation de pied de page">
-                <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item"><a class="footer__link" href="/fr/">Accueil</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html"
-                            aria-current="page">Lise Meitner</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
-                            science</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet Matilda</a>
+                <ul class="footer__groups u-list-unstyled">
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/">Accueil</a>
                     </li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/glossaire.html">Glossaire</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">À propos</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/lise-meitner.html" aria-current="page">Lise Meitner</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-fission-nucleaire.html">Fission nucléaire</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-atomic-power.html">Cinéma et science</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/femmes-de-science.html">Femme de science</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-litterature-repare-histoire.html">
+                                    Dans la littérature
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-marie-curie-livre.html">
+                                    Lumière féminine
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/effet-matilda.html">Effet matilda</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/a-propos.html">A propos</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/a-propos.html">Le projet</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/a-propos.html#autres-projets">
+                                    Les autres projets
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
 
             <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
-</body>
 
+</body>
 </html>

@@ -9,21 +9,16 @@
     <meta name="description"
         content="Lumina est un projet éditorial dédié à Lise Meitner et à l’effet Matilda : mémoire des femmes de science, recherche, design et narration." />
 
-    <!-- Favicons (à adapter) -->
     <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="/src/css/style.css" />
-
-    <!-- JS (menu etc.) -->
-    <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--home">
+
+
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
@@ -43,14 +38,13 @@
             </button>
         </div>
 
+        <!-- Arbo header: Accueil, Lise Meitner, Femme de science, A propos, Contact -->
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="/fr/" aria-current="page">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html">Effet Matilda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">A propos</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
 
@@ -61,12 +55,11 @@
     </header>
 
     <main id="main" class="main">
-        <!-- HERO -->
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero__inner wrapper">
                 <figure class="hero__figure">
                     <img class="hero__portrait" src="/assets/img/heros/Hero1_Lise.webp" alt="Portrait de Lise Meitner"
-                        width="240" height="240" />
+                        width="240" height="240" fetchpriority="high" />
                 </figure>
 
                 <h1 class="hero__title" id="hero-title">LISE MEITNER</h1>
@@ -83,12 +76,10 @@
             </div>
         </section>
 
-        <!-- MOTIF / DIVIDER -->
         <div class="divider" aria-hidden="true">
-            <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
+            <img class="divider__svg" src="/assets/img/motifs/motif2.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- EFFET MATILDA -->
         <section class="section section--matilda" aria-labelledby="matilda-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
@@ -106,12 +97,10 @@
             </div>
         </section>
 
-        <!-- MOTIF / DIVIDER -->
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif3.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- LISTE D’ARTICLES -->
         <section class="section section--articles" id="articles" aria-labelledby="articles-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
@@ -134,7 +123,7 @@
                     <li class="cards__item">
                         <article class="card-article">
                             <a class="card-article__link" href="/fr/article-fission-nucleaire.html">
-                                <img class="card-article__img" src="/assets/img/cards/card2.webp" alt="Illustration pour l’article sur la fission nucléaire." loading="lazy"
+                                <img class="card-article__img" src="/assets/img/cards/card2.webp" alt="" loading="lazy"
                                     width="328" height="169" />
                                 <h3 class="card-article__title">
                                     Fission nucléaire : comprendre comment un atome libère de l’énergie
@@ -143,16 +132,18 @@
                             </a>
                         </article>
                     </li>
+
                     <li class="cards__item cards__item--divider" aria-hidden="true">
                         <div class="divider">
-                            <img class="divider__svg" src="/assets/img/motifs/motif4.svg" alt="" loading="lazy" />
+                            <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
                         </div>
                     </li>
+
                     <li class="cards__item">
                         <article class="card-article">
                             <a class="card-article__link" href="/fr/article-litterature-repare-histoire.html">
                                 <img class="card-article__img" src="/assets/img/cards/card3.webp" alt="" loading="lazy"
-                                    loading="lazy" width="328" height="169" />
+                                    width="328" height="169" />
                                 <h3 class="card-article__title">Les femmes oubliées : la littérature répare l’histoire
                                 </h3>
                                 <span class="card-article__cta">Voir l’article</span>
@@ -163,7 +154,7 @@
                     <li class="cards__item">
                         <article class="card-article">
                             <a class="card-article__link" href="/fr/article-marie-curie-livre.html">
-                                <img class="card-article__img" src="/assets/img/cards/card4.webp" alt="Illustration pour l’article sur Marie Curie et les femmes de science." loading="lazy"
+                                <img class="card-article__img" src="/assets/img/cards/card4.webp" alt="" loading="lazy"
                                     width="328" height="169" />
                                 <h3 class="card-article__title">
                                     Marie Curie et les femmes de science : un livre qui éclaire l’oubli
@@ -172,16 +163,18 @@
                             </a>
                         </article>
                     </li>
+
                     <li class="cards__item cards__item--divider" aria-hidden="true">
                         <div class="divider">
                             <img class="divider__svg" src="/assets/img/motifs/motif4.svg" alt="" loading="lazy" />
                         </div>
                     </li>
+
                     <li class="cards__item">
                         <article class="card-article">
                             <a class="card-article__link" href="/fr/article-atomic-power.html">
                                 <img class="card-article__img" src="/assets/img/cards/card5.webp" alt="" loading="lazy"
-                                    loading="lazy" width="328" height="169" />
+                                    width="328" height="169" />
                                 <h3 class="card-article__title">
                                     Atomic Power : quand la science devient propagande
                                 </h3>
@@ -193,12 +186,10 @@
             </div>
         </section>
 
-        <!-- MOTIF / DIVIDER -->
         <div class="divider" aria-hidden="true">
-            <img class="divider__svg" src="/assets/img/motifs/motif4.svg" alt="" loading="lazy" />
+            <img class="divider__svg" src="/assets/img/motifs/motif2.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- CITATION -->
         <section class="quote" aria-label="Citation">
             <div class="quote__inner wrapper">
                 <blockquote class="quote__content">
@@ -210,12 +201,10 @@
             </div>
         </section>
 
-        <!-- MOTIF / DIVIDER -->
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/dividers/motif-04.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- A PROPOS -->
         <section class="section section--about" aria-labelledby="about-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
@@ -230,6 +219,9 @@
                 <a class="btn btn--outline" href="/fr/a-propos.html">En savoir plus</a>
             </div>
         </section>
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/img/motifs/motif3.svg" alt="" loading="lazy" />
+        </div>
     </main>
 
     <footer class="footer">
@@ -239,20 +231,57 @@
             </a>
 
             <p class="footer__note">
-                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span class="u-italic">MMI
-                    de Montbéliard</span>.
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
+                <span class="u-italic">MMI de Montbéliard</span>.
             </p>
 
+            <!-- Footer arbo détaillée -->
             <nav class="footer__nav" aria-label="Navigation de pied de page">
-                <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item"><a class="footer__link" href="/fr/" aria-current="page">Accueil</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
-                            science</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet Matilda</a>
+                <ul class="footer__groups u-list-unstyled">
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/" aria-current="page">Accueil</a>
                     </li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">À propos</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/lise-meitner.html">Lise Meitner</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
+                            </li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-fission-nucleaire.html">Fission nucléaire</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/article-atomic-power.html">Cinéma
+                                    et science</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/femmes-de-science.html">Femme de science</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-litterature-repare-histoire.html">Dans la littérature</a></li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-marie-curie-livre.html">Lumière féminine</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet
+                                    matilda</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/a-propos.html">A propos</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">Le projet</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html#autres-projets">Les
+                                    autres projets</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
 

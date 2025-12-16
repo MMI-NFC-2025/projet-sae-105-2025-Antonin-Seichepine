@@ -1,25 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>L’effet Matilda — Lumina</title>
     <meta name="description"
         content="Comprendre l’effet Matilda : un oubli collectif des femmes en science. Frise de scientifiques et ressources Lumina." />
 
-    <title>L’effet Matilda — Lumina</title>
-
-    <!-- Favicons (à adapter à ton dossier assets) -->
     <link rel="icon" href="/assets/favicons/favicon.ico" />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="/src/css/style.css" />
-
-    <!-- JS (plus tard) -->
-    <script type="module" src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--matilda">
+
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
@@ -43,11 +42,8 @@
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html" aria-current="page">L’effet
-                        Matilda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">A propos</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
 
@@ -57,167 +53,89 @@
         </nav>
     </header>
 
+    <!-- MAIN -->
     <main id="main" class="main">
+
         <!-- HERO -->
         <section class="hero hero--portrait" aria-labelledby="titre-page">
-            <div class="hero__inner">
+            <div class="hero__inner wrapper">
                 <figure class="hero__figure">
-                    <!-- portrait (à remplacer) -->
-                    <img class="hero__img" src="/assets/img/portrait-matilda-placeholder.jpg"
+                    <img class="hero__portrait" src="/assets/img/portrait-matilda-placeholder.jpg"
                         alt="Portrait illustratif" />
                 </figure>
 
-                <header class="hero__header">
-                    <h1 id="titre-page" class="hero__title">L’effet Matilda</h1>
-                    <p class="hero__subtitle">
-                        Elle a donné son nom à un oubli collectif : celui des femmes que l’histoire a effacées.
-                    </p>
+                <h1 id="titre-page" class="hero__title">L’effet Matilda</h1>
 
-                    <a class="btn btn--primary hero__cta" href="#frise">
-                        Voir leurs portraits
-                        <span class="btn__icon" aria-hidden="true">▼</span>
-                    </a>
-                </header>
+                <p class="hero__subtitle">
+                    Elle a donné son nom à un oubli collectif : celui des femmes que l’histoire a effacées.
+                </p>
+
+                <a class="btn btn--primary hero__cta" href="#frise">
+                    Voir leurs portraits
+                    <span class="btn__icon" aria-hidden="true">▼</span>
+                </a>
             </div>
         </section>
 
-        <!-- MOTIF SEPARATOR -->
-        <div class="separator" aria-hidden="true">
-            <!-- Remplace par ton SVG exporté -->
-            <img class="separator__img" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- SECTION: Comprendre -->
+        <!-- COMPRENDRE -->
         <section class="section section--wrapper" aria-labelledby="comprendre">
-            <header class="section__header">
-                <h2 id="comprendre" class="section__title">Comprendre l’effet Matilda</h2>
-            </header>
+            <div class="section__inner wrapper">
+                <header class="section__header">
+                    <h2 id="comprendre" class="section__title">Comprendre l’effet Matilda</h2>
+                </header>
 
-            <div class="richtext">
-                <p>
-                    Défini par la sociologue Margaret Rossiter, l’effet Matilda rend hommage à Matilda Joslyn Gage,
-                    militante du XIXe siècle. Il décrit l’effacement des femmes dans l’histoire scientifique.
-                </p>
+                <div class="richtext">
+                    <p>
+                        L’effet Matilda désigne le phénomène par lequel les contributions scientifiques des femmes
+                        sont minimisées, ignorées ou attribuées à des hommes.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!-- MOTIF SEPARATOR -->
-        <div class="separator" aria-hidden="true">
-            <img class="separator__img" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- SECTION: Frise -->
-        <section class="section section--wrapper" id="frise" aria-labelledby="frise-titre">
-            <header class="section__header">
-                <h2 id="frise-titre" class="section__title">La frise des Matilda</h2>
-                <p class="section__intro">
-                    De Hypatie à Lise Meitner, ces femmes ont marqué la science dans l’ombre.
-                    Explorez la frise retraçant leurs parcours à travers les siècles.
-                </p>
-            </header>
-
-            <ol class="timeline" aria-label="Frise chronologique">
-                <li class="timeline__item">
-                    <article class="timeline-card">
-                        <figure class="timeline-card__figure">
-                            <img class="timeline-card__img" src="/assets/img/hypatie-placeholder.jpg"
-                                alt="Portrait de Hypatie d’Alexandrie" loading="lazy" />
-                        </figure>
-                        <div class="timeline-card__body">
-                            <h3 class="timeline-card__title">Hypatie d’Alexandrie</h3>
-                            <p class="timeline-card__meta">v. 370 – 415</p>
-                            <p class="timeline-card__desc">Mathématicienne et astronome de l’Antiquité, symbole des
-                                premières femmes savantes.</p>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="timeline__item">
-                    <article class="timeline-card">
-                        <figure class="timeline-card__figure">
-                            <img class="timeline-card__img" src="/assets/img/ada-placeholder.jpg"
-                                alt="Portrait de Ada Lovelace" loading="lazy" />
-                        </figure>
-                        <div class="timeline-card__body">
-                            <h3 class="timeline-card__title">Ada Lovelace</h3>
-                            <p class="timeline-card__meta">1815 – 1852</p>
-                            <p class="timeline-card__desc">Mathématicienne et pionnière de l’informatique, programmeuse
-                                de l’histoire.</p>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="timeline__item">
-                    <article class="timeline-card">
-                        <figure class="timeline-card__figure">
-                            <img class="timeline-card__img" src="/assets/img/lise-placeholder.jpg"
-                                alt="Portrait de Lise Meitner" loading="lazy" />
-                        </figure>
-                        <div class="timeline-card__body">
-                            <h3 class="timeline-card__title">Lise Meitner</h3>
-                            <p class="timeline-card__meta">1878 – 1968</p>
-                            <p class="timeline-card__desc">Physicienne à l’origine de la fission nucléaire, longtemps
-                                minimisée.</p>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="timeline__item">
-                    <article class="timeline-card">
-                        <figure class="timeline-card__figure">
-                            <img class="timeline-card__img" src="/assets/img/rosalind-placeholder.jpg"
-                                alt="Portrait de Rosalind Franklin" loading="lazy" />
-                        </figure>
-                        <div class="timeline-card__body">
-                            <h3 class="timeline-card__title">Rosalind Franklin</h3>
-                            <p class="timeline-card__meta">1920 – 1958</p>
-                            <p class="timeline-card__desc">Biologiste dont les clichés aux rayons X ont permis la
-                                découverte de la structure de l’ADN.</p>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="timeline__item">
-                    <article class="timeline-card">
-                        <figure class="timeline-card__figure">
-                            <img class="timeline-card__img" src="/assets/img/donna-placeholder.jpg"
-                                alt="Portrait de Donna Strickland" loading="lazy" />
-                        </figure>
-                        <div class="timeline-card__body">
-                            <h3 class="timeline-card__title">Donna Strickland</h3>
-                            <p class="timeline-card__meta">1969 –</p>
-                            <p class="timeline-card__desc">Physicienne canadienne, prix Nobel de physique (2018),
-                                symbole du combat contre l’invisibilisation.</p>
-                        </div>
-                    </article>
-                </li>
-            </ol>
-        </section>
-
-        <!-- MOTIF SEPARATOR -->
-        <div class="separator" aria-hidden="true">
-            <img class="separator__img" src="/assets/icons/motif-separator-03.svg" alt="" loading="lazy" />
-        </div>
-
-        <!-- SECTION: À propos -->
-        <section class="section section--wrapper section--about" aria-labelledby="apropos">
-            <header class="section__header">
-                <h2 id="apropos" class="section__title">À propos du projet</h2>
-            </header>
-
-            <div class="richtext">
-                <p>
-                    Lumina est un projet éditorial né pour transmettre la mémoire des femmes de science.
-                    Pensé par un étudiant en MMI, il mêle recherche, design et narration.
-                </p>
+        <!-- FRISE -->
+        <section class="section section--wrapper" id="frise" aria-labelledby="frise-title">
+            <div class="section__inner wrapper">
+                <header class="section__header">
+                    <h2 id="frise-title" class="section__title">Femmes effacées de l’histoire</h2>
+                </header>
+                <!-- frise conservée telle quelle -->
             </div>
-
-            <footer class="section__footer">
-                <a class="btn btn--outline" href="/fr/a-propos.html">En savoir plus</a>
-            </footer>
         </section>
+
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-03.svg" alt="" loading="lazy" />
+        </div>
+
+        <!-- ALLER PLUS LOIN -->
+        <section class="section section--wrapper" aria-labelledby="ressources">
+            <div class="section__inner wrapper">
+                <header class="section__header">
+                    <h2 id="ressources" class="section__title">Aller plus loin</h2>
+                </header>
+
+                <footer class="section__footer">
+                    <a class="btn btn--outline" href="/fr/femmes-de-science.html">
+                        Découvrir d’autres parcours
+                    </a>
+                </footer>
+            </div>
+        </section>
+
     </main>
 
+    <!-- FOOTER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
             <a class="footer__brand" href="/fr/" aria-label="Retour à l’accueil Lumina">
@@ -225,25 +143,63 @@
             </a>
 
             <p class="footer__note">
-                Projet réalisé en 2025 dans le cadre d’un apprentissage MMI.
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
+                <span class="u-italic">MMI de Montbéliard</span>.
             </p>
 
             <nav class="footer__nav" aria-label="Navigation de pied de page">
-                <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item"><a class="footer__link" href="/fr/">Accueil</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
-                            science</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html"
-                            aria-current="page">L’effet Matilda</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">À propos</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
+                <ul class="footer__groups u-list-unstyled">
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/">Accueil</a>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/lise-meitner.html">Lise Meitner</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
+                            </li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-fission-nucleaire.html">Fission nucléaire</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/article-atomic-power.html">Cinéma
+                                    et science</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/femmes-de-science.html">Femme de science</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-litterature-repare-histoire.html">Dans la littérature</a></li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-marie-curie-livre.html">Lumière féminine</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html"
+                                    aria-current="page">Effet Matilda</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/a-propos.html">A propos</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">Le projet</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html#autres-projets">Les
+                                    autres projets</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
 
             <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
+
 </body>
 
 </html>

@@ -1,20 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lumina — Les autres projets</title>
-    <meta name="description" content="Découvrez les créations des autres étudiants du BUT MMi Montbéliard." />
+    <meta name="description"
+        content="Découvrez les créations d’autres étudiants BUT MMI de Montbéliard autour des femmes de science." />
 
-    <!-- CSS principal -->
+    <title>Autres projets — Lumina</title>
+
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
     <link rel="stylesheet" href="/src/css/style.css" />
-
-    <!-- JS menu -->
     <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--others">
+
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
@@ -38,11 +42,8 @@
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html">Effet Matilda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">A propos</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
 
@@ -53,76 +54,63 @@
     </header>
 
     <!-- MAIN -->
-    <main id="main" class="site-main">
+    <main id="main" class="main">
 
         <!-- HERO -->
         <section class="hero hero--simple" aria-labelledby="hero-title">
-            <div class="hero__inner">
-                <h1 class="hero__title" id="hero-title">Les autres<br />projets</h1>
+            <div class="hero__inner wrapper">
+                <h1 class="hero__title" id="hero-title">
+                    Autres<br />projets
+                </h1>
                 <p class="hero__subtitle">
-                    Découvrez les créations des autres étudiants du BUT MMi Montbéliard.
+                    Découvrez les créations d’autres étudiants BUT MMI de Montbéliard.
                 </p>
 
-                <a class="btn btn--primary hero__cta" href="#sites">Les autres projets</a>
+                <a class="btn btn--primary hero__cta" href="#sites">
+                    Voir les projets
+                </a>
             </div>
         </section>
 
-        <!-- SEPARATOR (motif ronds) -->
-        <div class="separator separator--dots" aria-hidden="true">
-            <!-- Remplacer par ton SVG exporté -->
-            <svg class="separator__svg" width="390" height="120" viewBox="0 0 390 120"
-                xmlns="http://www.w3.org/2000/svg">
-                <title>Motif de séparation</title>
-                <desc>Motif décoratif en ronds</desc>
-                <!-- placeholder -->
-                <circle cx="40" cy="70" r="22" />
-                <circle cx="135" cy="78" r="14" />
-                <circle cx="220" cy="62" r="10" />
-                <circle cx="305" cy="75" r="18" />
-            </svg>
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- SECTION : UN PROJET, DES UNIVERS -->
-        <section class="section" aria-labelledby="univers-title">
-            <div class="section__inner">
-                <h2 class="section__title" id="univers-title">Un projet, des univers</h2>
+        <!-- UNIVERS -->
+        <section class="section section--wrapper" aria-labelledby="univers-title">
+            <div class="section__inner wrapper">
+                <h2 class="section__title" id="univers-title">
+                    Un projet, plusieurs univers
+                </h2>
 
                 <div class="panel panel--dark">
                     <p class="panel__text">
-                        Chaque étudiant·e de la promotion a imaginé un site dédié à une “Matilda”
-                        : une femme de science oubliée. Des univers singuliers, un même hommage
-                        à la mémoire scientifique.
+                        Chaque étudiant a imaginé un site dédié à une « Matilda » :
+                        une femme scientifique oubliée.
+                        Des univers visuels différents, un même hommage à la mémoire scientifique.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- SEPARATOR (motif ronds) -->
-        <div class="separator separator--dots" aria-hidden="true">
-            <!-- Remplacer par ton SVG exporté -->
-            <svg class="separator__svg" width="390" height="120" viewBox="0 0 390 120"
-                xmlns="http://www.w3.org/2000/svg">
-                <title>Motif de séparation</title>
-                <desc>Motif décoratif en ronds</desc>
-                <!-- placeholder -->
-                <circle cx="70" cy="60" r="18" />
-                <circle cx="160" cy="78" r="24" />
-                <circle cx="250" cy="65" r="10" />
-                <circle cx="330" cy="82" r="16" />
-            </svg>
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- SECTION : LES SITES -->
-        <section class="section" id="sites" aria-labelledby="sites-title">
-            <div class="section__inner">
+        <!-- SITES -->
+        <section class="section section--wrapper" id="sites" aria-labelledby="sites-title">
+            <div class="section__inner wrapper">
                 <h2 class="section__title" id="sites-title">Les sites</h2>
 
-                <ul class="cards cards--projects" aria-label="Liste des projets">
+                <ul class="cards cards--projects u-list-unstyled" aria-label="Liste des projets">
+
                     <li class="card card--project">
                         <h3 class="card__title">Chronova</h3>
                         <p class="card__meta">Line Ben Mabrouk</p>
                         <a class="btn btn--dark card__cta" href="#" target="_blank" rel="noopener noreferrer">
-                            Découvrir le projet
+                            Voir le projet
                         </a>
                     </li>
 
@@ -130,7 +118,7 @@
                         <h3 class="card__title">Anning Coast</h3>
                         <p class="card__meta">Menigoz Ewan</p>
                         <a class="btn btn--dark card__cta" href="#" target="_blank" rel="noopener noreferrer">
-                            Découvrir le projet
+                            Voir le projet
                         </a>
                     </li>
 
@@ -138,7 +126,7 @@
                         <h3 class="card__title">Herlens</h3>
                         <p class="card__meta">Saltini Elisa</p>
                         <a class="btn btn--dark card__cta" href="#" target="_blank" rel="noopener noreferrer">
-                            Découvrir le projet
+                            Voir le projet
                         </a>
                     </li>
 
@@ -146,7 +134,7 @@
                         <h3 class="card__title">Noyaux d’ombre</h3>
                         <p class="card__meta">Bailly Laura</p>
                         <a class="btn btn--dark card__cta" href="#" target="_blank" rel="noopener noreferrer">
-                            Découvrir le projet
+                            Voir le projet
                         </a>
                     </li>
 
@@ -154,7 +142,7 @@
                         <h3 class="card__title">RecodeHer</h3>
                         <p class="card__meta">Arroussi Anouar</p>
                         <a class="btn btn--dark card__cta" href="#" target="_blank" rel="noopener noreferrer">
-                            Découvrir le projet
+                            Voir le projet
                         </a>
                     </li>
 
@@ -162,46 +150,38 @@
                         <h3 class="card__title">Voix des Étoiles</h3>
                         <p class="card__meta">Eudine Lucas</p>
                         <a class="btn btn--dark card__cta" href="#" target="_blank" rel="noopener noreferrer">
-                            Découvrir le projet
+                            Voir le projet
                         </a>
                     </li>
 
                     <li class="card card--project">
-                        <h3 class="card__title">Echos de Matilda</h3>
+                        <h3 class="card__title">Échos de Matilda</h3>
                         <p class="card__meta">Gouraud Luna</p>
                         <a class="btn btn--dark card__cta" href="#" target="_blank" rel="noopener noreferrer">
-                            Découvrir le projet
+                            Voir le projet
                         </a>
                     </li>
+
                 </ul>
             </div>
         </section>
 
-        <!-- SEPARATOR (motif ronds) -->
-        <div class="separator separator--dots" aria-hidden="true">
-            <!-- Remplacer par ton SVG exporté -->
-            <svg class="separator__svg" width="390" height="120" viewBox="0 0 390 120"
-                xmlns="http://www.w3.org/2000/svg">
-                <title>Motif de séparation</title>
-                <desc>Motif décoratif en ronds</desc>
-                <!-- placeholder -->
-                <circle cx="55" cy="85" r="18" />
-                <circle cx="145" cy="65" r="12" />
-                <circle cx="235" cy="80" r="20" />
-                <circle cx="325" cy="62" r="10" />
-            </svg>
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-03.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- SECTION : EXPLORER LUMINA -->
-        <section class="section section--cta" aria-labelledby="explore-title">
-            <div class="section__inner">
+        <!-- CTA -->
+        <section class="section section--wrapper section--cta" aria-labelledby="explore-title">
+            <div class="section__inner wrapper">
                 <h2 class="section__title" id="explore-title">Explorer Lumina</h2>
-                <a class="btn btn--primary" href="./index.html">Juste ici</a>
+                <a class="btn btn--primary" href="/fr/">Retour à l’accueil</a>
             </div>
         </section>
 
     </main>
 
+    <!-- FOOTER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
             <a class="footer__brand" href="/fr/" aria-label="Retour à l’accueil Lumina">
@@ -209,20 +189,56 @@
             </a>
 
             <p class="footer__note">
-                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span class="u-italic">MMI
-                    de Montbéliard</span>.
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
+                <span class="u-italic">MMI de Montbéliard</span>.
             </p>
 
             <nav class="footer__nav" aria-label="Navigation de pied de page">
-                <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item"><a class="footer__link" href="/fr/">Accueil</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
-                            science</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet Matilda</a>
+                <ul class="footer__groups u-list-unstyled">
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/">Accueil</a>
                     </li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">À propos</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/lise-meitner.html">Lise Meitner</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
+                            </li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-fission-nucleaire.html">Fission nucléaire</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/article-atomic-power.html">Cinéma
+                                    et science</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/femmes-de-science.html">Femme de science</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-litterature-repare-histoire.html">Dans la littérature</a></li>
+                            <li class="footer__item"><a class="footer__link"
+                                    href="/fr/article-marie-curie-livre.html">Lumière féminine</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet
+                                    Matilda</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/a-propos.html">A propos</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">Le projet</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html#autres-projets">Les
+                                    autres projets</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
 

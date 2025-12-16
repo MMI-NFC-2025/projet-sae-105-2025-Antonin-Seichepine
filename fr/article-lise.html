@@ -1,24 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Lise Meitner — La femme derrière la fission nucléaire | Lumina</title>
     <meta name="description"
-        content="Physicienne autrichienne d’origine juive, Lise Meitner a joué un rôle clé dans la découverte de la fission nucléaire. Un article Lumina." />
+        content="Physicienne autrichienne d’origine juive, Lise Meitner a joué un rôle clé dans la découverte de la fission nucléaire." />
 
-    <!-- CSS -->
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
     <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--article page--article-lise">
+
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
-                <a class="lang__link lang__link--active" href="/fr/article-lise.html" aria-current="page">FR</a>
+                <a class="lang__link lang__link--active" href="/fr/article-lise-meitner-fission.html"
+                    aria-current="page">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link" href="/en/article-lise.html" lang="en">EN</a>
+                <a class="lang__link" href="/en/article-lise-meitner-fission.html" lang="en">EN</a>
             </nav>
 
             <a class="header__brand" href="/fr/" aria-label="Retour à l'accueil Lumina">
@@ -36,11 +43,8 @@
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femmes de science</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="/fr/effet-matilda.html">Effet Matilda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">A propos</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
 
@@ -50,186 +54,195 @@
         </nav>
     </header>
 
-    <main class="main" id="main">
+    <main id="main" class="main">
+
         <!-- HERO ARTICLE -->
         <header class="article-hero">
-            <div class="article-hero__inner">
+            <div class="article-hero__inner wrapper">
                 <p class="article-hero__kicker">Lise Meitner</p>
                 <h1 class="article-hero__title">La femme derrière la fission nucléaire</h1>
 
                 <figure class="article-hero__media">
-                    <!-- Remplace par ta photo -->
                     <img class="article-hero__image" src="/assets/img/PLACEHOLDER-article-lise-hero.jpg"
                         alt="Lise Meitner et Otto Hahn dans un laboratoire." />
-                    <figcaption class="article-hero__caption">Lise Meitner et Otto Hahn dans leur laboratoire
+                    <figcaption class="article-hero__caption">
+                        Lise Meitner et Otto Hahn dans leur laboratoire
                     </figcaption>
                 </figure>
 
                 <p class="article-hero__lead">
-                    Physicienne autrichienne d’origine juive, Lise Meitner (1878–1968) a joué un rôle clé dans la
-                    découverte de la fission nucléaire.
-                    Restée dans l’ombre, elle incarne aujourd’hui l’injustice de l’effet Matilda.
+                    Physicienne autrichienne d’origine juive, Lise Meitner (1878–1968) a joué un rôle clé
+                    dans la découverte de la fission nucléaire.
+                    Longtemps ignorée, elle incarne aujourd’hui ce que l’on appelle l’effet Matilda.
                 </p>
             </div>
         </header>
 
-        <!-- Séparateur (motifs SVG à remplacer) -->
-        <div class="separator" aria-hidden="true">
-            <!-- Remplacer par ton SVG : <img src="..." alt="" /> ou <svg>...</svg> -->
-            <span class="separator__dot separator__dot--lg"></span>
-            <span class="separator__dot separator__dot--md"></span>
-            <span class="separator__dot separator__dot--sm"></span>
-            <span class="separator__dot separator__dot--md"></span>
-            <span class="separator__dot separator__dot--sm"></span>
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- CONTENU ARTICLE -->
+        <!-- ARTICLE -->
         <article class="article">
-            <div class="article__inner">
-                <section class="article-section" aria-labelledby="sec-1">
-                    <h2 class="article-section__title" id="sec-1">Une scientifique dans un monde qui ne voulait pas
-                        d’elle</h2>
+            <div class="article__inner wrapper">
+
+                <section class="article-section" aria-labelledby="s1">
+                    <h2 class="article-section__title" id="s1">
+                        Une scientifique dans un monde qui ne voulait pas d’elle
+                    </h2>
+
                     <div class="article-section__content">
                         <p>
-                            Née à Vienne, Lise Meitner obtient en 1906 l’un des premiers doctorats en physique décernés
-                            à une femme en Autriche.
-                            L’année suivante, elle rejoint à Berlin le chimiste Otto Hahn, avec qui elle collabore plus
-                            de trente ans au Kaiser-Wilhelm-Institut.
-                            Leur travail sur la radioactivité amène une compréhension nouvelle du noyau atomique.
+                            Née à Vienne, Lise Meitner obtient en 1906 l’un des premiers doctorats de physique
+                            décernés à une femme en Autriche.
+                            L’année suivante, elle rejoint le chimiste Otto Hahn à Berlin,
+                            entamant une collaboration de plus de trente ans à l’Institut Kaiser-Wilhelm.
                         </p>
                         <p>
-                            Mais en 1938, la montée du nazisme l’oblige à fuir l’Allemagne. Exilée en Suède, elle
-                            poursuit ses recherches malgré des moyens limités.
+                            Mais en 1938, la montée du nazisme la contraint à fuir l’Allemagne.
+                            Exilée en Suède, elle poursuit ses recherches dans des conditions précaires.
                         </p>
                     </div>
 
                     <figure class="article-figure">
                         <img class="article-figure__image" src="/assets/img/PLACEHOLDER-article-lise-1.jpg"
-                            alt="Bâtiment du Kaiser-Wilhelm-Institut à Berlin." />
-                        <figcaption class="article-figure__caption">Kaiser-Wilhelm-Institut — Berlin</figcaption>
+                            alt="Le bâtiment de l’Institut Kaiser-Wilhelm à Berlin." />
+                        <figcaption class="article-figure__caption">
+                            Institut Kaiser-Wilhelm — Berlin
+                        </figcaption>
                     </figure>
                 </section>
 
-                <section class="article-section" aria-labelledby="sec-2">
-                    <h2 class="article-section__title" id="sec-2">La fission : une découverte sans reconnaissance</h2>
+                <section class="article-section" aria-labelledby="s2">
+                    <h2 class="article-section__title" id="s2">
+                        La fission : une découverte sans reconnaissance
+                    </h2>
+
                     <div class="article-section__content">
                         <p>
-                            Quelques mois après son départ, Hahn observe un phénomène inattendu : le noyau d’uranium
-                            semble se diviser.
-                            Depuis la Suède, Meitner en propose l’explication : le noyau se scinde en deux, libérant une
-                            énergie considérable.
-                            Avec son neveu Otto Frisch, elle publie en janvier 1939 leur interprétation et introduit le
-                            terme <strong>fission nucléaire</strong>.
+                            Quelques mois après son départ, Hahn observe un phénomène inattendu :
+                            le noyau d’uranium semble se scinder.
+                            Depuis la Suède, Meitner en donne l’explication :
+                            le noyau se divise en deux, libérant une quantité d’énergie considérable.
+                            Avec son neveu Otto Frisch, elle publie cette interprétation en janvier 1939
+                            et introduit le terme <strong>fission nucléaire</strong>.
                         </p>
                         <p>
-                            Cette découverte bouleverse la physique, mais en 1944, le prix Nobel de chimie est attribué
-                            à Hahn seul.
-                            Meitner, pourtant à l’origine de la compréhension du phénomène, est ignorée.
+                            Cette découverte bouleverse la physique.
+                            Pourtant, en 1944, le prix Nobel de chimie est attribué à Otto Hahn seul.
+                            Lise Meitner, pourtant essentielle à la compréhension du phénomène,
+                            est écartée.
                         </p>
                     </div>
 
-                    <blockquote class="quote" aria-label="Citation">
-                        <p class="quote__text">« Les scientifiques ont la responsabilité de ce qu’ils découvrent. »</p>
+                    <blockquote class="quote">
+                        <p class="quote__text">
+                            « Les scientifiques ont une responsabilité dans ce qu’ils découvrent. »
+                        </p>
                         <cite class="quote__author">Lise Meitner</cite>
                     </blockquote>
                 </section>
 
-                <section class="article-section" aria-labelledby="sec-3">
-                    <h2 class="article-section__title" id="sec-3">Une position morale rare</h2>
+                <section class="article-section" aria-labelledby="s3">
+                    <h2 class="article-section__title" id="s3">
+                        Une position morale rare
+                    </h2>
+
                     <div class="article-section__content">
                         <p>
-                            Lise Meitner refuse de participer au projet Manhattan, consciente des dérives du progrès
-                            scientifique.
-                            Elle incarne une vision éthique et humaniste de la science : la recherche n’est pas neutre,
-                            elle engage une responsabilité.
-                        </p>
-                        <p>
-                            Ce refus courageux fait d’elle une pionnière de la réflexion sur l’éthique et la science.
+                            Lise Meitner refuse de participer au projet Manhattan,
+                            consciente des dérives possibles du progrès scientifique.
+                            Elle défend une vision éthique et humaniste de la science :
+                            la recherche n’est jamais neutre, elle engage une responsabilité.
                         </p>
                     </div>
                 </section>
 
-                <section class="article-section" aria-labelledby="sec-4">
-                    <h2 class="article-section__title" id="sec-4">Une reconnaissance tardive</h2>
+                <section class="article-section" aria-labelledby="s4">
+                    <h2 class="article-section__title" id="s4">
+                        Une reconnaissance tardive
+                    </h2>
+
                     <div class="article-section__content">
                         <p>
-                            Il faut attendre la fin de sa vie pour que la communauté scientifique lui rende justice.
-                            En 1966, elle reçoit le prix Enrico Fermi, aux côtés de Hahn et Strassmann.
-                            En 1997, l’élément 109 de la table périodique est baptisé <strong>meitnérium (Mt)</strong>
-                            en son honneur.
-                        </p>
-                        <p>
-                            Aujourd’hui, son nom désigne des conférences et des prix scientifiques qui rappellent son
-                            rôle dans l’histoire de la physique.
+                            Ce n’est que vers la fin de sa vie que la communauté scientifique commence à lui rendre
+                            justice.
+                            En 1966, elle reçoit le prix Enrico Fermi aux côtés de Hahn et Strassmann.
+                            En 1997, l’élément 109 est nommé <strong>meitnérium (Mt)</strong> en son honneur.
                         </p>
                     </div>
 
                     <figure class="article-figure">
                         <img class="article-figure__image" src="/assets/img/PLACEHOLDER-article-lise-2.jpg"
-                            alt="Portrait de Lise Meitner âgée, en Suède." />
-                        <figcaption class="article-figure__caption">Lise Meitner, en Suède — vers la fin de sa vie
+                            alt="Portrait de Lise Meitner en Suède, à la fin de sa vie." />
+                        <figcaption class="article-figure__caption">
+                            Lise Meitner en Suède — dernières années
                         </figcaption>
                     </figure>
                 </section>
 
-                <section class="article-section" aria-labelledby="sec-5">
-                    <h2 class="article-section__title" id="sec-5">Une mémoire à préserver</h2>
+                <section class="article-section" aria-labelledby="s5">
+                    <h2 class="article-section__title" id="s5">
+                        Une mémoire à préserver
+                    </h2>
+
                     <div class="article-section__content">
                         <p>
-                            L’histoire de Lise Meitner interroge la place des femmes dans la science et la
-                            responsabilité morale du progrès.
-                            Elle rappelle que la découverte n’est pas seulement un fait scientifique : c’est aussi une
-                            histoire humaine, parfois injuste.
+                            Le parcours de Lise Meitner interroge la place des femmes en science
+                            et la responsabilité morale du progrès.
+                            Il rappelle que toute découverte n’est pas seulement un fait scientifique,
+                            mais aussi une histoire humaine, parfois marquée par l’injustice.
                         </p>
                     </div>
                 </section>
+
             </div>
         </article>
 
-        <!-- Séparateur -->
-        <div class="separator" aria-hidden="true">
-            <span class="separator__dot separator__dot--lg"></span>
-            <span class="separator__dot separator__dot--md"></span>
-            <span class="separator__dot separator__dot--sm"></span>
-            <span class="separator__dot separator__dot--md"></span>
-            <span class="separator__dot separator__dot--sm"></span>
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- VOIR AUSSI (cards = mêmes classes partout) -->
-        <section class="section section--see-also" aria-labelledby="voir-aussi">
-            <div class="section__inner">
-                <h2 class="section__title" id="voir-aussi">Voir aussi</h2>
+        <!-- VOIR AUSSI -->
+        <section class="section section--see-also" aria-labelledby="see-also">
+            <div class="section__inner wrapper">
+                <h2 class="section__title" id="see-also">À lire aussi</h2>
 
                 <ul class="cards u-list-unstyled">
                     <li class="cards__item">
                         <article class="card-article">
-                            <a class="card-article__link" href="/fr/atomic-power.html"
-                                aria-label="Lire l’article : Atomic Power — Quand la science devient propagande">
+                            <a class="card-article__link" href="/fr/article-atomic-power.html">
                                 <img class="card-article__img" src="/assets/img/PLACEHOLDER-card-atomic-power.jpg"
                                     alt="" loading="lazy" width="328" height="169" />
-                                <h3 class="card-article__title">Atomic Power — Quand la science devient propagande</h3>
-                                <span class="card-article__cta">Voir l’article</span>
+                                <h3 class="card-article__title">
+                                    Atomic Power — Quand la science devient propagande
+                                </h3>
+                                <span class="card-article__cta">Lire l’article</span>
                             </a>
                         </article>
                     </li>
 
                     <li class="cards__item">
                         <article class="card-article">
-                            <a class="card-article__link" href="/fr/article-femme-de-science.html"
-                                aria-label="Lire l’article : Les femmes oubliées — La littérature répare l’histoire">
-                                <img class="card-article__img" src="/assets/img/PLACEHOLDER-card-femmes-oubliees.jpg"
+                            <a class="card-article__link" href="/fr/article-litterature-repare-histoire.html">
+                                <img class="card-article__img" src="/assets/img/PLACEHOLDER-card-forgotten-women.jpg"
                                     alt="" loading="lazy" width="328" height="169" />
-                                <h3 class="card-article__title">Les femmes oubliées — La littérature répare l’histoire
+                                <h3 class="card-article__title">
+                                    Femmes oubliées — La littérature répare l’histoire
                                 </h3>
-                                <span class="card-article__cta">Voir l’article</span>
+                                <span class="card-article__cta">Lire l’article</span>
                             </a>
                         </article>
                     </li>
                 </ul>
             </div>
         </section>
+
     </main>
 
+    <!-- FOOTER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
             <a class="footer__brand" href="/fr/" aria-label="Retour à l’accueil Lumina">
@@ -237,20 +250,82 @@
             </a>
 
             <p class="footer__note">
-                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département <span class="u-italic">MMI
-                    de Montbéliard</span>.
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
+                <span class="u-italic">MMI de Montbéliard</span>.
             </p>
 
             <nav class="footer__nav" aria-label="Navigation de pied de page">
-                <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item"><a class="footer__link" href="/fr/">Accueil</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/femmes-de-science.html">Femmes de
-                            science</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet Matilda</a>
+                <ul class="footer__groups u-list-unstyled">
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/">Accueil</a>
                     </li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">À propos</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/fr/contact.html">Contact</a></li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/lise-meitner.html">Lise Meitner</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-fission-nucleaire.html">
+                                    Fission nucléaire
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-atomic-power.html">
+                                    Cinéma et science
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/femmes-de-science.html">Femme de science</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-litterature-repare-histoire.html">
+                                    Dans la littérature
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-marie-curie-livre.html">
+                                    Lumière féminine
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/effet-matilda.html">
+                                    Effet Matilda
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/a-propos.html">A propos</a>
+                        <ul class="footer__list u-list-unstyled">
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/a-propos.html">
+                                    Le projet
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/a-propos.html#autres-projets">
+                                    Les autres projets
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/glossaire.html">
+                                    Glossaire
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__group">
+                        <a class="footer__group-link" href="/fr/contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
 
@@ -258,7 +333,7 @@
         </div>
     </footer>
 
-    <script type="module" src="/src/js/script.js" defer></script>
+
 </body>
 
 </html>
