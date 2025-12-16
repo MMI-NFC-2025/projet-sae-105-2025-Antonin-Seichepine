@@ -9,7 +9,13 @@
     <meta name="description"
         content="Comprendre l’effet Matilda : un oubli collectif des femmes en science. Frise de scientifiques et ressources Lumina." />
 
-    <link rel="icon" href="/assets/favicons/favicon.ico" />
+    <!-- Favicons (IDENTIQUES À L’INDEX) -->
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js" defer></script>
 </head>
@@ -60,8 +66,8 @@
         <section class="hero hero--portrait" aria-labelledby="titre-page">
             <div class="hero__inner wrapper">
                 <figure class="hero__figure">
-                    <img class="hero__portrait" src="/assets/img/portrait-matilda-placeholder.jpg"
-                        alt="Portrait illustratif" />
+                    <img class="hero__portrait" src="/assets/img/heros/hero_matilda.webp" alt="Portrait illustratif"
+                        width="240" height="240" fetchpriority="high" />
                 </figure>
 
                 <h1 id="titre-page" class="hero__title">L’effet Matilda</h1>
@@ -79,7 +85,7 @@
 
         <!-- DIVIDER -->
         <div class="divider" aria-hidden="true">
-            <img class="divider__svg" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
+            <img class="divider__svg" src="/assets/img/motifs/motif2.svg" alt="" loading="lazy" />
         </div>
 
         <!-- COMPRENDRE -->
@@ -100,35 +106,147 @@
 
         <!-- DIVIDER -->
         <div class="divider" aria-hidden="true">
-            <img class="divider__svg" src="/assets/icons/motif-separator-02.svg" alt="" loading="lazy" />
+            <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
 
         <!-- FRISE -->
         <section class="section section--wrapper" id="frise" aria-labelledby="frise-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
-                    <h2 id="frise-title" class="section__title">Femmes effacées de l’histoire</h2>
+                    <h2 id="frise-title" class="section__title">La frise des matilda</h2>
+                    <p class="section__intro">
+                        De Hypatie à Lise Meitner, ces femmes ont marqué la science dans l’ombre. Explorez la frise
+                        retraçant leurs parcours à travers les siècles.
+                    </p>
                 </header>
-                <!-- frise conservée telle quelle -->
+
+                <!-- Timeline / Frise (BEM) -->
+                <ol class="timeline" aria-label="Frise chronologique des femmes de science">
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Hypatie d’Alexandrie <span
+                                        class="timeline-card__dates">(v. 370 - 415)</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise1.webp"
+                                    alt="Portrait de Hypatie d’Alexandrie" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Mathématicienne et astronome de l’Antiquité, symbole des premières femmes savantes.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Ada Lovelace <span class="timeline-card__dates">(1815 -
+                                        1852)</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise2.webp"
+                                    alt="Portrait de Ada Lovelace" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Mathématicienne du XIXᵉ siècle, première programmeuse de l’histoire.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Lise Meitner <span class="timeline-card__dates">(1878 -
+                                        1968)</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise3.webp"
+                                    alt="Portrait de Lise Meitner" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Physicienne à l’origine de la fission nucléaire.
+                            </p>
+
+                            <footer class="timeline-card__footer">
+                                <a class="btn btn--outline timeline-card__cta" href="/fr/lise-meitner.html">
+                                    Lire sa biographie
+                                </a>
+                            </footer>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Rosalind Franklin <span
+                                        class="timeline-card__dates">(1920 - 1958)</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise4.webp"
+                                    alt="Portrait de Rosalind Franklin" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Biologiste dont les clichés aux rayons X ont permis la découverte de la structure de
+                                l’ADN.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Donna Strickland <span
+                                        class="timeline-card__dates">(1959 - )</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise5.webp"
+                                    alt="Portrait de Donna Strickland" loading="lazmatildas/donna-strickland.webpy"
+                                    width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Physicienne canadienne, quasi inconnue du grand public avant son prix Nobel 2018 :
+                                symbole d’une reconnaissance encore tardive.
+                            </p>
+                        </article>
+                    </li>
+                </ol>
+
+                <!-- Optionnel : élément décoratif de “ligne” (CSS ensuite) -->
+                <div class="timeline__rail" aria-hidden="true"></div>
             </div>
         </section>
 
         <!-- DIVIDER -->
         <div class="divider" aria-hidden="true">
-            <img class="divider__svg" src="/assets/icons/motif-separator-03.svg" alt="" loading="lazy" />
+            <img class="divider__svg" src="/assets/img/motifs/motif3.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- ALLER PLUS LOIN -->
-        <section class="section section--wrapper" aria-labelledby="ressources">
+        <section class="section section--wrapper section--about" aria-labelledby="about-project">
             <div class="section__inner wrapper">
                 <header class="section__header">
-                    <h2 id="ressources" class="section__title">Aller plus loin</h2>
+                    <h2 id="about-project" class="section__title">À propos du projet</h2>
                 </header>
 
+                <div class="richtext">
+                    <p>
+                        Lumina est un projet éditorial né pour transmettre la mémoire des femmes de science.
+                        Pensé par un étudiant en MMI, il mêle recherche, design et narration.
+                    </p>
+                </div>
+
                 <footer class="section__footer">
-                    <a class="btn btn--outline" href="/fr/femmes-de-science.html">
-                        Découvrir d’autres parcours
-                    </a>
+                    <a class="btn btn--outline" href="/fr/a-propos.html">En savoir plus</a>
                 </footer>
             </div>
         </section>
@@ -196,7 +314,7 @@
                 </ul>
             </nav>
 
-            <small class="footer__credits">Antonin Seichepine — MMI</small>
+            <small class="footer__credits">Antonin Seichepine - MMI</small>
         </div>
     </footer>
 
