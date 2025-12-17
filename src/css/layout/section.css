@@ -1,0 +1,43 @@
+.section {
+    padding: 3.1rem 0;
+}
+
+.section__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.55rem;
+}
+
+.section__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.section__title {
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+    font-weight: var(--fw-black);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.section__intro,
+.section__chapo {
+    color: var(--color-text-main);
+    line-height: 1.75;
+}
+
+.section--matilda {
+    background: var(--color-bg-main);
+}
+
+.section--articles {
+    background: var(--color-bg-main);
+}
+
+.section--about {
+    background: var(--color-bg-main);
+}
