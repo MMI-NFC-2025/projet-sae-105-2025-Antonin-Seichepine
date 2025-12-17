@@ -1,3 +1,17 @@
+/* Boutons principaux de l'index en rose (violet clair) */
+.btn--cta-index {
+    background: var(--color-primary-soft) !important;
+    color: var(--color-text-invert) !important;
+    border: none;
+}
+
+/* Bouton 'En savoir plus' : texte devient blanc après animation */
+/* Bouton outline rose (violet clair) pour 'En savoir plus' */
+.btn--outline.btn--cta-index-outline {
+    color: var(--color-primary-soft) !important;
+    border-color: var(--color-primary-soft) !important;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
