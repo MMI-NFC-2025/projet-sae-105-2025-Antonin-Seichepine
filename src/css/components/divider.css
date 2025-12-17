@@ -1,12 +1,35 @@
+.cards__item--divider .divider__svg {
+    display: block;
+    width: 120vw;
+    max-width: none;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Uniformiser le crop des dividers dans tous les contextes */
+.divider,
+.cards__item--divider,
+.card-article,
+.cards,
+.section,
+.main {
+    position: relative;
+    overflow: hidden;
+}
+
 .divider {
-    display: flex;
-    justify-content: center;
-    padding: 1.8rem 0;
+    padding: 2rem 0;
+    /* espace vertical uniquement */
 }
 
 .divider__svg {
     display: block;
-    width: 100%;
-    max-width: 30rem;
+    width: 120vw;
+    /* vw pour garantir le débordement viewport même dans une grid étroite */
+    max-width: none;
     height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    /* centrage visuel */
 }

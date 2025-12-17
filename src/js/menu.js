@@ -33,11 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
             closeMenu();
         }
     });
-
-    // Ferme avec la touche Échap
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-            closeMenu();
-        }
-    });
 });

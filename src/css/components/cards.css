@@ -2,6 +2,8 @@
 .cards {
     display: grid;
     gap: 1.7rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+    justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -33,18 +35,21 @@
 
 .card-article {
     background: var(--color-primary);
-    color: var(--color-text-invert);
+    color: #fff;
     border-radius: 1.3rem;
     overflow: hidden;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 340px;
 }
 
 .card-article__img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 170px;
+    object-fit: cover;
     border-radius: 1.3rem 1.3rem 0 0;
 }
 
@@ -85,26 +90,37 @@
     font-family: var(--font-title);
     font-size: 1.05rem;
     font-weight: var(--fw-bold);
+    color: #fff;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     line-height: 1.35;
     margin: 0.25rem 0 0;
     padding: 0 1.2rem;
+    text-align: left;
+    min-height: 4.05em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .card-article__cta {
     order: 3;
-    display: block;
+    display: flex;
     align-self: center;
     width: calc(100% - 2.4rem);
-    margin: 1.15rem 1.2rem 1.25rem;
-    padding: 1rem 0.5rem;
+    margin: 1rem 1.2rem 1.1rem;
+    padding: 0.75rem 0.5rem;
     border-radius: 1rem;
     background: #3c2a66;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 0.95rem;
     font-weight: var(--fw-semibold);
     text-transform: none;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 44px;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
@@ -115,7 +131,7 @@
 /* Card ultra fidèle à la maquette */
 .card-article--maquette {
     background: var(--color-primary);
-    color: var(--color-text-invert);
+    color: #fff;
     border-radius: 1.3rem;
     overflow: hidden;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
@@ -131,7 +147,8 @@
 .card-article--maquette .card-article__img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 170px;
+    object-fit: cover;
     border-radius: 1.3rem 1.3rem 0 0;
 }
 
@@ -168,21 +185,29 @@
     text-align: left;
     margin: 0;
     padding: 0 1.2rem;
+    min-height: 4.05em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .card-article--maquette .card-article__cta--block {
-    display: block;
+    display: flex;
     width: calc(100% - 2.4rem);
     text-align: center;
-    margin: 1.15rem 1.2rem 0;
-    padding: 1rem 0.5rem;
+    margin: 1rem 1.2rem 0;
+    padding: 0.75rem 0.5rem;
     border-radius: 1rem;
     background: #3c2a66;
-    font-size: 1.02rem;
+    font-size: 0.95rem;
     font-weight: var(--fw-semibold);
     text-transform: none;
     color: #fff;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 44px;
     transition: background 0.2s;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
