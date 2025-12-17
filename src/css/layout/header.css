@@ -28,12 +28,30 @@
     align-items: center;
     justify-content: center;
     padding: 0.15rem 0.35rem;
+    text-decoration: none;
 }
 
 .brand {
     display: block;
     height: 3.35rem;
     width: auto;
+}
+
+img.brand {
+    height: 3.35rem;
+    width: auto;
+}
+
+.brand:not(img) {
+    height: auto;
+    font-family: var(--font-title);
+    font-weight: var(--fw-black);
+    font-size: 1.45rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-text-invert);
+    padding: 0.25rem 0.15rem 0.1rem;
+    border-bottom: 0.18rem solid var(--color-primary-soft);
 }
 
 .lang {
