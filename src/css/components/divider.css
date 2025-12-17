@@ -1,12 +1,38 @@
 .divider {
     display: flex;
     justify-content: center;
-    padding: 1.8rem 0;
+    padding: 1.85rem 0;
+    overflow: hidden;
 }
 
 .divider__svg {
     display: block;
     width: 100%;
-    max-width: 30rem;
+    max-width: 32rem;
     height: auto;
+}
+
+/* Variantes de motifs (permet des décalages "pixel-perfect") */
+.divider--motif1 .divider__svg {
+    width: 110vw;
+    max-width: 34rem;
+    transform: translateX(-0.65rem);
+}
+
+.divider--motif2 .divider__svg {
+    width: 112vw;
+    max-width: 34rem;
+    transform: translateX(-1.25rem);
+}
+
+.divider--motif3 .divider__svg {
+    width: 112vw;
+    max-width: 34rem;
+    transform: translateX(-0.25rem);
+}
+
+.divider--motif4 .divider__svg {
+    width: 112vw;
+    max-width: 35rem;
+    transform: translateX(-0.35rem);
 }
