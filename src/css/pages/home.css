@@ -1,0 +1,48 @@
+.page--home {
+    background: var(--color-bg-main);
+}
+
+.hero__actions .btn {
+    min-width: 14.25rem;
+    background: var(--color-cta-pink);
+    color: var(--color-text-invert);
+}
+
+.hero__more {
+    margin-top: 0.2rem;
+}
+
+.section--matilda .section__header {
+    margin-bottom: 0.35rem;
+}
+
+.section--matilda .btn {
+    background: var(--color-cta-pink);
+    color: var(--color-text-invert);
+}
+
+.section--articles .cards {
+    margin-top: 1.05rem;
+}
+
+.section--articles .card-article {
+    min-height: 18.25rem;
+}
+
+.section--about .section__text {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.section--about .btn--outline {
+    border-color: var(--color-cta-pink);
+    color: var(--color-cta-pink);
+    margin: 0 auto;
+}
+
+.section--about .btn--outline:hover,
+.section--about .btn--outline:focus-visible {
+    background: var(--color-cta-pink);
+    color: var(--color-text-invert);
+}

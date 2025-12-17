@@ -1,0 +1,9 @@
+.main {
+    background: var(--color-bg-main);
+}
+
+.wrapper {
+    width: min(100%, 28rem);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
