@@ -7,16 +7,23 @@
 
     <title>Matilda Effect — Lumina</title>
     <meta name="description"
-        content="Understand the Matilda effect: why women scientists are erased from history and how to restore their visibility." />
+        content="Understand the Matilda effect: a collective erasure of women in science. Lumina timeline and resources." />
 
-    <link rel="icon" href="/assets/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js" defer></script>
 </head>
 
 <body class="page page--matilda">
 
-    <!-- HEADER (IDENTICAL TO HOME) -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER (MATCHES HOME) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Language switcher">
@@ -38,21 +45,12 @@
 
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/">Home</a>
+                <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in Science</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/women-in-science.html">Women in Science</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/about.html">About</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/contact.html">Contact</a>
-                </li>
+                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
             </ul>
 
             <div class="menu__media" aria-hidden="true">
@@ -65,22 +63,43 @@
     <main id="main" class="main">
 
         <!-- HERO -->
-        <section class="hero hero--page" aria-labelledby="hero-title">
+        <section class="hero hero--portrait" aria-labelledby="hero-title">
             <div class="hero__inner wrapper">
                 <figure class="hero__figure">
-                    <img class="hero__portrait" src="/assets/img/heros/hero_matilda.webp" alt="" width="240"
-                        height="240" />
+                    <img class="hero__portrait" src="/assets/img/heros/hero_matilda.webp" alt="Illustrated portrait"
+                        width="240" height="240" fetchpriority="high" />
                 </figure>
 
                 <h1 id="hero-title" class="hero__title">The Matilda effect</h1>
 
                 <p class="hero__subtitle">
-                    We talk about the place of women in science by asking a simple question: why do their names
-                    disappear?
+                    She lent her name to a collective omission: women whose stories history pushed aside.
                 </p>
 
-                <div class="hero__actions">
-                    <a class="btn" href="#frise">Explore the timeline</a>
+                <a class="btn btn--primary hero__cta" href="#frise">
+                    See their portraits
+                    <span class="btn__icon" aria-hidden="true">▼</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- DIVIDER -->
+        <div class="divider" aria-hidden="true">
+            <img class="divider__svg" src="/assets/img/motifs/motif2.svg" alt="" loading="lazy" />
+        </div>
+
+        <!-- UNDERSTAND -->
+        <section class="section section--wrapper" aria-labelledby="understand">
+            <div class="section__inner wrapper">
+                <header class="section__header">
+                    <h2 id="understand" class="section__title">Understanding the Matilda effect</h2>
+                </header>
+
+                <div class="richtext">
+                    <p>
+                        The Matilda effect describes how women’s scientific contributions are minimized, ignored, or
+                        attributed to men.
+                    </p>
                 </div>
             </div>
         </section>
@@ -90,23 +109,117 @@
             <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- INTRO TEXT -->
-        <section class="section section--wrapper" aria-labelledby="intro-title">
+        <!-- TIMELINE -->
+        <section class="section section--wrapper" id="frise" aria-labelledby="timeline-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
-                    <h2 id="intro-title" class="section__title">Why do they disappear?</h2>
+                    <h2 id="timeline-title" class="section__title">The Matilda timeline</h2>
+                    <p class="section__intro">
+                        From Hypatia to Lise Meitner, these women shaped science from the shadows. Explore the timeline
+                        following their journeys across the centuries.
+                    </p>
                 </header>
 
-                <p class="section__text">
-                    The Matilda effect is a phenomenon in which women scientists are ignored or see their contributions
-                    erased from history.
-                </p>
-                <p class="section__text">
-                    It affects women in STEM, in literature, in sport, and in many other fields.
-                </p>
-                <p class="section__text">
-                    Let us give them back the place they deserve.
-                </p>
+                <ol class="timeline" aria-label="Chronological timeline of women in science">
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Hypatia of Alexandria <span
+                                        class="timeline-card__dates">(c. 370 - 415)</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise1.webp"
+                                    alt="Portrait of Hypatia of Alexandria" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Mathematician and astronomer of Antiquity, symbol of the earliest women scholars.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Ada Lovelace <span class="timeline-card__dates">(1815 -
+                                        1852)</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise2.webp"
+                                    alt="Portrait of Ada Lovelace" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                19th-century mathematician, recognized as the first computer programmer.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Lise Meitner <span class="timeline-card__dates">(1878 -
+                                        1968)</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise3.webp"
+                                    alt="Portrait of Lise Meitner" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Physicist behind the discovery of nuclear fission.
+                            </p>
+
+                            <footer class="timeline-card__footer">
+                                <a class="btn btn--outline timeline-card__cta" href="/en/lise-meitner.html">
+                                    Read her biography
+                                </a>
+                            </footer>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Rosalind Franklin <span
+                                        class="timeline-card__dates">(1920 - 1958)</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise4.webp"
+                                    alt="Portrait of Rosalind Franklin" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Biologist whose X-ray images paved the way to the DNA double-helix discovery.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item">
+                        <article class="timeline-card">
+                            <header class="timeline-card__header">
+                                <h3 class="timeline-card__title">Donna Strickland <span
+                                        class="timeline-card__dates">(1959 - )</span></h3>
+                            </header>
+
+                            <figure class="timeline-card__figure">
+                                <img class="timeline-card__img" src="/assets/img/Frise/frise5.webp"
+                                    alt="Portrait of Donna Strickland" loading="lazy" width="200" height="200" />
+                            </figure>
+
+                            <p class="timeline-card__text">
+                                Canadian physicist, little-known before her 2018 Nobel Prize: a symbol of delayed
+                                recognition.
+                            </p>
+                        </article>
+                    </li>
+                </ol>
+
+                <div class="timeline__rail" aria-hidden="true"></div>
             </div>
         </section>
 
@@ -115,168 +228,28 @@
             <img class="divider__svg" src="/assets/img/motifs/motif3.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- WOMEN IN HISTORY TIMELINE -->
-        <section class="section section--wrapper" id="frise" aria-labelledby="timeline-title">
+        <section class="section section--wrapper section--about" aria-labelledby="about-project">
             <div class="section__inner wrapper">
                 <header class="section__header">
-                    <h2 id="timeline-title" class="section__title">
-                        Women in History — Timeline
-                    </h2>
+                    <h2 id="about-project" class="section__title">About the project</h2>
                 </header>
 
-                <div class="timeline">
-                    <article class="timeline__block">
-                        <div class="timeline__step">
-                            <span class="timeline__date">1647</span>
-                            <p class="timeline__text">The French Academy of Sciences refuses to admit women.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1774</span>
-                            <p class="timeline__text">Émilie du Châtelet dies, author of a translation of Newton's
-                                Principia.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1816</span>
-                            <p class="timeline__text">Sophie Germain publishes work on the vibration of metal plates.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="timeline__block">
-                        <div class="timeline__step">
-                            <span class="timeline__date">1890</span>
-                            <p class="timeline__text">Sociologist Harry C. Garrison spreads sexist stereotypes.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1892</span>
-                            <p class="timeline__text">A school board cites the supposed "masculinity" of science jobs.
-                            </p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1904</span>
-                            <p class="timeline__text">Max Planck argues that women must choose between science and
-                                family.</p>
-                        </div>
-                    </article>
-
-                    <article class="timeline__block">
-                        <div class="timeline__step">
-                            <span class="timeline__date">1913</span>
-                            <p class="timeline__text">The American Physics Society opposes women's participation.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1914</span>
-                            <p class="timeline__text">The British Medical Association refuses Marie Stopes.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1936</span>
-                            <p class="timeline__text">U.S. social workers note gender bias in science.</p>
-                        </div>
-                    </article>
-
-                    <article class="timeline__block">
-                        <div class="timeline__step">
-                            <span class="timeline__date">1938</span>
-                            <p class="timeline__text">Freeman dismisses women's abilities in science.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1958</span>
-                            <p class="timeline__text">Mathematicians in the U.S. criticize women in science.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1962</span>
-                            <p class="timeline__text">Male students block women's access to higher education.</p>
-                        </div>
-                    </article>
-
-                    <article class="timeline__block">
-                        <div class="timeline__step">
-                            <span class="timeline__date">1964</span>
-                            <p class="timeline__text">Biologist Peter Medawar compares women to "intelligent goldfish".
-                            </p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1967</span>
-                            <p class="timeline__text">Compulsory high school science courses exclude girls.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1968</span>
-                            <p class="timeline__text">Cambridge scientists say women do not belong in the lab.</p>
-                        </div>
-                    </article>
-
-                    <article class="timeline__block">
-                        <div class="timeline__step">
-                            <span class="timeline__date">1970</span>
-                            <p class="timeline__text">Biologist Sewall Wright rejects women's presence in science.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1977</span>
-                            <p class="timeline__text">Some academics deem women's work unpublishable.</p>
-                        </div>
-                    </article>
-
-                    <article class="timeline__block">
-                        <div class="timeline__step">
-                            <span class="timeline__date">1979</span>
-                            <p class="timeline__text">The Matilda effect is identified: women's contributions are
-                                minimized.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1980</span>
-                            <p class="timeline__text">A physics professor questions women's ability to understand
-                                complex theories.</p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1981</span>
-                            <p class="timeline__text">Marie Stopes fights to stay in the Royal Society archives.</p>
-                        </div>
-                    </article>
-
-                    <article class="timeline__block">
-                        <div class="timeline__step">
-                            <span class="timeline__date">1992</span>
-                            <p class="timeline__text">93% of Berkeley students say women's exclusion is long-lasting.
-                            </p>
-                        </div>
-                        <div class="timeline__step">
-                            <span class="timeline__date">1998</span>
-                            <p class="timeline__text">Council of Europe mission recommends targeting sexism in
-                                education.</p>
-                        </div>
-                    </article>
+                <div class="richtext">
+                    <p>
+                        Lumina is an editorial project born to preserve the memory of women in science. Conceived by an
+                        MMI student, it blends research, design, and storytelling.
+                    </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- DIVIDER -->
-        <div class="divider" aria-hidden="true">
-            <img class="divider__svg" src="/assets/img/motifs/motif4.svg" alt="" loading="lazy" />
-        </div>
-
-        <!-- CALL TO ACTION -->
-        <section class="section section--wrapper" aria-labelledby="cta-title">
-            <div class="section__inner wrapper">
-                <header class="section__header">
-                    <h2 id="cta-title" class="section__title">Let’s bring them back to light</h2>
-                </header>
-
-                <p class="section__text">
-                    The Matilda effect is still with us today.
-                </p>
-                <p class="section__text">
-                    Talk about these women, discover their work, and share their stories.
-                </p>
-
-                <a class="btn" href="/en/women-in-science.html">
-                    Discover them
-                </a>
+                <footer class="section__footer">
+                    <a class="btn btn--outline" href="/en/about.html">Learn more</a>
+                </footer>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER (IDENTICAL TO HOME) -->
+    <!-- FOOTER (MATCHES HOME) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
             <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
@@ -298,59 +271,34 @@
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/lise-meitner.html">Lise Meitner</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/lise-meitner.html">Biography</a>
+                            <li class="footer__item"><a class="footer__link" href="/en/lise-meitner.html">Biography</a>
                             </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/nuclear-fission.html">
-                                    Nuclear fission
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/atomic-power.html">
-                                    Cinema and science
-                                </a>
-                            </li>
+                            <li class="footer__item"><a class="footer__link" href="/en/nuclear-fission.html">Nuclear
+                                    fission</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/atomic-power.html">Cinema and
+                                    science</a></li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/women-in-science.html">Women in Science</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/article-women-in-science.html">
-                                    In literature
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/luminous-women.html">
-                                    Luminous women
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/matilda-effect.html" aria-current="page">
-                                    Matilda effect
-                                </a>
-                            </li>
+                            <li class="footer__item"><a class="footer__link" href="/en/article-women-in-science.html">In
+                                    literature</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/luminous-women.html">Luminous
+                                    women</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/matilda-effect.html"
+                                    aria-current="page">Matilda effect</a></li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/about.html">About</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/about.html">The project</a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/other-projects.html#sites">
-                                    Other projects
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="/en/glossary.html">
-                                    Glossary
-                                </a>
-                            </li>
+                            <li class="footer__item"><a class="footer__link" href="/en/about.html">The project</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/other-projects.html#sites">Other
+                                    projects</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/glossary.html">Glossary</a></li>
                         </ul>
                     </li>
 
