@@ -1,0 +1,77 @@
+:root {
+    /* =========================
+     TYPOGRAPHY
+     ========================= */
+
+    /* Font families */
+    --font-title: "Satoshi", system-ui, -apple-system, sans-serif;
+    --font-text: "Raleway", system-ui, -apple-system, sans-serif;
+
+    /* Font weights */
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* Font sizes */
+    --fs-h1-hero: 2.5rem;
+    /* 40px */
+    --fs-h1-article: 1.75rem;
+    /* 28px */
+    --fs-h2: 1.75rem;
+    /* 28px */
+    --fs-h3: 1.5rem;
+    /* 24px */
+    --fs-h4: 1.5rem;
+    /* 24px */
+
+    --fs-intro: 1.125rem;
+    /* 18px */
+    --fs-body: 1rem;
+    /* 16px */
+    --fs-small: 0.875rem;
+    /* 14px */
+
+    --fs-quote: 1.25rem;
+    /* 20px */
+    --fs-ui-lg: 1.25rem;
+    /* 20px */
+    --fs-ui: 1.125rem;
+    /* 18px */
+    --fs-ui-sm: 0.9375rem;
+    /* 15px */
+
+    /* Line heights */
+    --lh-tight: 1.2;
+    --lh-normal: 1.5;
+    --lh-loose: 1.7;
+
+
+    /* =========================
+     COLOR SYSTEM
+     ========================= */
+
+    /* Brand / primary */
+    --color-primary: #5a3d8b;
+    /* violet principal */
+    --color-primary-soft: #e2a7ff;
+    /* violet clair */
+
+    /* Accent */
+    --color-accent: #8864cb;
+    /* menu / CTA */
+    --color-accent-soft: #a37ee8;
+    /* léger accent */
+
+    /* Text */
+    --color-text-main: #281341;
+    /* texte principal */
+    --color-text-invert: #f8f6f8;
+    /* texte sur fond sombre */
+
+    /* Backgrounds */
+    --color-bg-main: #f8f6f8;
+    /* fond global */
+    --color-bg-accent: #8864cb;
+    /* fond menu / footer */
+}
