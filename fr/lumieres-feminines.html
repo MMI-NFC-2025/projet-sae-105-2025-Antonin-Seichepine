@@ -10,7 +10,7 @@
         content="Publié en 2024, Lumière féminine redonne une voix aux femmes effacées de l’histoire. Entre biographie et réflexion littéraire, l’ouvrage met en lumière Marie Curie, Lise Meitner et la mémoire scientifique." />
 
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js" defer></script>
+    <script type="module" src="/src/js/menu.js" defer></script>
 </head>
 
 <body class="page page--article page--article-lumieres-feminines">
@@ -19,13 +19,14 @@
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
-                <a class="lang__link lang__link--active" href="/fr/lumieres-feminines.html" aria-current="page">FR</a>
+                <a class="lang__link lang__link--active" href="/fr/" aria-current="page">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link" href="/en/luminous-women.html" lang="en">EN</a>
+                <a class="lang__link" href="/en/index.html" lang="en">EN</a>
             </nav>
 
             <a class="header__brand" href="/fr/" aria-label="Retour à l'accueil Lumina">
-                <span class="brand">LUMINA</span>
+                <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
+
             </a>
 
             <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu"
@@ -35,13 +36,12 @@
             </button>
         </div>
 
+        <!-- Arbo header: Accueil, Lise Meitner, Femme de science, A propos, Contact -->
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/" aria-current="page">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/femmes-de-science.html" aria-current="page">Femme de science</a>
-                </li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">A propos</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>

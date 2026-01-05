@@ -10,41 +10,41 @@
 
     <link rel="icon" href="/assets/favicons/favicon.ico" />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js" defer></script>
+    <script type="module" src="/src/js/menu.js" defer></script>
 </head>
 
 <body class="page page--contact">
 
-    <a class="skip-link" href="#main">Aller au contenu</a>
 
     <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
-                <a class="lang__link lang__link--active" href="/fr/contact.html" aria-current="page">FR</a>
+                <a class="lang__link lang__link--active" href="/fr/" aria-current="page">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link" href="/en/contact.html" lang="en">EN</a>
+                <a class="lang__link" href="/en/index.html" lang="en">EN</a>
             </nav>
 
             <a class="header__brand" href="/fr/" aria-label="Retour à l'accueil Lumina">
-                <span class="brand">LUMINA</span>
+                <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
+
             </a>
 
-            <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
-                aria-controls="site-menu">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-                <span class="menu-btn__bar" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu"
+                aria-controls="site-menu" aria-expanded="false">
+                <span class="menu-btn__bar menu-btn__bar--top"></span>
+                <span class="menu-btn__bar menu-btn__bar--bottom"></span>
             </button>
         </div>
 
+        <!-- Arbo header: Accueil, Lise Meitner, Femme de science, A propos, Contact -->
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/" aria-current="page">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Femme de science</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">A propos</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/contact.html" aria-current="page">Contact</a>
-                </li>
+                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
 
             <div class="menu__media" aria-hidden="true">
