@@ -10,34 +10,6 @@
     color: var(--color-primary);
 }
 
-.page--glossary .section--why {
-    background: transparent;
-}
-
-.page--glossary .section--why .section__title {
-    color: var(--color-primary);
-}
-
-.page--glossary .section--why .section__band {
-    background: var(--color-primary);
-    color: var(--color-text-invert);
-    margin-top: 1.2rem;
-    padding: 2.6rem 0 2.3rem;
-}
-
-.page--glossary .section--why .section__band .wrapper {
-    width: min(100%, 32rem);
-}
-
-.page--glossary .section--why .card-feature {
-    background: transparent;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    text-align: left;
-    color: inherit;
-}
-
 .page--glossary .glossary {
     display: grid;
     grid-template-columns: 1fr;

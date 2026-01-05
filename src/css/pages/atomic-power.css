@@ -1,22 +1,7 @@
-/* Mise en forme dédiée à la page fr/atomic-power.html (cinéma) */
-.page--article-cinema {
-    background: var(--color-bg-main);
-}
-
-.page--article-cinema .wrapper {
-    width: min(100%, 23rem);
-    padding: 0 1.2rem;
-}
-
 .page--article-cinema .article-hero {
     background: var(--color-bg-main);
     padding: 1.8rem 0 1.5rem;
     text-align: center;
-}
-
-.page--article-cinema .article-hero__inner {
-    display: grid;
-    gap: 1.35rem;
 }
 
 .page--article-cinema .article-hero__kicker {
@@ -33,18 +18,6 @@
     font-size: 1.3rem;
     line-height: 1.35;
     color: var(--color-primary);
-}
-
-.page--article-cinema .article-hero__media {
-    margin: 0;
-}
-
-.page--article-cinema .article-hero__image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 0.65rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .page--article-cinema .article-hero__caption {
@@ -64,17 +37,6 @@
     padding-bottom: 2.5rem;
 }
 
-.page--article-cinema .article__inner {
-    display: grid;
-    gap: 2.6rem;
-}
-
-.page--article-cinema .article-section {
-    display: grid;
-    gap: 1.15rem;
-}
-
-/* Carousel minimal – scroll natif (mobile + desktop) */
 .page--article-cinema .carousel {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -108,48 +70,10 @@
     box-shadow: none;
 }
 
-.page--article-cinema .article-section__title {
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 1.15rem;
-    text-align: center;
-    color: var(--color-primary-soft);
-}
-
 .page--article-cinema .article-section__text {
     line-height: 1.68;
     text-align: left;
     color: var(--color-text-main);
-}
-
-.page--article-cinema .article-section p+p {
-    margin-top: 0.55rem;
-}
-
-.page--article-cinema .article-figure {
-    margin: 0.9rem 0 0;
-}
-
-.page--article-cinema .article-figure__image {
-    width: 100%;
-    height: auto;
-    border-radius: 0.65rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.page--article-cinema .article-figure__caption {
-    margin-top: 0.45rem;
-    font-size: 0.82rem;
-    color: rgba(40, 19, 65, 0.75);
-}
-
-.page--article-cinema .article-section__kicker {
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-weight: var(--fw-black);
-    color: var(--color-primary);
-    text-align: center;
-    font-size: 0.9rem;
 }
 
 .page--article-cinema .article-section--cta {
@@ -163,56 +87,9 @@
     gap: 1.1rem;
 }
 
-.page--article-cinema .cards__item {
-    background: transparent;
-}
-
-
-/* Quote — même style que l’accueil */
-.page--article-cinema .quote {
-    background: var(--color-primary);
-    color: var(--color-text-invert);
-    padding: 2.85rem 0;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-}
-
-.page--article-cinema .quote__inner.wrapper {
-    width: min(100%, 28rem);
-    padding: 0 1.25rem;
-    margin: 0 auto;
-}
-
-.page--article-cinema .quote__content {
-    text-align: center;
-    display: grid;
-    gap: 0.9rem;
-}
-
-.page--article-cinema .quote__text,
-.page--article-cinema .quote__author {
-    color: var(--color-text-invert);
-}
-
 .page--article-cinema .quote__text {
     font-size: 1.15rem;
     letter-spacing: 0.08em;
     line-height: 1.5;
     text-transform: uppercase;
-}
-
-@media (max-width: 480px) {
-    .page--article-cinema .wrapper {
-        width: min(100%, 21.5rem);
-        padding: 0 1rem;
-    }
-
-    .page--article-cinema .article-hero {
-        padding: 1.6rem 0 1.35rem;
-    }
-
-    .page--article-cinema .article-section__title {
-        font-size: 1.12rem;
-    }
 }

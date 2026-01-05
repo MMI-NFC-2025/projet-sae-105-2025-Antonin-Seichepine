@@ -1,0 +1,227 @@
+.page--article-lise,
+.page--article-lumieres-feminines,
+.page--article-femmes-de-science,
+.page--article-cinema,
+.page--article-fission {
+    background: var(--color-bg-main);
+}
+
+.page--article-lise .article-hero,
+.page--article-lumieres-feminines .article-hero {
+    background: var(--color-bg-main);
+    padding: 1.9rem 0 1.6rem;
+    text-align: center;
+}
+
+.page--article-lise .article-hero__inner,
+.page--article-lumieres-feminines .article-hero__inner,
+.page--article-fission .article-hero__inner,
+.page--article-cinema .article-hero__inner {
+    display: grid;
+    gap: 1.35rem;
+}
+
+.page--article-lise .article-hero__kicker,
+.page--article-lumieres-feminines .article-hero__kicker,
+.page--article-femmes-de-science .article-hero__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: var(--fw-bold);
+    color: var(--color-primary);
+    font-size: 0.88rem;
+}
+
+.page--article-lise .article-hero__title,
+.page--article-lumieres-feminines .article-hero__title {
+    text-transform: uppercase;
+    font-size: 1.28rem;
+    letter-spacing: 0.05em;
+    line-height: 1.35;
+    color: var(--color-primary);
+}
+
+.page--article-lise .article-hero__media,
+.page--article-lumieres-feminines .article-hero__media,
+.page--article-femmes-de-science .article-hero__media,
+.page--article-cinema .article-hero__media,
+.page--article-fission .article-hero__media {
+    margin: 0;
+}
+
+.page--article-lise .article-hero__image,
+.page--article-lumieres-feminines .article-hero__image,
+.page--article-femmes-de-science .article-hero__image,
+.page--article-cinema .article-hero__image,
+.page--article-fission .article-hero__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.page--article-lise .article-hero__caption,
+.page--article-lumieres-feminines .article-hero__caption,
+.page--article-fission .article-hero__caption {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    color: rgba(40, 19, 65, 0.75);
+}
+
+.page--article-lise .article__inner,
+.page--article-lumieres-feminines .article__inner,
+.page--article-femmes-de-science .article__inner,
+.page--article-cinema .article__inner,
+.page--article-fission .article__inner {
+    display: grid;
+    gap: 2.6rem;
+}
+
+.page--article-lise .article-section,
+.page--article-lumieres-feminines .article-section,
+.page--article-femmes-de-science .article-section,
+.page--article-cinema .article-section,
+.page--article-fission .article-section {
+    display: grid;
+    gap: 1.15rem;
+}
+
+.page--article-lise .article-section p+p,
+.page--article-lumieres-feminines .article-section p+p,
+.page--article-femmes-de-science .article-section p+p,
+.page--article-cinema .article-section p+p,
+.page--article-fission .article-section p+p {
+    margin-top: 0.55rem;
+}
+
+.page--article-lise .article-section__title,
+.page--article-lumieres-feminines .article-section__title,
+.page--article-femmes-de-science .article-section__title,
+.page--article-cinema .article-section__title,
+.page--article-fission .article-section__title {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.15rem;
+    text-align: center;
+    color: var(--color-primary-soft);
+}
+
+.page--article-lise .article-section__subtitle,
+.page--article-lumieres-feminines .article-section__subtitle,
+.page--article-cinema .article-section__subtitle,
+.page--article-fission .article-section__subtitle {
+    font-size: 0.95rem;
+    font-weight: var(--fw-bold);
+    color: rgba(40, 19, 65, 0.78);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.page--article-lise .article-figure,
+.page--article-lumieres-feminines .article-figure,
+.page--article-femmes-de-science .article-figure,
+.page--article-cinema .article-figure,
+.page--article-fission .article-figure {
+    margin: 0.9rem 0 0;
+}
+
+.page--article-lise .article-figure__image,
+.page--article-lumieres-feminines .article-figure__image,
+.page--article-femmes-de-science .article-figure__image,
+.page--article-cinema .article-figure__image,
+.page--article-fission .article-figure__image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page--article-lise .article-figure__caption,
+.page--article-lumieres-feminines .article-figure__caption,
+.page--article-femmes-de-science .article-figure__caption,
+.page--article-cinema .article-figure__caption,
+.page--article-fission .article-figure__caption {
+    margin-top: 0.45rem;
+    font-size: 0.82rem;
+    color: rgba(40, 19, 65, 0.75);
+}
+
+.page--article-femmes-de-science .article-section__kicker,
+.page--article-cinema .article-section__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: var(--fw-black);
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.page--article-femmes-de-science .article-section__cta,
+.page--article-lumieres-feminines .article-section__cta {
+    background: transparent;
+    color: var(--color-text-main);
+    border-radius: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+    place-items: center;
+    position: relative;
+    margin: 1.2rem 0 1.6rem;
+    box-shadow: none;
+}
+
+.page--article-femmes-de-science .article-section__cta-text,
+.page--article-lumieres-feminines .article-section__cta-text {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: var(--fw-black);
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.page--article-femmes-de-science .article-section__cta .btn,
+.page--article-lumieres-feminines .article-section__cta .btn {
+    background: var(--color-primary-soft);
+    color: var(--color-text-invert);
+    width: min(100%, 14rem);
+    box-shadow: none;
+    border-radius: 0.9rem;
+}
+
+.page--article-femmes-de-science .callout,
+.page--article-fission .callout {
+    background: #efe6ff;
+    border-left: 4px solid var(--color-primary);
+    padding: 1rem 1rem 1rem 1.2rem;
+    border-radius: 0.8rem;
+    color: var(--color-text-main);
+}
+
+.page--article-femmes-de-science .callout__text,
+.page--article-fission .callout__text {
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .page--article-lise .article-hero,
+    .page--article-lumieres-feminines .article-hero,
+    .page--article-fission .article-hero {
+        padding: 1.7rem 0 1.4rem;
+    }
+
+    .page--article-femmes-de-science .article-hero,
+    .page--article-cinema .article-hero {
+        padding: 1.6rem 0 1.35rem;
+    }
+
+    .page--article-lise .article-section__title,
+    .page--article-lumieres-feminines .article-section__title,
+    .page--article-fission .article-section__title {
+        font-size: 1.02rem;
+    }
+
+    .page--article-femmes-de-science .article-section__title,
+    .page--article-cinema .article-section__title {
+        font-size: 1.12rem;
+    }
+}

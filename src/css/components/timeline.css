@@ -1,0 +1,117 @@
+.page--matilda .section--timeline .section__intro {
+    text-align: center;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+.page--matilda .timeline {
+    position: relative;
+    display: grid;
+    gap: 3.2rem;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    justify-items: center;
+}
+
+.page--matilda .timeline__rail {
+    position: absolute;
+    top: 12rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    background: var(--color-primary);
+    border-radius: 999px;
+    z-index: 0;
+}
+
+.page--matilda .timeline__item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.page--matilda .timeline__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+    height: 100%;
+    background: var(--color-bg-main);
+    z-index: 1;
+}
+
+.page--matilda .timeline__item::after {
+    display: none;
+}
+
+.page--matilda .timeline-card {
+    position: relative;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: none;
+    border: none;
+    width: min(100%, 18rem);
+    display: grid;
+    gap: 0.65rem;
+    z-index: 2;
+}
+
+.page--matilda .timeline-card__figure {
+    order: -1;
+    margin: 0 auto;
+}
+
+.page--matilda .timeline-card__img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.page--matilda .timeline-card__title {
+    font-family: var(--font-title);
+    font-weight: var(--fw-black);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    line-height: 1.35;
+}
+
+.page--matilda .timeline-card__dates {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    color: var(--color-text-main);
+}
+
+.page--matilda .timeline-card__text {
+    line-height: 1.55;
+    color: var(--color-text-main);
+    max-width: 18rem;
+    margin: 0 auto;
+}
+
+.page--matilda .timeline-card__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.page--matilda .timeline-card__cta {
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .page--matilda .timeline-card {
+        width: min(100%, 17rem);
+    }
+}

@@ -215,3 +215,18 @@
 .card-article--maquette .card-article__cta--block:hover {
     background: #2a1b4d;
 }
+
+.page--article-lise .cards,
+.page--article-lumieres-feminines .cards,
+.page--article-fission .cards {
+    background: transparent;
+    padding: 0;
+}
+
+.page--article-lise .cards__item,
+.page--article-lumieres-feminines .cards__item,
+.page--article-femmes-de-science .cards__item,
+.page--article-fission .cards__item,
+.page--article-cinema .cards__item {
+    background: transparent;
+}

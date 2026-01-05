@@ -53,3 +53,150 @@
         font-size: 1.45rem;
     }
 }
+
+.page--lise-meitner .section--bio,
+.page--women-science .section--who,
+.page--glossary .section--why,
+.page--about .section--spirit {
+    background: transparent;
+}
+
+.page--lise-meitner .section--bio .section__title,
+.page--women-science .section--who .section__title,
+.page--glossary .section--why .section__title,
+.page--about .section--spirit .section__title {
+    color: var(--color-primary);
+}
+
+.page--lise-meitner .section--bio .section__band,
+.page--women-science .section--who .section__band,
+.page--glossary .section--why .section__band,
+.page--about .section--spirit .section__band {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    margin-top: 1.2rem;
+    padding: 2.6rem 0 2.3rem;
+}
+
+.page--lise-meitner .section--bio .section__band .wrapper,
+.page--women-science .section--who .section__band .wrapper,
+.page--glossary .section--why .section__band .wrapper,
+.page--about .section--spirit .section__band .wrapper {
+    width: min(100%, 32rem);
+}
+
+.page--lise-meitner .section--bio .card-feature,
+.page--women-science .section--who .card-feature,
+.page--glossary .section--why .card-feature,
+.page--about .section--spirit .card-feature {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    text-align: left;
+    color: inherit;
+}
+
+.page--matilda .section--understand {
+    background: transparent;
+}
+
+.page--matilda .section--understand .section__title {
+    color: var(--color-primary);
+}
+
+.page--matilda .section--understand .section__band {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    margin-top: 1.2rem;
+    padding: 2.5rem 0 2.2rem;
+}
+
+.page--matilda .section--understand .section__band .wrapper {
+    width: min(100%, 32rem);
+}
+
+.page--matilda .section--understand .card-feature {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    text-align: left;
+    color: inherit;
+}
+
+.page--matilda .section--understand .card-feature__text {
+    margin-bottom: 1.15rem;
+    line-height: 1.65;
+}
+
+.page--home .section--matilda .wrapper,
+.page--women-science .section--matilda-block .wrapper,
+.page--women-science .section--origin .wrapper,
+.page--lise-meitner .section--legacy .wrapper,
+.page--about .section--others .wrapper {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+.page--home .section--matilda .card-feature {
+    width: 100%;
+    border-radius: 0;
+    padding: 2.4rem clamp(1.5rem, 4vw, 3rem);
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.page--women-science .section--matilda-block .card-feature,
+.page--women-science .section--origin .card-feature,
+.page--lise-meitner .section--legacy .card-feature,
+.page--about .section--others .card-feature {
+    width: 100%;
+    border-radius: 0;
+    padding: 2.4rem clamp(1.5rem, 4vw, 3rem);
+    box-shadow: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page--home .section--matilda .card-feature__text,
+.page--women-science .section--matilda-block .card-feature__text,
+.page--women-science .section--origin .card-feature__text,
+.page--lise-meitner .section--legacy .card-feature__text,
+.page--about .section--others .card-feature__text {
+    max-width: 46rem;
+    margin: 0 auto 1.05rem;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .page--home .section--matilda .card-feature,
+    .page--women-science .section--matilda-block .card-feature,
+    .page--women-science .section--origin .card-feature,
+    .page--lise-meitner .section--legacy .card-feature,
+    .page--about .section--others .card-feature {
+        padding: 1.7rem 1.05rem;
+    }
+
+    .page--home .section--matilda .card-feature__text,
+    .page--women-science .section--matilda-block .card-feature__text,
+    .page--women-science .section--origin .card-feature__text,
+    .page--lise-meitner .section--legacy .card-feature__text,
+    .page--about .section--others .card-feature__text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0 auto 0.75rem;
+        max-width: 28rem;
+        padding: 0 0.25rem;
+    }
+
+    .page--home .section--matilda .btn--cta-index,
+    .page--women-science .section--matilda-block .btn--cta-index,
+    .page--women-science .section--origin .btn--cta-index,
+    .page--lise-meitner .section--legacy .btn--cta-index,
+    .page--about .section--others .btn--cta-index {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -27,6 +27,7 @@
 @import "components/richtext.css";
 @import "components/timeline.css";
 @import "components/forms.css";
+@import "components/article.css";
 
 /* Pages */
 @import "pages/home.css";

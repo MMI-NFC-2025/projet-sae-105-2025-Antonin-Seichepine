@@ -24,3 +24,44 @@
 .quote__author {
     color: var(--color-text-invert);
 }
+
+.page--article-lise .quote,
+.page--article-lumieres-feminines .quote,
+.page--article-fission .quote,
+.page--article-cinema .quote {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    padding: 2.85rem 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.page--article-lise .quote__inner.wrapper,
+.page--article-lumieres-feminines .quote__inner.wrapper,
+.page--article-fission .quote__inner.wrapper,
+.page--article-cinema .quote__inner.wrapper {
+    width: min(100%, 28rem);
+    padding: 0 1.25rem;
+    margin: 0 auto;
+}
+
+.page--article-lise .quote__content,
+.page--article-lumieres-feminines .quote__content,
+.page--article-fission .quote__content,
+.page--article-cinema .quote__content {
+    text-align: center;
+    display: grid;
+    gap: 0.9rem;
+}
+
+.page--article-lise .quote__text,
+.page--article-lise .quote__author,
+.page--article-lumieres-feminines .quote__text,
+.page--article-lumieres-feminines .quote__author,
+.page--article-fission .quote__text,
+.page--article-fission .quote__author,
+.page--article-cinema .quote__text,
+.page--article-cinema .quote__author {
+    color: var(--color-text-invert);
+}
