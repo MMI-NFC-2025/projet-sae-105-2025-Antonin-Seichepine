@@ -27,6 +27,7 @@
     background: var(--color-primary);
     color: var(--color-text-invert);
     font-size: 0.95rem;
+    font-family: inherit;
 }
 
 .form--contact .form__textarea {

@@ -1,0 +1,190 @@
+/* Hero aligned with other portrait pages */
+.page--matilda .hero__inner {
+    text-align: center;
+    gap: 1.45rem;
+}
+
+.page--matilda .hero__figure {
+    width: clamp(20rem, 26vw, 23rem);
+}
+
+.page--matilda .hero__portrait {
+    width: clamp(20rem, 26vw, 23rem);
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* Violet band for the Matilda explanation */
+.page--matilda .section--understand {
+    background: transparent;
+}
+
+.page--matilda .section--understand .section__title {
+    color: var(--color-primary);
+}
+
+.page--matilda .section--understand .section__band {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    margin-top: 1.2rem;
+    padding: 2.5rem 0 2.2rem;
+}
+
+.page--matilda .section--understand .section__band .wrapper {
+    width: min(100%, 32rem);
+}
+
+.page--matilda .section--understand .card-feature {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    text-align: left;
+    color: inherit;
+}
+
+.page--matilda .section--understand .card-feature__text {
+    margin-bottom: 1.15rem;
+    line-height: 1.65;
+}
+
+/* Timeline styling aligned with circular portraits */
+.page--matilda .section--timeline .section__intro {
+    text-align: center;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+.page--matilda .timeline {
+    position: relative;
+    display: grid;
+    gap: 3.2rem;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    justify-items: center;
+}
+
+.page--matilda .timeline__rail {
+    position: absolute;
+    top: 12rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    background: var(--color-primary);
+    border-radius: 999px;
+    z-index: 0;
+}
+
+.page--matilda .timeline__item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.page--matilda .timeline__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+    height: 100%;
+    background: var(--color-bg-main);
+    z-index: 1;
+}
+
+.page--matilda .timeline__item::after {
+    display: none;
+}
+
+.page--matilda .timeline-card {
+    position: relative;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: none;
+    border: none;
+    width: min(100%, 18rem);
+    display: grid;
+    gap: 0.65rem;
+    z-index: 2;
+}
+
+.page--matilda .timeline-card__figure {
+    order: -1;
+    margin: 0 auto;
+}
+
+.page--matilda .timeline-card__img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.page--matilda .timeline-card__title {
+    font-family: var(--font-title);
+    font-weight: var(--fw-black);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    line-height: 1.35;
+}
+
+.page--matilda .timeline-card__dates {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    color: var(--color-text-main);
+}
+
+.page--matilda .timeline-card__text {
+    line-height: 1.55;
+    color: var(--color-text-main);
+    max-width: 18rem;
+    margin: 0 auto;
+}
+
+.page--matilda .timeline-card__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.page--matilda .timeline-card__cta {
+    width: 100%;
+}
+
+.page--matilda .section--about .section__inner {
+    text-align: center;
+    align-items: center;
+}
+
+.page--matilda .section--about .section__footer {
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .page--matilda .hero__inner {
+        width: min(100%, 24rem);
+    }
+
+    .page--matilda .hero__portrait {
+        width: 190px;
+        height: 190px;
+    }
+
+    .page--matilda .timeline-card {
+        width: min(100%, 17rem);
+    }
+}

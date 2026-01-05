@@ -7,42 +7,41 @@
 
     <title>Lumina — Home</title>
     <meta name="description"
-        content="Lumina is an editorial project dedicated to Lise Meitner and the Matilda effect: honoring women in science through research, design, and storytelling." />
+        content="Lumina is an editorial project dedicated to Lise Meitner and the Matilda Effect: the memory of women in science, research, design, and storytelling." />
 
     <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link rel="stylesheet" href="/src/css/style.css">
     <script src="/src/js/menu.js" defer></script>
 </head>
 
 <body class="page page--home">
 
-
     <header class="header header--solid">
         <div class="header__inner">
-            <nav class="lang" aria-label="Language switcher">
-                <a class="lang__link" href="/fr/" lang="fr">FR</a>
+            <nav class="lang" aria-label="Language selector">
+                <a class="lang__link" href="/fr/index.html" lang="fr">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link lang__link--active" href="/en/" aria-current="page">EN</a>
+                <a class="lang__link lang__link--active" href="/en/index.html" aria-current="page">EN</a>
             </nav>
 
-            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
-                <span class="brand">LUMINA</span>
+            <a class="header__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+                <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
             </a>
 
-            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
-                aria-controls="site-menu">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-                <span class="menu-btn__bar" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-controls="site-menu"
+                aria-expanded="false">
+                <span class="menu-btn__bar menu-btn__bar--top"></span>
+                <span class="menu-btn__bar menu-btn__bar--bottom"></span>
             </button>
         </div>
 
-        <!-- Navigation: Home, Lise Meitner, Women in Science, About, Contact -->
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/en/" aria-current="page">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/index.html" aria-current="page">Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in Science</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
@@ -64,15 +63,15 @@
                 </figure>
 
                 <h1 class="hero__title" id="hero-title">LISE MEITNER</h1>
-                <p class="hero__subtitle">A forgotten pioneer of nuclear fission.</p>
+                <p class="hero__subtitle">The forgotten pioneer of nuclear fission.</p>
 
                 <div class="hero__actions">
                     <a class="btn btn--cta-index" href="/en/lise-meitner.html">Discover her story</a>
                 </div>
 
                 <a class="hero__more" href="#articles">
-                    <span class="hero__more-label">More articles</span>
-                    <span class="hero__more-icon" aria-hidden="true">↓</span>
+                    <span class="hero__more-label">Other articles</span>
+                    <span class="hero__more-icon" aria-hidden="true"></span>
                 </a>
             </div>
         </section>
@@ -90,11 +89,11 @@
 
                 <article class="card-feature">
                     <p class="card-feature__text">
-                        Erased from the Nobel, symbol of the Matilda effect, Lise Meitner shines a light on those who
-                        were forgotten.
+                        Excluded from the Nobel Prize, a symbol of the Matilda Effect, Lise Meitner sheds light on those
+                        who were forgotten.
                     </p>
 
-                    <a class="btn" href="/en/women-in-science.html">Explore the portraits</a>
+                    <a class="btn btn--cta-index" href="/en/matilda-effect.html">Discover the portraits</a>
                 </article>
             </div>
         </section>
@@ -108,82 +107,85 @@
                 <header class="section__header">
                     <h2 class="section__title" id="articles-title">STORIES TO DISCOVER</h2>
                 </header>
-
-                <ul class="cards u-list-unstyled">
-                    <li class="cards__item">
-                        <article class="card-article">
-                            <a class="card-article__link" href="/en/nuclear-fission.html">
-                                <img class="card-article__img" src="/assets/img/cards/card1.webp" alt="" loading="lazy"
-                                    width="328" height="169" />
-                                <h3 class="card-article__title">Lise Meitner, the woman behind nuclear fission</h3>
-                                <span class="card-article__cta">Read the article</span>
-                            </a>
-                        </article>
-                    </li>
-
-                    <li class="cards__item">
-                        <article class="card-article">
-                            <a class="card-article__link" href="/en/nuclear-fission.html">
-                                <img class="card-article__img" src="/assets/img/cards/card2.webp" alt="" loading="lazy"
-                                    width="328" height="169" />
-                                <h3 class="card-article__title">
-                                    Nuclear fission: how an atom releases energy
-                                </h3>
-                                <span class="card-article__cta">Read the article</span>
-                            </a>
-                        </article>
-                    </li>
-
-                    <li class="cards__item cards__item--divider" aria-hidden="true">
-                        <div class="divider divider--motif1">
-                            <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
-                        </div>
-                    </li>
-
-                    <li class="cards__item">
-                        <article class="card-article">
-                            <a class="card-article__link" href="/en/article-women-in-science.html">
-                                <img class="card-article__img" src="/assets/img/cards/card3.webp" alt="" loading="lazy"
-                                    width="328" height="169" />
-                                <h3 class="card-article__title">Forgotten women: literature mends history</h3>
-                                <span class="card-article__cta">Read the article</span>
-                            </a>
-                        </article>
-                    </li>
-
-                    <li class="cards__item">
-                        <article class="card-article">
-                            <a class="card-article__link" href="/en/luminous-women.html">
-                                <img class="card-article__img" src="/assets/img/cards/card4.webp" alt="" loading="lazy"
-                                    width="328" height="169" />
-                                <h3 class="card-article__title">
-                                    Marie Curie and women in science: a book that brings forgotten figures to light
-                                </h3>
-                                <span class="card-article__cta">Read the article</span>
-                            </a>
-                        </article>
-                    </li>
-
-                    <li class="cards__item cards__item--divider" aria-hidden="true">
-                        <div class="divider divider--motif4">
-                            <img class="divider__svg" src="/assets/img/motifs/motif4.svg" alt="" loading="lazy" />
-                        </div>
-                    </li>
-
-                    <li class="cards__item">
-                        <article class="card-article">
-                            <a class="card-article__link" href="/en/atomic-power.html">
-                                <img class="card-article__img" src="/assets/img/cards/card5.webp" alt="" loading="lazy"
-                                    width="328" height="169" />
-                                <h3 class="card-article__title">
-                                    Atomic Power: when science becomes propaganda
-                                </h3>
-                                <span class="card-article__cta">Read the article</span>
-                            </a>
-                        </article>
-                    </li>
-                </ul>
             </div>
+
+            <ul class="cards u-list-unstyled">
+                <li class="cards__item">
+                    <article class="card-article card-article--maquette">
+                        <img class="card-article__img" src="/assets/img/cards/card1.webp" alt="" loading="lazy"
+                            width="328" height="169" />
+                        <div class="card-article__motif" aria-hidden="true"></div>
+                        <div class="card-article__body">
+                            <h3 class="card-article__title">LISE MEITNER, THE WOMAN BEHIND NUCLEAR FISSION</h3>
+                            <a class="card-article__cta card-article__cta--block"
+                                href="/en/article-lise-meitner-fission.html">Read the
+                                article</a>
+                        </div>
+                    </article>
+                </li>
+
+                <li class="cards__item">
+                    <article class="card-article">
+                        <a class="card-article__link" href="/en/nuclear-fission.html">
+                            <img class="card-article__img" src="/assets/img/cards/card2.webp" alt="" loading="lazy"
+                                width="328" height="169" />
+                            <h3 class="card-article__title">
+                                Nuclear fission: understanding how an atom releases energy
+                            </h3>
+                            <span class="card-article__cta">Read the article</span>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+
+            <div class="divider divider--motif1" aria-hidden="true">
+                <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
+            </div>
+
+            <ul class="cards u-list-unstyled">
+                <li class="cards__item">
+                    <article class="card-article">
+                        <a class="card-article__link" href="/en/article-women-in-science.html">
+                            <img class="card-article__img" src="/assets/img/cards/card3.webp" alt="" loading="lazy"
+                                width="328" height="169" />
+                            <h3 class="card-article__title">Forgotten women: literature restores history</h3>
+                            <span class="card-article__cta">Read the article</span>
+                        </a>
+                    </article>
+                </li>
+
+                <li class="cards__item">
+                    <article class="card-article">
+                        <a class="card-article__link" href="/en/luminous-women.html">
+                            <img class="card-article__img" src="/assets/img/cards/card4.webp" alt="" loading="lazy"
+                                width="328" height="169" />
+                            <h3 class="card-article__title">
+                                Marie Curie and women in science: a book that sheds light on oblivion
+                            </h3>
+                            <span class="card-article__cta">Read the article</span>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+
+            <div class="divider divider--motif4" aria-hidden="true">
+                <img class="divider__svg" src="/assets/img/motifs/motif4.svg" alt="" loading="lazy" />
+            </div>
+
+            <ul class="cards u-list-unstyled">
+                <li class="cards__item">
+                    <article class="card-article">
+                        <a class="card-article__link" href="/en/atomic-power.html">
+                            <img class="card-article__img" src="/assets/img/cards/card5.webp" alt="" loading="lazy"
+                                width="328" height="169" />
+                            <h3 class="card-article__title">
+                                Atomic Power: when science becomes propaganda
+                            </h3>
+                            <span class="card-article__cta">Read the article</span>
+                        </a>
+                    </article>
+                </li>
+            </ul>
         </section>
 
         <div class="divider divider--motif2" aria-hidden="true">
@@ -193,7 +195,7 @@
         <section class="quote" aria-label="Quote">
             <div class="quote__inner wrapper">
                 <blockquote class="quote__content">
-                    <p class="quote__text">“Scientists have a responsibility for what they discover.”</p>
+                    <p class="quote__text">“Scientists are responsible for what they discover.”</p>
                     <footer class="quote__footer">
                         <cite class="quote__author">Lise Meitner</cite>
                     </footer>
@@ -212,13 +214,14 @@
                 </header>
 
                 <p class="section__text">
-                    Lumina is an editorial project created to pass on the memory of women in science.
-                    Imagined by a Multimedia & Internet student, it combines research, design, and storytelling.
+                    Lumina is an editorial project created to preserve the memory of women in science.
+                    Designed by an MMI student, it combines research, design, and storytelling.
                 </p>
 
-                <a class="btn btn--outline" href="/en/about.html">Learn more</a>
+                <a class="btn btn--outline btn--cta-index-outline" href="/en/about.html">Learn more</a>
             </div>
         </section>
+
         <div class="divider divider--motif3" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif3.svg" alt="" loading="lazy" />
         </div>
@@ -226,7 +229,7 @@
 
     <footer class="footer">
         <div class="footer__inner wrapper">
-            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
+            <a class="footer__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
                 <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
             </a>
 
@@ -235,12 +238,11 @@
                 <span class="u-italic">MMI department of Montbéliard</span>.
             </p>
 
-            <!-- Footer navigation -->
             <nav class="footer__nav" aria-label="Footer navigation">
                 <ul class="footer__groups u-list-unstyled">
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/" aria-current="page">Home</a>
+                        <a class="footer__group-link" href="/en/index.html" aria-current="page">Home</a>
                     </li>
 
                     <li class="footer__group">
@@ -260,10 +262,10 @@
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item"><a class="footer__link" href="/en/article-women-in-science.html">In
                                     literature</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/luminous-women.html">Luminous
-                                    women</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/feminine-lights.html">Feminine
+                                    lights</a></li>
                             <li class="footer__item"><a class="footer__link" href="/en/matilda-effect.html">Matilda
-                                    effect</a></li>
+                                    Effect</a></li>
                         </ul>
                     </li>
 
@@ -271,10 +273,9 @@
                         <a class="footer__group-link" href="/en/about.html">About</a>
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item"><a class="footer__link" href="/en/about.html">The project</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/other-projects.html#sites">Other
+                            <li class="footer__item"><a class="footer__link" href="/en/other-projects.html">Other
                                     projects</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/glossary.html">Glossary</a>
-                            </li>
+                            <li class="footer__item"><a class="footer__link" href="/en/glossary.html">Glossary</a></li>
                         </ul>
                     </li>
 

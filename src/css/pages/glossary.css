@@ -1,0 +1,111 @@
+.page--glossary .hero__inner {
+    width: min(100%, 24rem);
+    text-align: center;
+    gap: 1rem;
+}
+
+.page--glossary .hero__kicker {
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+}
+
+.page--glossary .section--why {
+    background: transparent;
+}
+
+.page--glossary .section--why .section__title {
+    color: var(--color-primary);
+}
+
+.page--glossary .section--why .section__band {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    margin-top: 1.2rem;
+    padding: 2.6rem 0 2.3rem;
+}
+
+.page--glossary .section--why .section__band .wrapper {
+    width: min(100%, 32rem);
+}
+
+.page--glossary .section--why .card-feature {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    text-align: left;
+    color: inherit;
+}
+
+.page--glossary .glossary {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.3rem;
+    align-items: start;
+}
+
+.page--glossary .glossary__item {
+    text-align: center;
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+    position: relative;
+    padding-bottom: 1.4rem;
+}
+
+.page--glossary .glossary__item::after {
+    content: "";
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background: var(--color-primary-soft);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page--glossary .glossary__item:last-child::after {
+    display: none;
+}
+
+.page--glossary .glossary__title {
+    font-family: var(--font-title);
+    font-weight: var(--fw-black);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-primary);
+}
+
+.page--glossary .glossary__icon {
+    width: 88px;
+    height: auto;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.08));
+}
+
+.page--glossary .glossary__text {
+    max-width: 20rem;
+    line-height: 1.6;
+    color: var(--color-text-main);
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page--glossary .section--cta .section__inner {
+    text-align: center;
+}
+
+.page--glossary .section--cta .section__footer {
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .page--glossary .hero__inner {
+        width: min(100%, 26rem);
+    }
+
+    .page--glossary .glossary {
+        gap: 2.4rem;
+    }
+}

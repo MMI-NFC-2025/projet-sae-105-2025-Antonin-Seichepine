@@ -1,0 +1,203 @@
+/* Mise en forme dédiée à la page fr/lumieres-feminines.html */
+.page--article-lumieres-feminines {
+    background: var(--color-bg-main);
+}
+
+.page--article-lumieres-feminines .wrapper {
+    width: min(100%, 23rem);
+    padding: 0 1.2rem;
+}
+
+.page--article-lumieres-feminines .article-hero {
+    background: var(--color-bg-main);
+    padding: 1.9rem 0 1.6rem;
+    text-align: center;
+}
+
+.page--article-lumieres-feminines .article-hero__inner {
+    display: grid;
+    gap: 1.35rem;
+}
+
+.page--article-lumieres-feminines .article-hero__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: var(--fw-bold);
+    color: var(--color-primary);
+    font-size: 0.88rem;
+}
+
+.page--article-lumieres-feminines .article-hero__title {
+    text-transform: uppercase;
+    font-size: 1.28rem;
+    letter-spacing: 0.05em;
+    line-height: 1.35;
+    color: var(--color-primary);
+}
+
+.page--article-lumieres-feminines .article-hero__media {
+    margin: 0;
+}
+
+.page--article-lumieres-feminines .article-hero__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.page--article-lumieres-feminines .article-hero__caption {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    color: rgba(40, 19, 65, 0.75);
+}
+
+.page--article-lumieres-feminines .article-hero__lead,
+.page--article-lumieres-feminines .article-hero__intro,
+.page--article-lumieres-feminines .article-section__text {
+    text-align: left;
+    line-height: 1.7;
+    color: var(--color-text-main);
+}
+
+.page--article-lumieres-feminines .divider {
+    padding: 1.6rem 0;
+}
+
+.page--article-lumieres-feminines .article {
+    padding-bottom: 2.6rem;
+}
+
+.page--article-lumieres-feminines .article__inner {
+    display: grid;
+    gap: 2.6rem;
+}
+
+.page--article-lumieres-feminines .article-section {
+    display: grid;
+    gap: 1.15rem;
+}
+
+.page--article-lumieres-feminines .article-section p+p {
+    margin-top: 0.55rem;
+}
+
+.page--article-lumieres-feminines .article-section__title {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.15rem;
+    text-align: center;
+    color: var(--color-primary-soft);
+}
+
+.page--article-lumieres-feminines .article-section__subtitle {
+    font-size: 0.95rem;
+    font-weight: var(--fw-bold);
+    color: rgba(40, 19, 65, 0.78);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.page--article-lumieres-feminines .article-figure {
+    margin: 0.9rem 0 0;
+}
+
+.page--article-lumieres-feminines .article-figure__image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page--article-lumieres-feminines .article-figure__caption {
+    margin-top: 0.45rem;
+    font-size: 0.82rem;
+    color: rgba(40, 19, 65, 0.75);
+}
+
+.page--article-lumieres-feminines .cards {
+    background: transparent;
+    padding: 0;
+}
+
+.page--article-lumieres-feminines .cards__item {
+    background: transparent;
+}
+
+.page--article-lumieres-feminines .article-section__cta {
+    background: transparent;
+    color: var(--color-text-main);
+    border-radius: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+    place-items: center;
+    position: relative;
+    margin: 1.2rem 0 1.6rem;
+    box-shadow: none;
+}
+
+.page--article-lumieres-feminines .article-section__cta-text {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: var(--fw-black);
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.page--article-lumieres-feminines .article-section__cta .btn {
+    background: var(--color-primary-soft);
+    color: var(--color-text-invert);
+    width: min(100%, 14rem);
+    box-shadow: none;
+    border-radius: 0.9rem;
+}
+
+.page--article-lumieres-feminines .quote {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    padding: 2.85rem 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.page--article-lumieres-feminines .quote__inner.wrapper {
+    width: min(100%, 28rem);
+    padding: 0 1.25rem;
+    margin: 0 auto;
+}
+
+.page--article-lumieres-feminines .quote__content {
+    text-align: center;
+    display: grid;
+    gap: 0.9rem;
+}
+
+.page--article-lumieres-feminines .quote__text,
+.page--article-lumieres-feminines .quote__author {
+    color: var(--color-text-invert);
+}
+
+.page--article-lumieres-feminines .quote__text {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .page--article-lumieres-feminines .wrapper {
+        width: min(100%, 21.5rem);
+        padding: 0 1rem;
+    }
+
+    .page--article-lumieres-feminines .article-hero {
+        padding: 1.7rem 0 1.4rem;
+    }
+
+    .page--article-lumieres-feminines .article-section__title {
+        font-size: 1.02rem;
+    }
+}

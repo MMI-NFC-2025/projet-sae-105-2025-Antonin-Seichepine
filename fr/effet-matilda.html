@@ -22,15 +22,14 @@
 
 <body class="page page--matilda">
 
-    <a class="skip-link" href="#main">Aller au contenu</a>
 
     <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
-                <a class="lang__link lang__link--active" href="/fr/" aria-current="page">FR</a>
+                <a class="lang__link lang__link--active" href="/fr/effet-matilda.html" aria-current="page">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link" href="/en/index.html" lang="en">EN</a>
+                <a class="lang__link" href="/en/matilda-effect.html" lang="en">EN</a>
             </nav>
 
             <a class="header__brand" href="/fr/" aria-label="Retour à l'accueil Lumina">
@@ -65,11 +64,11 @@
     <main id="main" class="main">
 
         <!-- HERO -->
-        <section class="hero hero--portrait" aria-labelledby="titre-page">
+        <section class="hero hero--profile" aria-labelledby="hero-title">
             <div class="hero__inner wrapper">
                 <figure class="hero__figure">
-                    <img class="hero__portrait" src="/assets/img/heros/hero_matilda.webp" alt="Portrait illustratif"
-                        width="240" height="240" fetchpriority="high" />
+                    <img class="hero__portrait" src="/assets/img/heros/hero_matilda.webp" alt="Portrait de Lise Meitner"
+                        width="240" height="240" />
                 </figure>
 
                 <h1 id="titre-page" class="hero__title">L’effet Matilda</h1>
@@ -78,9 +77,8 @@
                     Elle a donné son nom à un oubli collectif : celui des femmes que l’histoire a effacées.
                 </p>
 
-                <a class="btn btn--primary hero__cta" href="#frise">
+                <a class="btn btn--cta-index hero__cta" href="#frise">
                     Voir leurs portraits
-                    <span class="btn__icon" aria-hidden="true">▼</span>
                 </a>
             </div>
         </section>
@@ -91,17 +89,21 @@
         </div>
 
         <!-- COMPRENDRE -->
-        <section class="section section--wrapper" aria-labelledby="comprendre">
+        <section class="section section--wrapper section--understand" aria-labelledby="comprendre">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 id="comprendre" class="section__title">Comprendre l’effet Matilda</h2>
                 </header>
+            </div>
 
-                <div class="richtext">
-                    <p>
-                        L’effet Matilda désigne le phénomène par lequel les contributions scientifiques des femmes
-                        sont minimisées, ignorées ou attribuées à des hommes.
-                    </p>
+            <div class="section__band">
+                <div class="wrapper">
+                    <article class="card-feature">
+                        <p class="card-feature__text">
+                            L’effet Matilda désigne le phénomène par lequel les contributions scientifiques des femmes
+                            sont minimisées, ignorées ou attribuées à des hommes.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -112,7 +114,7 @@
         </div>
 
         <!-- FRISE -->
-        <section class="section section--wrapper" id="frise" aria-labelledby="frise-title">
+        <section class="section section--wrapper section--timeline" id="frise" aria-labelledby="frise-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 id="frise-title" class="section__title">La frise des matilda</h2>
@@ -176,11 +178,7 @@
                                 Physicienne à l’origine de la fission nucléaire.
                             </p>
 
-                            <footer class="timeline-card__footer">
-                                <a class="btn btn--outline timeline-card__cta" href="/fr/lise-meitner.html">
-                                    Lire sa biographie
-                                </a>
-                            </footer>
+
                         </article>
                     </li>
 
@@ -239,15 +237,13 @@
                     <h2 id="about-project" class="section__title">À propos du projet</h2>
                 </header>
 
-                <div class="richtext">
-                    <p>
-                        Lumina est un projet éditorial né pour transmettre la mémoire des femmes de science.
-                        Pensé par un étudiant en MMI, il mêle recherche, design et narration.
-                    </p>
-                </div>
+                <p class="section__text">
+                    Lumina est un projet éditorial né pour transmettre la mémoire des femmes de science.
+                    Pensé par un étudiant en MMI, il mêle recherche, design et narration.
+                </p>
 
                 <footer class="section__footer">
-                    <a class="btn btn--outline" href="/fr/a-propos.html">En savoir plus</a>
+                    <a class="btn btn--outline btn--cta-index-outline" href="/fr/a-propos.html">En savoir plus</a>
                 </footer>
             </div>
         </section>

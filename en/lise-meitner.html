@@ -7,52 +7,43 @@
 
     <title>Lise Meitner — Lumina</title>
     <meta name="description"
-        content="Lise Meitner, the forgotten pioneer of nuclear fission. Her journey, discoveries, and scientific legacy." />
+        content="Lise Meitner, a forgotten pioneer of nuclear fission. Her life, discoveries, and scientific legacy." />
 
     <link rel="icon" href="/assets/favicons/favicon.ico" />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js" defer></script>
+    <script type="module" src="/src/js/menu.js" defer></script>
 </head>
 
 <body class="page page--lise-meitner">
 
-    <!-- HEADER (IDENTICAL TO HOME) -->
+    <!-- HEADER (STRICTLY IDENTICAL TO INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
-            <nav class="lang" aria-label="Language switcher">
+            <nav class="lang" aria-label="Language selector">
                 <a class="lang__link" href="/fr/lise-meitner.html" lang="fr">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
                 <a class="lang__link lang__link--active" href="/en/lise-meitner.html" aria-current="page">EN</a>
             </nav>
 
-            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
-                <span class="brand">LUMINA</span>
+            <a class="header__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+                <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
             </a>
 
-            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
-                aria-controls="site-menu">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-                <span class="menu-btn__bar" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-controls="site-menu"
+                aria-expanded="false">
+                <span class="menu-btn__bar menu-btn__bar--top"></span>
+                <span class="menu-btn__bar menu-btn__bar--bottom"></span>
             </button>
         </div>
 
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/lise-meitner.html" aria-current="page">Lise Meitner</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/women-in-science.html">Women in Science</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/about.html">About</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/contact.html">Contact</a>
-                </li>
+                <li class="menu__item"><a class="menu__link" href="/en/index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html" aria-current="page">Lise
+                        Meitner</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in Science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
             </ul>
 
             <div class="menu__media" aria-hidden="true">
@@ -75,12 +66,12 @@
                 <h1 id="hero-title" class="hero__title">Lise Meitner</h1>
 
                 <p class="hero__subtitle">
-                    She uncovered nuclear fission.<br />
+                    She discovered nuclear fission.<br />
                     But history wrote another name.
                 </p>
 
                 <div class="hero__actions">
-                    <a class="btn btn--cta-index" href="#decouvertes">Read her story</a>
+                    <a class="btn btn--cta-index" href="#decouvertes">Discover her story</a>
                 </div>
             </div>
         </section>
@@ -91,19 +82,25 @@
         </div>
 
         <!-- WHO WAS LISE MEITNER -->
-        <section class="section section--wrapper" aria-labelledby="who-title">
+        <section class="section section--wrapper section--bio" aria-labelledby="who-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 id="who-title" class="section__title">Who was Lise Meitner?</h2>
                 </header>
+            </div>
 
-                <p class="section__text">
-                    A researcher who changed science without seeking the spotlight.
-                </p>
+            <div class="section__band">
+                <div class="section__inner wrapper">
+                    <div class="card-feature card-feature--bio">
+                        <p class="card-feature__text">
+                            A researcher who changed science without ever being debated.
+                        </p>
 
-                <p class="section__text">
-                    Lise Meitner embodies the forgotten side of discovery and the conscience of knowledge.
-                </p>
+                        <p class="card-feature__text">
+                            Lise Meitner embodies the forgotten side of discovery and scientific conscience.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -118,30 +115,30 @@
                 <header class="section__header">
                     <h2 id="discoveries-title" class="section__title">Her discoveries</h2>
                     <p class="section__chapo">
-                        Explore the articles that dive into the legacy of Lise Meitner and women in science.
+                        Discover the articles that explore the legacy of Lise Meitner and women in science.
                     </p>
                 </header>
-
             </div>
         </section>
 
-        <!-- HER STORY -->
+        <!-- Her story -->
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
-        <section class="section section--wrapper" id="story" aria-labelledby="story-title">
+        <section class="section section--wrapper" id="histoire" aria-labelledby="story-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 id="story-title" class="section__title">Her story</h2>
                     <p class="section__chapo">
-                        From Vienna to Stockholm, a life of exile and scientific rigor. </p>
+                        From Vienna to Stockholm, a life of exile and scientific rigor.
+                    </p>
                 </header>
             </div>
         </section>
         <ul class="cards cards--stack u-list-unstyled">
             <li class="cards__item">
                 <article class="card-article">
-                    <a class="card-article__link" href="/en/nuclear-fission.html">
+                    <a class="card-article__link" href="/en/article-lise.html">
                         <img class="card-article__img" src="/assets/img/cards/card1.webp" alt="" loading="lazy"
                             width="328" height="169" />
                         <h3 class="card-article__title">
@@ -152,16 +149,18 @@
                 </article>
             </li>
         </ul>
-        <!-- HER DISCOVERY -->
+
+        <!-- Her discovery -->
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
-        <section class="section section--wrapper" id="discovery" aria-labelledby="discovery-title">
+        <section class="section section--wrapper" id="decouverte" aria-labelledby="discovery-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 id="discovery-title" class="section__title">Her discovery</h2>
                     <p class="section__chapo">
-                        The origins of nuclear fission. </p>
+                        At the origins of nuclear fission.
+                    </p>
                 </header>
             </div>
         </section>
@@ -173,14 +172,14 @@
                             width="328" height="169" />
                         <h3 class="card-article__title">
                             Nuclear fission: understanding how an atom releases energy
-
                         </h3>
                         <span class="card-article__cta">Read the article</span>
                     </a>
                 </article>
             </li>
         </ul>
-        <!-- SCIENCE AND CINEMA -->
+
+        <!-- Science and cinema -->
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
@@ -189,7 +188,8 @@
                 <header class="section__header">
                     <h2 id="cinema-title" class="section__title">Science and cinema</h2>
                     <p class="section__chapo">
-                        From Atomic Power to Oppenheimer, fission becomes a story. </p>
+                        From Atomic Power to Oppenheimer, fission becomes narrative.
+                    </p>
                 </header>
             </div>
         </section>
@@ -211,32 +211,36 @@
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif3.svg" alt="" loading="lazy" />
         </div>
+
         <!-- LEGACY -->
-        <section class="section section--wrapper" aria-labelledby="legacy-title">
+        <section class="section section--matilda section--legacy" aria-labelledby="legacy-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 id="legacy-title" class="section__title">The legacy of Lise Meitner</h2>
                 </header>
 
-                <p class="section__text">
-                    Lise Meitner embodies what we now call the Matilda effect,
-                    a symbol of women erased from the history of science.
-                </p>
+                <article class="card-feature">
+                    <p class="card-feature__text">
+                        Lise Meitner embodies what is now called the Matilda Effect,
+                        a symbol of women made invisible in the history of science.
+                    </p>
 
-                <a class="btn btn--secondary" href="/en/women-in-science.html">
-                    Discover the women in science
-                </a>
+                    <a class="btn btn--cta-index" href="/en/women-in-science.html">
+                        Discover women in science
+                    </a>
+                </article>
             </div>
         </section>
+
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
     </main>
 
-    <!-- FOOTER (IDENTICAL TO HOME) -->
+    <!-- FOOTER (STRICTLY IDENTICAL TO INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
-            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
+            <a class="footer__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
                 <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
             </a>
 
@@ -249,14 +253,14 @@
                 <ul class="footer__groups u-list-unstyled">
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/">Home</a>
+                        <a class="footer__group-link" href="/en/index.html">Home</a>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/lise-meitner.html" aria-current="page">Lise Meitner</a>
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/lise-meitner.html" aria-current="page">Biography</a>
+                                <a class="footer__link" href="/en/lise-meitner.html">Biography</a>
                             </li>
                             <li class="footer__item">
                                 <a class="footer__link" href="/en/nuclear-fission.html">Nuclear fission</a>
@@ -276,12 +280,12 @@
                                 </a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/luminous-women.html">
-                                    Luminous women
+                                <a class="footer__link" href="/en/feminine-lights.html">
+                                    Feminine lights
                                 </a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/matilda-effect.html">Matilda effect</a>
+                                <a class="footer__link" href="/en/matilda-effect.html">Matilda Effect</a>
                             </li>
                         </ul>
                     </li>
@@ -293,7 +297,7 @@
                                 <a class="footer__link" href="/en/about.html">The project</a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/other-projects.html#sites">
+                                <a class="footer__link" href="/en/other-projects.html">
                                     Other projects
                                 </a>
                             </li>

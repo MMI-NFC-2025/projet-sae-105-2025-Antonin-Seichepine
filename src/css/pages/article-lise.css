@@ -1,0 +1,170 @@
+/* Mise en forme dédiée à la page fr/article-lise.html (article Lise Meitner) */
+.page--article-lise {
+    background: var(--color-bg-main);
+}
+
+.page--article-lise .wrapper {
+    width: min(100%, 23rem);
+    padding: 0 1.2rem;
+}
+
+.page--article-lise .article-hero {
+    background: var(--color-bg-main);
+    padding: 1.9rem 0 1.6rem;
+    text-align: center;
+}
+
+.page--article-lise .article-hero__inner {
+    display: grid;
+    gap: 1.35rem;
+}
+
+.page--article-lise .article-hero__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: var(--fw-bold);
+    color: var(--color-primary);
+    font-size: 0.88rem;
+}
+
+.page--article-lise .article-hero__title {
+    text-transform: uppercase;
+    font-size: 1.28rem;
+    letter-spacing: 0.05em;
+    line-height: 1.35;
+    color: var(--color-primary);
+}
+
+.page--article-lise .article-hero__media {
+    margin: 0;
+}
+
+.page--article-lise .article-hero__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.page--article-lise .article-hero__caption {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    color: rgba(40, 19, 65, 0.75);
+}
+
+.page--article-lise .article-hero__lead,
+.page--article-lise .article-section__text {
+    text-align: left;
+    line-height: 1.7;
+    color: var(--color-text-main);
+}
+
+.page--article-lise .article {
+    background: var(--color-bg-main);
+    padding-bottom: 2.6rem;
+}
+
+.page--article-lise .article__inner {
+    display: grid;
+    gap: 2.6rem;
+}
+
+.page--article-lise .article-section {
+    display: grid;
+    gap: 1.15rem;
+}
+
+.page--article-lise .article-section p+p {
+    margin-top: 0.55rem;
+}
+
+.page--article-lise .article-section__title {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.15rem;
+    text-align: center;
+    color: var(--color-primary-soft);
+}
+
+.page--article-lise .article-section__subtitle {
+    font-size: 0.95rem;
+    font-weight: var(--fw-bold);
+    color: rgba(40, 19, 65, 0.78);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.page--article-lise .article-figure {
+    margin: 0.9rem 0 0;
+}
+
+.page--article-lise .article-figure__image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page--article-lise .article-figure__caption {
+    margin-top: 0.45rem;
+    font-size: 0.82rem;
+    color: rgba(40, 19, 65, 0.75);
+}
+
+.page--article-lise .cards {
+    background: transparent;
+    padding: 0;
+}
+
+.page--article-lise .cards__item {
+    background: transparent;
+}
+
+.page--article-lise .quote {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    padding: 2.85rem 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.page--article-lise .quote__inner.wrapper {
+    width: min(100%, 28rem);
+    padding: 0 1.25rem;
+    margin: 0 auto;
+}
+
+.page--article-lise .quote__content {
+    text-align: center;
+    display: grid;
+    gap: 0.9rem;
+}
+
+.page--article-lise .quote__text,
+.page--article-lise .quote__author {
+    color: var(--color-text-invert);
+}
+
+.page--article-lise .quote__text {
+    font-size: 1.08rem;
+    line-height: 1.65;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .page--article-lise .wrapper {
+        width: min(100%, 21.5rem);
+        padding: 0 1rem;
+    }
+
+    .page--article-lise .article-hero {
+        padding: 1.7rem 0 1.4rem;
+    }
+
+    .page--article-lise .article-section__title {
+        font-size: 1.02rem;
+    }
+}

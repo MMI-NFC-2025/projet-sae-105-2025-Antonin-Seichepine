@@ -31,7 +31,13 @@
 /* Pages */
 @import "pages/home.css";
 @import "pages/women-science.css";
+@import "pages/femmes-de-science.css";
+@import "pages/lumieres-feminines.css";
+@import "pages/article-lise.css";
 @import "pages/lise-meitner.css";
 @import "pages/matilda.css";
 @import "pages/glossary.css";
 @import "pages/about.css";
+@import "pages/vulgarisation.css";
+@import "pages/atomic-power.css";
+@import "pages/other-projects.css";

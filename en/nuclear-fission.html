@@ -5,42 +5,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Nuclear fission — How an atom releases energy | Lumina</title>
+    <title>Nuclear fission — Understanding how an atom releases energy | Lumina</title>
     <meta name="description"
-        content="Understanding nuclear fission: atom, uranium 235, chain reaction, nuclear plant, and ethical stakes." />
+        content="Understanding nuclear fission: atom, uranium 235, chain reaction, nuclear power plant, and ethical issues." />
 
     <link rel="icon" href="/assets/favicons/favicon.ico" />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js" defer></script>
+    <script type="module" src="/src/js/menu.js" defer></script>
 </head>
 
 <body class="page page--article page--article-fission">
 
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <!-- HEADER (IDENTICAL TO HOME) -->
+    <!-- HEADER (STRICTLY IDENTICAL TO INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
-            <nav class="lang" aria-label="Language switcher">
+            <nav class="lang" aria-label="Language selector">
                 <a class="lang__link" href="/fr/vulgarisation.html" lang="fr">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
                 <a class="lang__link lang__link--active" href="/en/nuclear-fission.html" aria-current="page">EN</a>
             </nav>
 
-            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
-                <span class="brand">LUMINA</span>
+            <a class="header__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+                <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
             </a>
 
-            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
-                aria-controls="site-menu">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-                <span class="menu-btn__bar" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-controls="site-menu"
+                aria-expanded="false">
+                <span class="menu-btn__bar menu-btn__bar--top"></span>
+                <span class="menu-btn__bar menu-btn__bar--bottom"></span>
             </button>
         </div>
 
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/index.html">Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in Science</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
@@ -57,25 +55,24 @@
 
         <header class="article-hero">
             <div class="article-hero__inner wrapper">
-                <p class="article-hero__kicker">Nuclear fission</p>
                 <h1 class="article-hero__title">Understanding how an atom releases energy</h1>
 
                 <figure class="article-hero__media">
                     <img class="article-hero__image" src="/assets/img/Articles/article_vulg.webp"
                         alt="Uraninite ore used to produce uranium." />
-                    <figcaption class="article-hero__caption">Uraninite ore - a source of uranium.</figcaption>
+                    <figcaption class="article-hero__caption">Uraninite ore — a source of uranium.</figcaption>
                 </figure>
 
                 <p class="article-hero__lead">
-                    <strong>Nuclear fission</strong>, brought to light at the end of the 1930s (notably thanks to
-                    <strong>Lise Meitner</strong>), rests on a simple idea: when an <strong>atomic nucleus</strong>
-                    breaks apart, it releases a
-                    <strong>huge amount of energy</strong>.
+                    <strong>Nuclear fission</strong>, brought to light in the late 1930s (notably thanks to
+                    <strong>Lise Meitner</strong>),
+                    is based on a simple idea: when an <strong>atomic nucleus</strong> splits, it releases an
+                    <strong>immense amount of energy</strong>.
                 </p>
 
                 <p class="article-hero__intro">
                     In this article, we clarify <em>what an atom is</em>, how a <strong>chain reaction</strong> begins,
-                    then how this energy can generate electricity… or weapons.
+                    and how this energy can produce electricity… or weapons.
                 </p>
             </div>
         </header>
@@ -92,142 +89,146 @@
                     <h2 class="article-section__title" id="sec-atom">What exactly is an atom?</h2>
 
                     <p class="article-section__text">
-                        Imagine a tiny <strong>solar system</strong>:
-                        a <strong>nucleus</strong> at the center (protons + neutrons), and <strong>electrons</strong>
-                        orbiting around it.
+                        Imagine a tiny <strong>solar system</strong>.
+                        At the center, a compact <strong>nucleus</strong>, made of protons and neutrons.
+                        Around it, <strong>electrons</strong> orbit like planets around a sun.
                     </p>
 
-                    <h3 class="article-section__subtitle">What matters here: the stability of the nucleus</h3>
+                    <h3 class="article-section__subtitle">Stability and fission</h3>
                     <p class="article-section__text">
-                        Most nuclei are stable. But some, like <strong>uranium-235</strong>,
-                        are more fragile: a single neutron can be enough to disturb them.
+                        This nucleus is generally stable, but some elements such as
+                        <strong>uranium&nbsp;235</strong>
+                        are less so. A single neutron can be enough to destabilize it.
                     </p>
-
-                    <ul class="article-list">
-                        <li class="article-list__item"><strong>Protons</strong>: positive charge, in the nucleus.</li>
-                        <li class="article-list__item"><strong>Neutrons</strong>: no charge, in the nucleus.</li>
-                        <li class="article-list__item"><strong>Electrons</strong>: negative charge, around the nucleus.
-                        </li>
-                    </ul>
-
-                    <aside class="callout" aria-label="Explanatory box">
-                        <p class="callout__text">
-                            When uranium-235 captures a neutron, it becomes unstable and can <strong>split</strong>.
-                            This split releases both <strong>energy</strong> and additional <strong>neutrons</strong>.
-                        </p>
-                    </aside>
+                    <p class="article-section__text">
+                        When this happens, the nucleus splits into two smaller parts, releasing an immense
+                        amount of thermal and light energy: this is the process of <strong>nuclear fission</strong>.
+                    </p>
 
                     <div class="article-section__cta">
-                        <p class="cta-text">Glossary of key concepts</p>
-                        <a class="btn btn--primary" href="/en/glossary.html">see the definitions</a>
+                        <h1 class="article-section__cta-title">Key glossary terms</h1>
+                        <a class="btn btn--cta-index" href="/en/glossary.html">View definitions</a>
                     </div>
+                </section>
 
-                    <div class="divider divider--cta" aria-hidden="true">
-                        <img class="divider__svg" src="/assets/img/motifs/motif5.svg" alt="" loading="lazy" />
-                    </div>
+                <section class="article-section" aria-labelledby="sec-chain">
+                    <h2 class="article-section__title" id="sec-chain">A chain reaction</h2>
 
-                    <section class="article-section" aria-labelledby="sec-chain">
-                        <h2 class="article-section__title" id="sec-chain">A chain reaction</h2>
+                    <p class="article-section__text">
+                        When a uranium nucleus splits, it releases not only energy, but also new
+                        <strong>neutrons</strong>.
+                        These neutrons strike other nuclei, which then split in turn.
+                    </p>
 
-                        <p class="article-section__text">
-                            When a nucleus breaks apart, it releases <strong>neutrons</strong>.
-                            These neutrons strike other nuclei… which break in turn.
-                        </p>
+                    <h3 class="article-section__subtitle">The domino effect</h3>
+                    <p class="article-section__text">
+                        This cycle repeats itself endlessly: this is known as a <strong>chain reaction</strong>.
+                        It can be compared to a row of <strong>dominoes</strong>: once the first falls, everything
+                        follows.
+                    </p>
+                    <p class="article-section__text">
+                        But here, each “fall” releases a gigantic amount of energy on an atomic scale.
+                        This principle makes fission both powerful and difficult to control.
+                    </p>
 
-                        <h3 class="article-section__subtitle">The simplest image: dominoes</h3>
-                        <p class="article-section__text">
-                            It is like a row of <strong>dominoes</strong>: once the first falls, everything follows.
-                            In fission, each “fall” releases enormous energy.
-                        </p>
+                    <figure class="article-figure">
+                        <img class="article-figure__image" src="/assets/img/Articles/article_vulg2.webp"
+                            alt="Illustration of a domino effect representing a chain reaction." />
+                        <figcaption class="article-figure__caption">Chain reaction: the domino effect.</figcaption>
+                    </figure>
+                </section>
 
-                        <figure class="article-figure">
-                            <img class="article-figure__image" src="/assets/img/Articles/article_vulg2.webp"
-                                alt="Domino effect illustration showing a chain reaction." />
-                            <figcaption class="article-figure__caption">Chain reaction: the domino effect.
-                            </figcaption>
-                        </figure>
-                    </section>
+                <section class="article-section" aria-labelledby="sec-electricity">
+                    <h2 class="article-section__title" id="sec-electricity">From atom to electricity</h2>
 
-                    <section class="article-section" aria-labelledby="sec-electricity">
-                        <h2 class="article-section__title" id="sec-electricity">From atom to electricity</h2>
+                    <p class="article-section__text">
+                        In a <strong>nuclear power plant</strong>, the energy released by fission is transformed into
+                        heat. This heat boils water, whose steam turns turbines to generate electricity.
+                    </p>
 
-                        <p class="article-section__text">
-                            In a <strong>nuclear power plant</strong>, the energy from fission becomes
-                            <strong>heat</strong>.
-                            This heat boils water: the steam drives turbines, which produce electricity.
-                        </p>
+                    <p class="article-section__text">
+                        Fission, once a laboratory phenomenon, has become one of the pillars of our modern world.
+                    </p>
 
-                        <ol class="article-steps">
-                            <li class="article-steps__item"><strong>Fission</strong> → heat generation.</li>
-                            <li class="article-steps__item"><strong>Water</strong> → steam under pressure.</li>
-                            <li class="article-steps__item"><strong>Turbines</strong> → rotation.</li>
-                            <li class="article-steps__item"><strong>Alternator</strong> → electricity.</li>
-                        </ol>
+                    <figure class="article-figure">
+                        <img class="article-figure__image" src="/assets/img/Articles/article_vulg3.webp"
+                            alt="Illustration of a nuclear power plant." />
+                        <figcaption class="article-figure__caption">
+                            Heat from fission can generate electricity.
+                        </figcaption>
+                    </figure>
+                </section>
 
-                        <figure class="article-figure">
-                            <img class="article-figure__image" src="/assets/img/Articles/article_vulg3.webp"
-                                alt="Illustration of a nuclear power plant." />
-                            <figcaption class="article-figure__caption">Heat from fission can produce electricity.
-                            </figcaption>
-                        </figure>
-                    </section>
+                <section class="article-section" aria-labelledby="sec-ethics">
+                    <h2 class="article-section__title" id="sec-ethics">Fission, between progress and responsibility</h2>
 
-                    <section class="article-section" aria-labelledby="sec-ethics">
-                        <h2 class="article-section__title" id="sec-ethics">Fission, between progress and responsibility
-                        </h2>
+                    <p class="article-section__text">
+                        This reaction, capable of lighting entire cities, also led to the creation of the
+                        <strong>atomic bomb</strong>.
+                    </p>
+                    <p class="article-section__text">
+                        Lise Meitner, who provided its theoretical explanation, refused to take part,
+                        convinced that science should enlighten, not destroy.
+                    </p>
+                    <p class="article-section__text">
+                        This moral dilemma still runs through our time: how can knowledge and responsibility be
+                        reconciled?
+                    </p>
 
-                        <p class="article-section__text">
-                            This reaction can power entire cities… but it also enabled the <strong>atomic bomb</strong>.
-                            Meitner, who provided its explanation, refused to take part.
-                        </p>
-
-                        <blockquote class="quote">
-                            <p class="quote__text">"The danger is not the atomic bomb, but the heart of man."</p>
-                            <cite class="quote__author">Albert Einstein</cite>
-                        </blockquote>
-                    </section>
-
-                    <section class="article-section" aria-labelledby="sec-narrative">
-                        <h2 class="article-section__title" id="sec-narrative">From science to collective story</h2>
-
-                        <p class="article-section__text">
-                            Fission has become a symbol: power, fear, modernity.
-                            It still feeds popular culture, especially in cinema.
-                        </p>
-
-                        <p class="article-section__text">
-                            Example: the documentary <em>Atomic Power</em> questions how science can become a tool of
-                            propaganda,
-                            between <strong>promise</strong> and <strong>threat</strong>.
-                        </p>
-
-                        <div class="article-section__cta">
-                            <a class="btn btn--outline" href="/en/atomic-power.html">See also</a>
+                    <section class="quote" aria-label="Quote">
+                        <div class="quote__inner wrapper">
+                            <blockquote class="quote__content">
+                                <p class="quote__text">
+                                    “Scientists have a responsibility for what they discover.”
+                                </p>
+                                <footer class="quote__footer">
+                                    <cite class="quote__author">Albert Einstein</cite>
+                                </footer>
+                            </blockquote>
                         </div>
-
-                        <ul class="cards u-list-unstyled">
-                            <li class="cards__item">
-                                <article class="card-article">
-                                    <a class="card-article__link" href="/en/atomic-power.html">
-                                        <img class="card-article__img" src="/assets/img/cards/card5.webp" alt=""
-                                            loading="lazy" width="328" height="169" />
-                                        <h3 class="card-article__title">Atomic Power: when science becomes propaganda
-                                        </h3>
-                                        <span class="card-article__cta">Read the article</span>
-                                    </a>
-                                </article>
-                            </li>
-                        </ul>
                     </section>
+                </section>
+
+                <section class="article-section" aria-labelledby="sec-narrative">
+                    <h2 class="article-section__title" id="sec-narrative">From science to collective narrative</h2>
+
+                    <p class="article-section__text">
+                        Nuclear fission has not only transformed physics: it has also shaped our collective
+                        imagination.
+                        A symbol of power and fear, it continues to inspire literature and cinema, between
+                        fascination and anxiety.
+                    </p>
+
+                    <p class="article-section__text">
+                        This is the case with the documentary <em>Atomic Power</em>, which questions how science
+                        sometimes becomes a narrative tool, caught between <strong>promise</strong> and
+                        <strong>threat</strong>.
+                    </p>
+
+                    <ul class="cards u-list-unstyled">
+                        <li class="cards__item">
+                            <article class="card-article">
+                                <a class="card-article__link" href="/en/atomic-power.html">
+                                    <img class="card-article__img" src="/assets/img/cards/card5.webp" alt=""
+                                        loading="lazy" width="328" height="169" />
+                                    <h3 class="card-article__title">
+                                        Atomic Power: when science becomes propaganda
+                                    </h3>
+                                    <span class="card-article__cta">View the article</span>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
 
             </div>
         </article>
     </main>
 
-    <!-- FOOTER (IDENTICAL TO HOME) -->
+    <!-- FOOTER (STRICTLY IDENTICAL TO INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
-            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
+            <a class="footer__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
                 <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
             </a>
 
@@ -240,41 +241,64 @@
                 <ul class="footer__groups u-list-unstyled">
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/">Home</a>
+                        <a class="footer__group-link" href="/en/index.html">Home</a>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/lise-meitner.html">Lise Meitner</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item"><a class="footer__link" href="/en/lise-meitner.html">Biography</a>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/lise-meitner.html">Biography</a>
                             </li>
-                            <li class="footer__item"><a class="footer__link" href="/en/nuclear-fission.html"
-                                    aria-current="page">Nuclear
-                                    fission</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/atomic-power.html">Cinema and
-                                    science</a></li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/nuclear-fission.html" aria-current="page">
+                                    Nuclear fission
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/atomic-power.html">
+                                    Cinema and science
+                                </a>
+                            </li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/women-in-science.html">Women in Science</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item"><a class="footer__link" href="/en/article-women-in-science.html">In
-                                    literature</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/luminous-women.html">Luminous
-                                    women</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/matilda-effect.html">Matilda
-                                    effect</a></li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/article-women-in-science.html">
+                                    In literature
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/feminine-lights.html">
+                                    Feminine light
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/matilda-effect.html">
+                                    Matilda Effect
+                                </a>
+                            </li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/about.html">About</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item"><a class="footer__link" href="/en/about.html">The project</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/other-projects.html#sites">Other
-                                    projects</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/glossary.html">Glossary</a>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/about.html">The project</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/other-projects.html">
+                                    Other projects
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/en/glossary.html">
+                                    Glossary
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -286,7 +310,7 @@
                 </ul>
             </nav>
 
-            <small class="footer__credits">Antonin Seichepine - MMI</small>
+            <small class="footer__credits">Antonin Seichepine — MMI</small>
         </div>
     </footer>
 

@@ -16,15 +16,14 @@
 
 <body class="page page--glossary">
 
-    <a class="skip-link" href="#main">Aller au contenu</a>
 
     <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Sélecteur de langue">
-                <a class="lang__link lang__link--active" href="/fr/" aria-current="page">FR</a>
+                <a class="lang__link lang__link--active" href="/fr/glossaire.html" aria-current="page">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link" href="/en/index.html" lang="en">EN</a>
+                <a class="lang__link" href="/en/glossary.html" lang="en">EN</a>
             </nav>
 
             <a class="header__brand" href="/fr/" aria-label="Retour à l'accueil Lumina">
@@ -62,13 +61,12 @@
         <section class="hero hero--simple" aria-labelledby="page-title">
             <div class="hero__inner wrapper">
                 <header class="hero__header">
-                    <p class="hero__kicker">GLOSSAIRE</p>
                     <h1 class="hero__title" id="page-title">Glossaire</h1>
                     <p class="hero__subtitle">
                         Pour comprendre les notions clés abordées dans Lumina. </p>
                 </header>
 
-                <a class="btn btn--primary" href="#notions">Voir le glossaire</a>
+                <a class="btn btn--cta-index" href="#notions">Voir le glossaire</a>
             </div>
         </section>
 
@@ -78,18 +76,22 @@
         </div>
 
         <!-- POURQUOI UN GLOSSAIRE -->
-        <section class="section section--wrapper" aria-labelledby="why">
+        <section class="section section--wrapper section--why" aria-labelledby="why">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 class="section__title" id="why">Pourquoi un glossaire&nbsp;?</h2>
                 </header>
+            </div>
 
-                <div class="richtext">
-                    <p>
-                        Certains termes scientifiques nécessitent des explications claires pour mieux comprendre
-                        Lise Meitner, la fission nucléaire, l’éthique scientifique et l’effet Matilda.
-                        Ce glossaire propose des définitions simples et utiles.
-                    </p>
+            <div class="section__band">
+                <div class="section__inner wrapper">
+                    <div class="card-feature card-feature--why">
+                        <p class="card-feature__text">
+                            Certains termes scientifiques nécessitent des explications claires pour mieux comprendre
+                            Lise Meitner, la fission nucléaire, l’éthique scientifique et l’effet Matilda.
+                            Ce glossaire propose des définitions simples et utiles.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -190,14 +192,14 @@
         </div>
 
         <!-- CTA -->
-        <section class="section section--wrapper" aria-labelledby="cta">
+        <section class="section section--wrapper section--cta" aria-labelledby="cta">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 class="section__title" id="cta">Explorer Lumina</h2>
                 </header>
 
                 <footer class="section__footer">
-                    <a class="btn btn--primary" href="/fr/">Retour à l’accueil</a>
+                    <a class="btn btn--cta-index" href="/fr/">Retour à l’accueil</a>
                 </footer>
             </div>
         </section>
@@ -208,7 +210,7 @@
     <footer class="footer">
         <div class="footer__inner wrapper">
             <a class="footer__brand" href="/fr/" aria-label="Retour à l’accueil Lumina">
-                <img class="footer__logo" src="/assets/img/motifs/motif2.svg" alt="" />
+                <img class="footer__logo" src="/assets/img/logosite.svg" alt="" />
             </a>
 
             <p class="footer__note">

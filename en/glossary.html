@@ -5,42 +5,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
-        content="Lumina glossary: key definitions to understand Lise Meitner, nuclear fission, and the Matilda effect." />
+        content="Lumina glossary: key definitions to understand Lise Meitner, nuclear fission, and the Matilda Effect." />
 
     <title>Glossary — Lumina</title>
 
     <link rel="icon" href="/assets/favicons/favicon.ico" />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js" defer></script>
+    <script type="module" src="/src/js/menu.js" defer></script>
 </head>
 
 <body class="page page--glossary">
 
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <!-- HEADER (IDENTICAL TO HOME) -->
+    <!-- HEADER (STRICTLY IDENTICAL TO INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
-            <nav class="lang" aria-label="Language switcher">
+            <nav class="lang" aria-label="Language selector">
                 <a class="lang__link" href="/fr/glossaire.html" lang="fr">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link lang__link--active" href="/en/glossary.html" aria-current="page">EN</a>
+                <a class="lang__link lang__link--active" href="/en/index.html" aria-current="page">EN</a>
             </nav>
 
-            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
-                <span class="brand">LUMINA</span>
+            <a class="header__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+                <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
             </a>
 
-            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
-                aria-controls="site-menu">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-                <span class="menu-btn__bar" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-controls="site-menu"
+                aria-expanded="false">
+                <span class="menu-btn__bar menu-btn__bar--top"></span>
+                <span class="menu-btn__bar menu-btn__bar--bottom"></span>
             </button>
         </div>
 
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/index.html">Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in Science</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
@@ -60,13 +58,13 @@
         <section class="hero hero--simple" aria-labelledby="page-title">
             <div class="hero__inner wrapper">
                 <header class="hero__header">
-                    <p class="hero__kicker">GLOSSARY</p>
                     <h1 class="hero__title" id="page-title">Glossary</h1>
                     <p class="hero__subtitle">
-                        To understand the key concepts covered in Lumina. </p>
+                        To understand the key concepts addressed in Lumina.
+                    </p>
                 </header>
 
-                <a class="btn btn--primary" href="#notions">See the glossary</a>
+                <a class="btn btn--cta-index" href="#notions">View the glossary</a>
             </div>
         </section>
 
@@ -76,18 +74,22 @@
         </div>
 
         <!-- WHY A GLOSSARY -->
-        <section class="section section--wrapper" aria-labelledby="why">
+        <section class="section section--wrapper section--why" aria-labelledby="why">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 class="section__title" id="why">Why a glossary?</h2>
                 </header>
+            </div>
 
-                <div class="richtext">
-                    <p>
-                        Some scientific terms need clear explanations to better understand Lise Meitner, nuclear
-                        fission, scientific ethics, and the Matilda effect.
-                        This glossary offers simple, useful definitions.
-                    </p>
+            <div class="section__band">
+                <div class="section__inner wrapper">
+                    <div class="card-feature card-feature--why">
+                        <p class="card-feature__text">
+                            Some scientific terms require clear explanations to better understand
+                            Lise Meitner, nuclear fission, scientific ethics, and the Matilda Effect.
+                            This glossary provides simple and useful definitions.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -110,8 +112,8 @@
                         <h3 class="glossary__title">Atom</h3>
                         <img class="glossary__icon" src="/assets/img/icos/ico1.svg" alt="" loading="lazy" />
                         <p class="glossary__text">
-                            Fundamental unit of matter, made of a central nucleus (protons and neutrons) and electrons
-                            moving around it.
+                            The fundamental unit of matter, composed of a central nucleus
+                            (protons and neutrons) and electrons moving around it.
                         </p>
                     </article>
 
@@ -128,16 +130,16 @@
                         <h3 class="glossary__title">Nuclear fission</h3>
                         <img class="glossary__icon" src="/assets/img/icos/ico3.svg" alt="" loading="lazy" />
                         <p class="glossary__text">
-                            Reaction in which an atomic nucleus splits into two smaller nuclei,
+                            A reaction in which an atomic nucleus splits into two smaller nuclei,
                             releasing energy and neutrons.
                         </p>
                     </article>
 
                     <article class="glossary__item" id="uranium-235">
-                        <h3 class="glossary__title">Uranium 235</h3>
+                        <h3 class="glossary__title">Uranium-235</h3>
                         <img class="glossary__icon" src="/assets/img/icos/ico4.svg" alt="" loading="lazy" />
                         <p class="glossary__text">
-                            Isotope of uranium capable of undergoing nuclear fission,
+                            An isotope of uranium capable of undergoing nuclear fission,
                             used in some reactors and historically central to nuclear energy.
                         </p>
                     </article>
@@ -146,8 +148,8 @@
                         <h3 class="glossary__title">Neutron</h3>
                         <img class="glossary__icon" src="/assets/img/icos/ico5.svg" alt="" loading="lazy" />
                         <p class="glossary__text">
-                            Electrically neutral particle found in the nucleus.
-                            During fission, emitted neutrons can trigger a chain reaction.
+                            An electrically neutral particle found in the nucleus.
+                            During fission, released neutrons can trigger a chain reaction.
                         </p>
                     </article>
 
@@ -155,17 +157,17 @@
                         <h3 class="glossary__title">Radioactivity</h3>
                         <img class="glossary__icon" src="/assets/img/icos/ico6.svg" alt="" loading="lazy" />
                         <p class="glossary__text">
-                            Property of unstable nuclei to transform spontaneously,
+                            The property of unstable nuclei to transform spontaneously,
                             emitting particles or radiation.
                         </p>
                     </article>
 
                     <article class="glossary__item" id="matilda-effect">
-                        <h3 class="glossary__title">Matilda effect</h3>
+                        <h3 class="glossary__title">Matilda Effect</h3>
                         <img class="glossary__icon" src="/assets/img/icos/ico7.svg" alt="" loading="lazy" />
                         <p class="glossary__text">
-                            Concept describing the tendency to minimize or attribute to men the scientific contributions
-                            of women.
+                            A concept describing the tendency to minimize or attribute to men
+                            the scientific contributions of women.
                         </p>
                     </article>
 
@@ -174,7 +176,7 @@
                         <img class="glossary__icon" src="/assets/img/icos/ico8.svg" alt="" loading="lazy" />
                         <p class="glossary__text">
                             Reflection on the moral responsibility of researchers,
-                            especially when discoveries may have dangerous uses.
+                            especially when discoveries may have dangerous applications.
                         </p>
                     </article>
 
@@ -188,25 +190,25 @@
         </div>
 
         <!-- CTA -->
-        <section class="section section--wrapper" aria-labelledby="cta">
+        <section class="section section--wrapper section--cta" aria-labelledby="cta">
             <div class="section__inner wrapper">
                 <header class="section__header">
                     <h2 class="section__title" id="cta">Explore Lumina</h2>
                 </header>
 
                 <footer class="section__footer">
-                    <a class="btn btn--primary" href="/en/">Back to home</a>
+                    <a class="btn btn--cta-index" href="/en/index.html">Back to home</a>
                 </footer>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER (IDENTICAL TO HOME) -->
+    <!-- FOOTER (STRICTLY IDENTICAL TO INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
-            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
-                <img class="footer__logo" src="/assets/img/motifs/motif2.svg" alt="" />
+            <a class="footer__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+                <img class="footer__logo" src="/assets/img/logosite.svg" alt="" />
             </a>
 
             <p class="footer__note">
@@ -218,7 +220,7 @@
                 <ul class="footer__groups u-list-unstyled">
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/">Home</a>
+                        <a class="footer__group-link" href="/en/index.html">Home</a>
                     </li>
 
                     <li class="footer__group">
@@ -238,10 +240,10 @@
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item"><a class="footer__link" href="/en/article-women-in-science.html">In
                                     literature</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/luminous-women.html">Luminous
-                                    women</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/matilda-effect.html"
-                                    aria-current="page">Matilda effect</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/feminine-lights.html">Feminine
+                                    lights</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/matilda-effect.html">Matilda
+                                    Effect</a></li>
                         </ul>
                     </li>
 
@@ -249,7 +251,7 @@
                         <a class="footer__group-link" href="/en/about.html">About</a>
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item"><a class="footer__link" href="/en/about.html">The project</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/other-projects.html#sites">Other
+                            <li class="footer__item"><a class="footer__link" href="/en/other-projects.html">Other
                                     projects</a></li>
                             <li class="footer__item"><a class="footer__link" href="/en/glossary.html"
                                     aria-current="page">Glossary</a></li>

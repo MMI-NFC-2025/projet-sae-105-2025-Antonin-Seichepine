@@ -5,10 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Matilda Effect — Lumina</title>
+    <title>The Matilda Effect — Lumina</title>
     <meta name="description"
-        content="Understand the Matilda effect: a collective erasure of women in science. Lumina timeline and resources." />
+        content="Understanding the Matilda Effect: the collective erasure of women in science. Timeline of scientists and Lumina resources." />
 
+    <!-- Favicons (IDENTICAL TO INDEX) -->
     <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
@@ -16,39 +17,36 @@
     <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js" defer></script>
+    <script type="module" src="/src/js/menu.js" defer></script>
 </head>
 
 <body class="page page--matilda">
 
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <!-- HEADER (MATCHES HOME) -->
+    <!-- HEADER (STRICTLY IDENTICAL TO INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
-            <nav class="lang" aria-label="Language switcher">
+            <nav class="lang" aria-label="Language selector">
                 <a class="lang__link" href="/fr/effet-matilda.html" lang="fr">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link lang__link--active" href="/en/matilda-effect.html" aria-current="page">EN</a>
+                <a class="lang__link lang__link--active" href="/en/index.html" aria-current="page">EN</a>
             </nav>
 
-            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
-                <span class="brand">LUMINA</span>
+            <a class="header__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+                <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
             </a>
 
-            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
-                aria-controls="site-menu">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-                <span class="menu-btn__bar" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-controls="site-menu"
+                aria-expanded="false">
+                <span class="menu-btn__bar menu-btn__bar--top"></span>
+                <span class="menu-btn__bar menu-btn__bar--bottom"></span>
             </button>
         </div>
 
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/index.html">Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in Science</a>
-                </li>
+                <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in Science</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
             </ul>
@@ -63,22 +61,21 @@
     <main id="main" class="main">
 
         <!-- HERO -->
-        <section class="hero hero--portrait" aria-labelledby="hero-title">
+        <section class="hero hero--profile" aria-labelledby="hero-title">
             <div class="hero__inner wrapper">
                 <figure class="hero__figure">
-                    <img class="hero__portrait" src="/assets/img/heros/hero_matilda.webp" alt="Illustrated portrait"
-                        width="240" height="240" fetchpriority="high" />
+                    <img class="hero__portrait" src="/assets/img/heros/hero_matilda.webp" alt="Portrait of Lise Meitner"
+                        width="240" height="240" />
                 </figure>
 
-                <h1 id="hero-title" class="hero__title">The Matilda effect</h1>
+                <h1 id="titre-page" class="hero__title">The Matilda Effect</h1>
 
                 <p class="hero__subtitle">
-                    She lent her name to a collective omission: women whose stories history pushed aside.
+                    It gave its name to a collective erasure: that of women whom history has erased.
                 </p>
 
-                <a class="btn btn--primary hero__cta" href="#frise">
-                    See their portraits
-                    <span class="btn__icon" aria-hidden="true">▼</span>
+                <a class="btn btn--cta-index hero__cta" href="#frise">
+                    View their portraits
                 </a>
             </div>
         </section>
@@ -89,17 +86,21 @@
         </div>
 
         <!-- UNDERSTAND -->
-        <section class="section section--wrapper" aria-labelledby="understand">
+        <section class="section section--wrapper section--understand" aria-labelledby="comprendre">
             <div class="section__inner wrapper">
                 <header class="section__header">
-                    <h2 id="understand" class="section__title">Understanding the Matilda effect</h2>
+                    <h2 id="comprendre" class="section__title">Understanding the Matilda Effect</h2>
                 </header>
+            </div>
 
-                <div class="richtext">
-                    <p>
-                        The Matilda effect describes how women’s scientific contributions are minimized, ignored, or
-                        attributed to men.
-                    </p>
+            <div class="section__band">
+                <div class="wrapper">
+                    <article class="card-feature">
+                        <p class="card-feature__text">
+                            The Matilda Effect refers to the phenomenon by which women’s scientific contributions
+                            are minimized, ignored, or attributed to men.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -110,22 +111,22 @@
         </div>
 
         <!-- TIMELINE -->
-        <section class="section section--wrapper" id="frise" aria-labelledby="timeline-title">
+        <section class="section section--wrapper section--timeline" id="frise" aria-labelledby="frise-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
-                    <h2 id="timeline-title" class="section__title">The Matilda timeline</h2>
+                    <h2 id="frise-title" class="section__title">The Matilda timeline</h2>
                     <p class="section__intro">
-                        From Hypatia to Lise Meitner, these women shaped science from the shadows. Explore the timeline
-                        following their journeys across the centuries.
+                        From Hypatia to Lise Meitner, these women shaped science in the shadows.
+                        Explore the timeline tracing their journeys across the centuries.
                     </p>
                 </header>
 
-                <ol class="timeline" aria-label="Chronological timeline of women in science">
+                <ol class="timeline" aria-label="Timeline of women in science">
                     <li class="timeline__item">
                         <article class="timeline-card">
                             <header class="timeline-card__header">
                                 <h3 class="timeline-card__title">Hypatia of Alexandria <span
-                                        class="timeline-card__dates">(c. 370 - 415)</span></h3>
+                                        class="timeline-card__dates">(c. 370 – 415)</span></h3>
                             </header>
 
                             <figure class="timeline-card__figure">
@@ -134,7 +135,7 @@
                             </figure>
 
                             <p class="timeline-card__text">
-                                Mathematician and astronomer of Antiquity, symbol of the earliest women scholars.
+                                Mathematician and astronomer of Antiquity, a symbol of the earliest learned women.
                             </p>
                         </article>
                     </li>
@@ -142,7 +143,7 @@
                     <li class="timeline__item">
                         <article class="timeline-card">
                             <header class="timeline-card__header">
-                                <h3 class="timeline-card__title">Ada Lovelace <span class="timeline-card__dates">(1815 -
+                                <h3 class="timeline-card__title">Ada Lovelace <span class="timeline-card__dates">(1815 –
                                         1852)</span></h3>
                             </header>
 
@@ -152,7 +153,7 @@
                             </figure>
 
                             <p class="timeline-card__text">
-                                19th-century mathematician, recognized as the first computer programmer.
+                                19th-century mathematician, the world’s first computer programmer.
                             </p>
                         </article>
                     </li>
@@ -160,7 +161,7 @@
                     <li class="timeline__item">
                         <article class="timeline-card">
                             <header class="timeline-card__header">
-                                <h3 class="timeline-card__title">Lise Meitner <span class="timeline-card__dates">(1878 -
+                                <h3 class="timeline-card__title">Lise Meitner <span class="timeline-card__dates">(1878 –
                                         1968)</span></h3>
                             </header>
 
@@ -170,14 +171,8 @@
                             </figure>
 
                             <p class="timeline-card__text">
-                                Physicist behind the discovery of nuclear fission.
+                                Physicist at the origin of nuclear fission.
                             </p>
-
-                            <footer class="timeline-card__footer">
-                                <a class="btn btn--outline timeline-card__cta" href="/en/lise-meitner.html">
-                                    Read her biography
-                                </a>
-                            </footer>
                         </article>
                     </li>
 
@@ -185,7 +180,7 @@
                         <article class="timeline-card">
                             <header class="timeline-card__header">
                                 <h3 class="timeline-card__title">Rosalind Franklin <span
-                                        class="timeline-card__dates">(1920 - 1958)</span></h3>
+                                        class="timeline-card__dates">(1920 – 1958)</span></h3>
                             </header>
 
                             <figure class="timeline-card__figure">
@@ -194,7 +189,7 @@
                             </figure>
 
                             <p class="timeline-card__text">
-                                Biologist whose X-ray images paved the way to the DNA double-helix discovery.
+                                Biologist whose X-ray images enabled the discovery of DNA’s structure.
                             </p>
                         </article>
                     </li>
@@ -203,7 +198,7 @@
                         <article class="timeline-card">
                             <header class="timeline-card__header">
                                 <h3 class="timeline-card__title">Donna Strickland <span
-                                        class="timeline-card__dates">(1959 - )</span></h3>
+                                        class="timeline-card__dates">(1959 – )</span></h3>
                             </header>
 
                             <figure class="timeline-card__figure">
@@ -212,8 +207,8 @@
                             </figure>
 
                             <p class="timeline-card__text">
-                                Canadian physicist, little-known before her 2018 Nobel Prize: a symbol of delayed
-                                recognition.
+                                Canadian physicist, largely unknown to the public before her 2018 Nobel Prize:
+                                a symbol of recognition that still comes too late.
                             </p>
                         </article>
                     </li>
@@ -234,25 +229,23 @@
                     <h2 id="about-project" class="section__title">About the project</h2>
                 </header>
 
-                <div class="richtext">
-                    <p>
-                        Lumina is an editorial project born to preserve the memory of women in science. Conceived by an
-                        MMI student, it blends research, design, and storytelling.
-                    </p>
-                </div>
+                <p class="section__text">
+                    Lumina is an editorial project created to preserve the memory of women in science.
+                    Designed by an MMI student, it combines research, design, and storytelling.
+                </p>
 
                 <footer class="section__footer">
-                    <a class="btn btn--outline" href="/en/about.html">Learn more</a>
+                    <a class="btn btn--outline btn--cta-index-outline" href="/en/about.html">Learn more</a>
                 </footer>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER (MATCHES HOME) -->
+    <!-- FOOTER (STRICTLY IDENTICAL TO INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
-            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
+            <a class="footer__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
                 <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
             </a>
 
@@ -265,7 +258,7 @@
                 <ul class="footer__groups u-list-unstyled">
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/">Home</a>
+                        <a class="footer__group-link" href="/en/index.html">Home</a>
                     </li>
 
                     <li class="footer__group">
@@ -285,21 +278,15 @@
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item"><a class="footer__link" href="/en/article-women-in-science.html">In
                                     literature</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/luminous-women.html">Luminous
-                                    women</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/feminine-lights.html">Feminine
+                                    lights</a></li>
                             <li class="footer__item"><a class="footer__link" href="/en/matilda-effect.html"
-                                    aria-current="page">Matilda effect</a></li>
+                                    aria-current="page">Matilda Effect</a></li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/about.html">About</a>
-                        <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item"><a class="footer__link" href="/en/about.html">The project</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/other-projects.html#sites">Other
-                                    projects</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/glossary.html">Glossary</a></li>
-                        </ul>
                     </li>
 
                     <li class="footer__group">

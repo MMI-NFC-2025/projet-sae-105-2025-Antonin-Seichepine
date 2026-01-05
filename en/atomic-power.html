@@ -7,40 +7,38 @@
 
     <title>Atomic Power — When science becomes propaganda | Lumina</title>
     <meta name="description"
-        content="Analysis of the 1946 documentary Atomic Power: when science becomes a tool of political propaganda." />
+        content="Analysis of the documentary Atomic Power (1946): when science becomes a tool of political propaganda." />
 
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js" defer></script>
+    <script type="module" src="/src/js/menu.js" defer></script>
 </head>
 
 <body class="page page--article page--article-cinema">
 
-    <!-- HEADER: SAME AS INDEX -->
+    <!-- HEADER : IDENTICAL COPY OF INDEX -->
     <header class="header header--solid">
         <div class="header__inner">
-            <nav class="lang" aria-label="Language switcher">
+            <nav class="lang" aria-label="Language selector">
                 <a class="lang__link" href="/fr/atomic-power.html" lang="fr">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link lang__link--active" href="/en/atomic-power.html" aria-current="page">EN</a>
+                <a class="lang__link lang__link--active" href="/en/index.html" aria-current="page">EN</a>
             </nav>
 
-            <a class="header__brand" href="/en/" aria-label="Back to Lumina home">
-                <span class="brand">LUMINA</span>
+            <a class="header__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+                <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
             </a>
 
-            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
-                aria-controls="site-menu">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-                <span class="menu-btn__bar" aria-hidden="true"></span>
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-controls="site-menu"
+                aria-expanded="false">
+                <span class="menu-btn__bar menu-btn__bar--top"></span>
+                <span class="menu-btn__bar menu-btn__bar--bottom"></span>
             </button>
         </div>
 
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/en/lise-meitner.html" aria-current="page">Lise Meitner</a>
-                </li>
+                <li class="menu__item"><a class="menu__link" href="/en/index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html">Women in Science</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
@@ -64,20 +62,20 @@
                     <img class="article-hero__image" src="/assets/img/Articles/article_film.webp"
                         alt="Nuclear explosion filmed during a U.S. test." />
                     <figcaption class="article-hero__caption">
-                        Atomic mushroom cloud — symbol of power and fear.
+                        Atomic mushroom cloud — a symbol of power and fear.
                     </figcaption>
                 </figure>
 
                 <p class="article-hero__lead">
-                    Released in <time datetime="1946">1946</time>, the documentary <em>Atomic Power</em> set out to
-                    celebrate the victory of progress.
-                    But behind its triumphant tone lies another reality:
-                    that of <strong>science used as a political tool</strong>.
+                    Released in <time datetime="1946">1946</time>, the documentary <em>Atomic Power</em> aimed to
+                    celebrate
+                    the victory of progress.
+                    But behind its triumphant tone lies another reality: science used as a
+                    <strong>political tool</strong>.
                 </p>
 
                 <p class="article-hero__intro">
-                    This film shows how science can be
-                    <strong>staged</strong>, shaped, and instrumentalized to serve a narrative.
+                    This film shows how science can be staged, shaped, and instrumentalized to serve a narrative.
                 </p>
             </div>
         </header>
@@ -93,16 +91,21 @@
                     </h2>
 
                     <p class="article-section__text">
-                        The film shows factories, laboratories, and spectacular explosions.
-                        Nuclear fission becomes a <strong>symbol of human intelligence</strong>
-                        and American power.
+                        The film opens with focused faces, laboratories, spectacular explosions.
+                        Nuclear fission becomes a <strong>symbol of human ingenuity</strong> and military power.
                     </p>
 
                     <p class="article-section__text">
-                        Everything is designed to make the bomb appear as
-                        the natural culmination of progress.
+                        But there is a shadow: by glorifying the bombings of Hiroshima and Nagasaki, the documentary
+                        acts
+                        as a screen,
+                        obscuring horror in favor of scientific triumph.
                     </p>
                 </section>
+
+                <div class="divider divider--motif1" aria-hidden="true">
+                    <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
+                </div>
 
                 <!-- SEE ALSO -->
                 <section class="article-section article-section--cta" aria-labelledby="sec-voir-aussi-1">
@@ -111,7 +114,7 @@
                     <ul class="cards u-list-unstyled">
                         <li class="cards__item">
                             <article class="card-article">
-                                <a class="card-article__link" href="/en/lise-meitner.html">
+                                <a class="card-article__link" href="/en/article-lise.html">
                                     <img class="card-article__img" src="/assets/img/cards/card1.webp" alt=""
                                         loading="lazy" width="328" height="169" />
                                     <h3 class="card-article__title">
@@ -127,33 +130,35 @@
                 <!-- SECTION 2 -->
                 <section class="article-section" aria-labelledby="sec-politique">
                     <h2 class="article-section__title" id="sec-politique">
-                        Science at the service of politics
+                        Science in the service of politics
                     </h2>
 
                     <p class="article-section__text">
-                        Nothing in <em>Atomic Power</em> is left to chance.
-                        Solemn voice-over, heroic music, sharp editing:
-                        everything is built to <em>persuade rather than question</em>.
+                        Nothing in <em>Atomic Power</em> is left to chance. Solemn voice-over, heroic music,
+                        rhythmic editing: every shot is a political gesture.
                     </p>
 
                     <p class="article-section__text">
-                        Science becomes a tool of <strong>political narrative</strong>.
-                        It does not explain — it reassures.
+                        This glorification of nuclear power comes with scientific endorsement. The narrative erases
+                        victims and gives the bomb the appearance of a solution.
                     </p>
 
                     <p class="article-section__text">
-                        This glorification of nuclear power hides dangers,
-                        ethical questions, and human consequences.
+                        Even in its staging, science is no longer neutral: it becomes an argument.
                     </p>
 
                     <figure class="article-figure">
                         <img class="article-figure__image" src="/assets/img/Articles/article_film.webp"
-                            alt="Archive image related to the Manhattan Project." />
+                            alt="Archival image related to the Manhattan Project." />
                         <figcaption class="article-figure__caption">
-                            Archive image — <em>Atomic Power</em>.
+                            Archival image — <em>Atomic Power</em>.
                         </figcaption>
                     </figure>
                 </section>
+
+                <div class="divider divider--motif1" aria-hidden="true">
+                    <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
+                </div>
 
                 <!-- SECTION 3 -->
                 <section class="article-section" aria-labelledby="sec-cinema">
@@ -162,28 +167,19 @@
                     </h2>
 
                     <p class="article-section__text">
-                        Cinema quickly seized on nuclear power:
+                        Cinema quickly embraced nuclear power:
                         a symbol of destruction, but also of fascination.
                     </p>
 
-                    <!-- CAROUSEL: 5 Oppenheimer posters -->
-                    <div class="carousel" aria-label="Oppenheimer movie posters">
-                        <ul class="carousel__track u-list-unstyled">
-                            <li class="carousel__slide">
+                    <div class="carousel" data-carousel="swipe" aria-label="Oppenheimer film posters">
+                        <ul class="carousel__track u-list-unstyled" data-carousel-track>
+                            <li class="carousel__slide" aria-hidden="false">
                                 <img class="carousel__img" src="/assets/img/carousel/carousel1.webp"
-                                    alt="Poster of the film Oppenheimer — version 1" loading="lazy" />
+                                    alt="Poster of the film Oppenheimer" loading="lazy" />
                             </li>
-                            <li class="carousel__slide">
+                            <li class="carousel__slide" aria-hidden="true">
                                 <img class="carousel__img" src="/assets/img/carousel/carousel2.webp"
-                                    alt="Poster of the film Oppenheimer — version 2" loading="lazy" />
-                            </li>
-                            <li class="carousel__slide">
-                                <img class="carousel__img" src="/assets/img/carousel/carousel3.webp"
-                                    alt="Poster of the film Oppenheimer — version 3" loading="lazy" />
-                            </li>
-                            <li class="carousel__slide">
-                                <img class="carousel__img" src="/assets/img/carousel/carousel4.webp"
-                                    alt="Poster of the film Oppenheimer — version 4" loading="lazy" />
+                                    alt="Alternative poster of the film Oppenheimer" loading="lazy" />
                             </li>
                         </ul>
                     </div>
@@ -191,14 +187,19 @@
 
                 <!-- QUOTE -->
                 <section class="article-section article-section--quote" aria-labelledby="sec-citation">
-
-                    <blockquote class="quote">
-                        <p class="quote__text">
-                            "Science has given us the power to transform the world,
-                            but not always the wisdom to guide it."
-                        </p>
-                        <cite class="quote__author">Carl Sagan</cite>
-                    </blockquote>
+                    <section class="quote" aria-label="Quote">
+                        <div class="quote__inner wrapper">
+                            <blockquote class="quote__content">
+                                <p class="quote__text">
+                                    “Science has given us the power to transform the world,
+                                    but not always the wisdom to guide it.”
+                                </p>
+                                <footer class="quote__footer">
+                                    <cite class="quote__author">Carl Sagan</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </section>
                 </section>
 
                 <!-- SECTION 4 -->
@@ -208,19 +209,18 @@
                     </h2>
 
                     <p class="article-section__text">
-                        <em>Atomic Power</em> is not only a propaganda film:
-                        it reflects a generation convinced it could dominate nature.
+                        <em>Atomic Power</em> is not just a period film: it is the mirror of a generation
+                        convinced it could dominate the world through science.
                     </p>
 
                     <p class="article-section__text">
-                        It shows that nuclear power is both
-                        <strong>a tool of progress</strong> and
-                        <strong>a permanent threat</strong>.
+                        It shows that science, when it serves a political discourse, can become a narrative — a truth.
                     </p>
 
                     <p class="article-section__text">
-                        A crucial reminder: scientific progress
-                        can become dangerous when it lacks moral reflection.
+                        Between fascination and danger, the documentary reveals the enduring tensions of nuclear power.
+                        Even after the blast of the bomb, the question remains: how can we ensure that science remains
+                        progress?
                     </p>
                 </section>
 
@@ -228,10 +228,10 @@
         </article>
     </main>
 
-    <!-- FOOTER: SAME AS INDEX -->
+    <!-- FOOTER : IDENTICAL COPY OF INDEX -->
     <footer class="footer">
         <div class="footer__inner wrapper">
-            <a class="footer__brand" href="/en/" aria-label="Back to Lumina home">
+            <a class="footer__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
                 <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
             </a>
 
@@ -244,7 +244,7 @@
                 <ul class="footer__groups u-list-unstyled">
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/">Home</a>
+                        <a class="footer__group-link" href="/en/index.html">Home</a>
                     </li>
 
                     <li class="footer__group">
@@ -254,8 +254,8 @@
                             </li>
                             <li class="footer__item"><a class="footer__link" href="/en/nuclear-fission.html">Nuclear
                                     fission</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/atomic-power.html"
-                                    aria-current="page">Cinema and science</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/atomic-power.html">Cinema and
+                                    science</a></li>
                         </ul>
                     </li>
 
@@ -264,22 +264,15 @@
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item"><a class="footer__link" href="/en/article-women-in-science.html">In
                                     literature</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/luminous-women.html">Luminous
-                                    women</a></li>
+                            <li class="footer__item"><a class="footer__link" href="/en/feminine-lights.html">Feminine
+                                    lights</a></li>
                             <li class="footer__item"><a class="footer__link" href="/en/matilda-effect.html">Matilda
-                                    effect</a></li>
+                                    Effect</a></li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/en/about.html">About</a>
-                        <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item"><a class="footer__link" href="/en/about.html">The project</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/other-projects.html#sites">Other
-                                    projects</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/en/glossary.html">Glossary</a>
-                            </li>
-                        </ul>
                     </li>
 
                     <li class="footer__group">
