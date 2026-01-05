@@ -1,3 +1,3 @@
-# Pages en anglais
+# Page en français
 
-Placez ici les pages en anglais.
+Placez ici les pages en français.

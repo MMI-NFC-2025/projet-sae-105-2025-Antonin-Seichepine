@@ -11,7 +11,8 @@
 
     <link rel="icon" href="/assets/favicons/favicon.ico" />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/menu.js" defer></script>
+    <!-- FIX W3C : type=module = defer implicite -->
+    <script type="module" src="/src/js/menu.js"></script>
 </head>
 
 <body class="page page--article page--article-fission">
@@ -27,7 +28,6 @@
 
             <a class="header__brand" href="/fr/" aria-label="Retour à l'accueil Lumina">
                 <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
-
             </a>
 
             <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu"
@@ -37,7 +37,7 @@
             </button>
         </div>
 
-        <!-- Arbo header: Accueil, Lise Meitner, Femme de science, A propos, Contact -->
+        <!-- Arbo header -->
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="/fr/" aria-current="page">Accueil</a></li>
@@ -62,7 +62,9 @@
                 <figure class="article-hero__media">
                     <img class="article-hero__image" src="/assets/img/Articles/article_vulg.webp"
                         alt="Minerai d’uraninite utilisé pour produire de l’uranium." />
-                    <figcaption class="article-hero__caption">Minerai d’uraninite - une source d’uranium.</figcaption>
+                    <figcaption class="article-hero__caption">
+                        Minerai d’uraninite - une source d’uranium.
+                    </figcaption>
                 </figure>
 
                 <p class="article-hero__lead">
@@ -80,7 +82,6 @@
             </div>
         </header>
 
-        <!-- DIVIDER -->
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/icons/motif-separator-01.svg" alt="" loading="lazy" />
         </div>
@@ -98,22 +99,23 @@
                     </p>
 
                     <h3 class="article-section__subtitle">Stabilité et fission</h3>
+
                     <p class="article-section__text">
                         Ce noyau est généralement stable, mais certains éléments comme
-                        l’<strong>uranium&nbsp;235</strong>
-                        le sont moins. Un simple neutron peut suffire à le déstabiliser.
+                        l’<strong>uranium&nbsp;235</strong> le sont moins.
+                        Un simple neutron peut suffire à le déstabiliser.
                     </p>
+
                     <p class="article-section__text">
                         Quand cela arrive, le noyau se divise en deux parties plus petites, libérant une immense
-                        quantité d’énergie thermique et lumineuse : c’est le processus de <strong>fission
-                            nucléaire</strong>.
+                        quantité d’énergie thermique et lumineuse : c’est le processus de
+                        <strong>fission nucléaire</strong>.
                     </p>
 
                     <div class="article-section__cta">
                         <h1 class="article-section__cta-title">Glossaire notions clés</h1>
                         <a class="btn btn--cta-index" href="/fr/glossaire.html">Voir les définitions</a>
                     </div>
-
                 </section>
 
                 <section class="article-section" aria-labelledby="sec-chain">
@@ -126,12 +128,14 @@
                     </p>
 
                     <h3 class="article-section__subtitle">L’effet domino</h3>
+
                     <p class="article-section__text">
                         Ce cycle se répète indéfiniment : c’est ce qu’on appelle une <strong>réaction en
                             chaîne</strong>.
                         On peut la comparer à une rangée de <strong>dominos</strong> : dès que le premier tombe, tout
                         s’enchaîne.
                     </p>
+
                     <p class="article-section__text">
                         Mais ici, chaque “chute” libère une énergie gigantesque à l’échelle atomique.
                         C’est ce principe qui rend la fission à la fois puissante et difficile à maîtriser.
@@ -140,7 +144,8 @@
                     <figure class="article-figure">
                         <img class="article-figure__image" src="/assets/img/Articles/article_vulg2.webp"
                             alt="Illustration d’un effet domino représentant une réaction en chaîne." />
-                        <figcaption class="article-figure__caption">Réaction en chaîne : l’effet domino.
+                        <figcaption class="article-figure__caption">
+                            Réaction en chaîne : l’effet domino.
                         </figcaption>
                     </figure>
                 </section>
@@ -162,23 +167,27 @@
                     <figure class="article-figure">
                         <img class="article-figure__image" src="/assets/img/Articles/article_vulg3.webp"
                             alt="Illustration d’une centrale nucléaire." />
-                        <figcaption class="article-figure__caption">La chaleur de la fission peut produire de
-                            l’électricité.</figcaption>
+                        <figcaption class="article-figure__caption">
+                            La chaleur de la fission peut produire de l’électricité.
+                        </figcaption>
                     </figure>
                 </section>
 
                 <section class="article-section" aria-labelledby="sec-ethics">
-                    <h2 class="article-section__title" id="sec-ethics">La fission, entre progrès et responsabilité
+                    <h2 class="article-section__title" id="sec-ethics">
+                        La fission, entre progrès et responsabilité
                     </h2>
 
                     <p class="article-section__text">
                         Cette réaction, capable d’éclairer des villes entières, a aussi conduit à la création de la
                         <strong>bombe atomique</strong>.
                     </p>
+
                     <p class="article-section__text">
                         Lise Meitner, qui en avait donné l’explication théorique, refusa d’y participer, convaincue que
                         la science devait éclairer, non détruire.
                     </p>
+
                     <p class="article-section__text">
                         Ce dilemme moral traverse toujours notre époque : comment concilier savoir et
                         responsabilité&nbsp;?
@@ -187,8 +196,9 @@
                     <section class="quote" aria-label="Citation">
                         <div class="quote__inner wrapper">
                             <blockquote class="quote__content">
-                                <p class="quote__text">« Les scientifiques ont une responsabilité dans ce qu’ils
-                                    découvrent. »</p>
+                                <p class="quote__text">
+                                    « Les scientifiques ont une responsabilité dans ce qu’ils découvrent. »
+                                </p>
                                 <footer class="quote__footer">
                                     <cite class="quote__author">Albert Einstein</cite>
                                 </footer>
@@ -212,8 +222,6 @@
                         devient parfois un outil de narration, entre <strong>promesse</strong> et
                         <strong>menace</strong>.
                     </p>
-
-
 
                     <ul class="cards u-list-unstyled">
                         <li class="cards__item">
@@ -257,34 +265,54 @@
                     <li class="footer__group">
                         <a class="footer__group-link" href="/fr/lise-meitner.html">Lise Meitner</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item"><a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/lise-meitner.html">Biographie</a>
                             </li>
-                            <li class="footer__item"><a class="footer__link" href="/fr/vulgarisation.html"
-                                    aria-current="page">Fission nucléaire</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/fr/atomic-power.html">Cinéma
-                                    et science</a></li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/vulgarisation.html" aria-current="page">
+                                    Fission nucléaire
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/atomic-power.html">Cinéma et science</a>
+                            </li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/fr/femmes-de-science.html">Femme de science</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item"><a class="footer__link"
-                                    href="/fr/article-femme-de-science.html">Dans la littérature</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/fr/lumieres-feminines.html">Lumière
-                                    féminine</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/fr/effet-matilda.html">Effet
-                                    Matilda</a></li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/article-femme-de-science.html">
+                                    Dans la littérature
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/lumieres-feminines.html">
+                                    Lumière féminine
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/effet-matilda.html">
+                                    Effet Matilda
+                                </a>
+                            </li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
                         <a class="footer__group-link" href="/fr/a-propos.html">A propos</a>
                         <ul class="footer__list u-list-unstyled">
-                            <li class="footer__item"><a class="footer__link" href="/fr/a-propos.html">Le projet</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/fr/autres-projets.html">Les
-                                    autres projets</a></li>
-                            <li class="footer__item"><a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/a-propos.html">Le projet</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/autres-projets.html">
+                                    Les autres projets
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
                             </li>
                         </ul>
                     </li>

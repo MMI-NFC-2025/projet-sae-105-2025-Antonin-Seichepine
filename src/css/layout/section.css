@@ -43,13 +43,13 @@
 }
 
 /* FR global section sizing aligned with home reference */
-html[lang="fr"] .section__title {
+.section__title {
     font-size: 1.85rem;
     letter-spacing: 0.06em;
 }
 
 @media (max-width: 480px) {
-    html[lang="fr"] .section__title {
+.section__title {
         font-size: 1.45rem;
     }
 }

@@ -5,28 +5,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Women in Science — Lumina</title>
+    <title>Women in science — Lumina</title>
     <meta name="description"
-        content="Women in science: portraits, legacies, examples and resources to understand the invisibilization of women scientists." />
+        content="Women in science: profiles, legacies, examples, and resources to understand the invisibilization of women scientists." />
 
     <link rel="icon" href="/assets/favicons/favicon.ico" />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/menu.js" defer></script>
+    <script type="module" src="/src/js/menu.js"></script>
 </head>
 
 <body class="page page--women-science">
 
-    <!-- HEADER (STRICTLY IDENTICAL TO INDEX) -->
+    <!-- HEADER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <header class="header header--solid">
         <div class="header__inner">
             <nav class="lang" aria-label="Language selector">
-                <a class="lang__link" href="/fr/femmes-de-science.html" lang="fr">FR</a>
+                <a class="lang__link lang__link--active" href="/fr/femmes-de-science.html" aria-current="page">FR</a>
                 <span class="lang__sep" aria-hidden="true">/</span>
-                <a class="lang__link lang__link--active" href="/en/index.html" aria-current="page">EN</a>
+                <a class="lang__link" href="/en/women-in-science.html" lang="en">EN</a>
             </nav>
 
-            <a class="header__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+            <a class="header__brand" href="/fr/" aria-label="Back to Lumina home">
                 <img class="brand" src="/assets/img/logosite.svg" alt="Lumina" width="120" height="28" />
+
             </a>
 
             <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-controls="site-menu"
@@ -36,14 +37,14 @@
             </button>
         </div>
 
+        <!-- Arbo header: Accueil, Lise Meitner, Femme de science, A propos, Contact -->
         <nav class="menu" id="site-menu" hidden>
             <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="/en/index.html">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/lise-meitner.html">Lise Meitner</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/women-in-science.html" aria-current="page">Women
-                        in Science</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/" aria-current="page">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/lise-meitner.html">Lise Meitner</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/femmes-de-science.html">Women in science</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/a-propos.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             </ul>
 
             <div class="menu__media" aria-hidden="true">
@@ -63,14 +64,14 @@
                         height="240" />
                 </figure>
 
-                <h1 id="hero-title" class="hero__title">Women in Science</h1>
+                <h1 id="hero-title" class="hero__title">Women in science</h1>
 
                 <p class="hero__subtitle">
-                    They illuminated the world, yet history has often forgotten their names.
+                    They illuminated the world, but history often forgot their names.
                 </p>
 
                 <div class="hero__actions">
-                    <a class="btn btn--cta-index" href="#portraits">Discover their journeys</a>
+                    <a class="btn btn--cta-index" href="#portraits">See their journeys</a>
                 </div>
             </div>
         </section>
@@ -80,7 +81,7 @@
             <img class="divider__svg" src="/assets/img/motifs/motif2.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- WHO ARE THEY -->
+        <!-- QUI SONT ELLES -->
         <section class="section section--wrapper section--who" aria-labelledby="who-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
@@ -92,10 +93,10 @@
                 <div class="section__inner wrapper">
                     <div class="card-feature card-feature--bio">
                         <p class="card-feature__text">
-                            Discover the women who shaped science but whose memory has faded.
+                            Discover those who marked science but whose memory faded.
                         </p>
                         <p class="card-feature__text">
-                            Through their journeys and stories, we restore their legacy.
+                            Through their journeys and their stories, we bring them back.
                         </p>
                     </div>
                 </div>
@@ -107,7 +108,7 @@
             <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- THEIR LEGACIES -->
+        <!-- LEURS HÉRITAGES -->
         <section class="section section--wrapper" aria-labelledby="legacy-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
@@ -125,7 +126,7 @@
             <img class="divider__svg" src="/assets/img/motifs/motif3.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- THE WOMEN SCIENTISTS -->
+        <!-- LES FEMMES SCIENTIFIQUES -->
         <section class="section section--wrapper" id="portraits" aria-labelledby="portraits-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
@@ -137,7 +138,7 @@
                 <ul class="cards cards--stack u-list-unstyled">
                     <li class="cards__item">
                         <article class="card-article">
-                            <a class="card-article__link" href="/en/article-women-in-science.html">
+                            <a class="card-article__link" href="/fr/article-femme-de-science.html">
                                 <img class="card-article__img" src="/assets/img/cards/card3.webp" alt="" loading="lazy"
                                     width="328" height="169" />
                                 <h3 class="card-article__title">
@@ -150,11 +151,11 @@
 
                     <li class="cards__item">
                         <article class="card-article">
-                            <a class="card-article__link" href="/en/feminine-lights.html">
+                            <a class="card-article__link" href="/fr/lumieres-feminines.html">
                                 <img class="card-article__img" src="/assets/img/cards/card4.webp" alt="" loading="lazy"
                                     width="328" height="169" />
                                 <h3 class="card-article__title">
-                                    Marie Curie and women in science: a book shedding light on oblivion
+                                    Marie Curie and women in science: a book that sheds light on oblivion
                                 </h3>
                                 <span class="card-article__cta">Read the article</span>
                             </a>
@@ -169,7 +170,7 @@
             <img class="divider__svg" src="/assets/img/motifs/motif4.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- EXAMPLE: LISE MEITNER -->
+        <!-- EXEMPLE : LISE MEITNER -->
         <section class="section section--wrapper" aria-labelledby="example-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
@@ -181,7 +182,7 @@
                 <ul class="cards cards--stack u-list-unstyled">
                     <li class="cards__item">
                         <article class="card-article">
-                            <a class="card-article__link" href="/en/article-lise.html">
+                            <a class="card-article__link" href="/fr/article-lise.html">
                                 <img class="card-article__img" src="/assets/img/cards/card1.webp" alt="" loading="lazy"
                                     width="328" height="169" />
                                 <h3 class="card-article__title">
@@ -200,20 +201,20 @@
             <img class="divider__svg" src="/assets/img/motifs/motif1.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- MATILDA EFFECT -->
+        <!-- EFFET MATILDA -->
         <section class="section section--matilda section--matilda-block" aria-labelledby="matilda-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
-                    <h2 id="matilda-title" class="section__title">The Matilda Effect</h2>
+                    <h2 id="matilda-title" class="section__title">The Matilda effect</h2>
                 </header>
 
                 <article class="card-feature">
                     <p class="card-feature__text">
-                        The Matilda Effect describes the erasure of women from scientific history.
+                        The Matilda effect describes the erasure of women in scientific history.
                     </p>
 
-                    <a class="btn btn--cta-index" href="/en/matilda-effect.html">
-                        Access the timeline
+                    <a class="btn btn--cta-index" href="/fr/effet-matilda.html">
+                        View the timeline
                     </a>
                 </article>
             </div>
@@ -224,7 +225,7 @@
             <img class="divider__svg" src="/assets/img/motifs/motif2.svg" alt="" loading="lazy" />
         </div>
 
-        <!-- ORIGIN OF LUMINA -->
+        <!-- À L’ORIGINE DE LUMINA -->
         <section class="section section--matilda section--origin" aria-labelledby="origin-title">
             <div class="section__inner wrapper">
                 <header class="section__header">
@@ -238,51 +239,50 @@
                         Lise Meitner is at the origin of the Lumina project.
                     </p>
 
-                    <a class="btn btn--cta-index" href="/en/lise-meitner.html">
+                    <a class="btn btn--cta-index" href="/fr/lise-meitner.html">
                         Discover her story
                     </a>
                 </article>
             </div>
         </section>
-
         <div class="divider" aria-hidden="true">
             <img class="divider__svg" src="/assets/img/motifs/motif3.svg" alt="" loading="lazy" />
         </div>
 
     </main>
 
-    <!-- FOOTER (STRICTLY IDENTICAL TO INDEX) -->
+    <!-- FOOTER (STRICTEMENT IDENTIQUE À L’INDEX) -->
     <footer class="footer">
         <div class="footer__inner wrapper">
-            <a class="footer__brand" href="/en/index.html" aria-label="Back to Lumina homepage">
+            <a class="footer__brand" href="/fr/" aria-label="Back to Lumina home">
                 <img class="footer__logo" src="/assets/img/logosite.svg" alt="Lumina" />
             </a>
 
             <p class="footer__note">
                 Project completed in 2025 as part of an educational exercise at the
-                <span class="u-italic">MMI department of Montbéliard</span>.
+                <span class="u-italic">MMI de Montbéliard</span>.
             </p>
 
-            <nav class="footer__nav" aria-label="Footer navigation">
+            <nav class="footer__nav" aria-label="Navigation de pied de page">
                 <ul class="footer__groups u-list-unstyled">
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/index.html">Home</a>
+                        <a class="footer__group-link" href="/fr/">Home</a>
                     </li>
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/lise-meitner.html">Lise Meitner</a>
+                        <a class="footer__group-link" href="/fr/lise-meitner.html">Lise Meitner</a>
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/lise-meitner.html">Biography</a>
+                                <a class="footer__link" href="/fr/lise-meitner.html">Biography</a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/nuclear-fission.html">
+                                <a class="footer__link" href="/fr/vulgarisation.html">
                                     Nuclear fission
                                 </a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/atomic-power.html">
+                                <a class="footer__link" href="/fr/atomic-power.html">
                                     Cinema and science
                                 </a>
                             </li>
@@ -290,40 +290,40 @@
                     </li>
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/women-in-science.html" aria-current="page">Women in
-                            Science</a>
+                        <a class="footer__group-link" href="/fr/femmes-de-science.html" aria-current="page">Women in
+                            science</a>
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/article-women-in-science.html">
+                                <a class="footer__link" href="/fr/article-femme-de-science.html">
                                     In literature
                                 </a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/feminine-lights.html">
-                                    Feminine lights
+                                <a class="footer__link" href="/fr/lumieres-feminines.html">
+                                    Luminous women
                                 </a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/matilda-effect.html">
-                                    Matilda Effect
+                                <a class="footer__link" href="/fr/effet-matilda.html">
+                                    Matilda effect
                                 </a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/about.html">About</a>
+                        <a class="footer__group-link" href="/fr/a-propos.html">About</a>
                         <ul class="footer__list u-list-unstyled">
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/about.html">The project</a>
+                                <a class="footer__link" href="/fr/a-propos.html">The project</a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/other-projects.html">
+                                <a class="footer__link" href="/fr/autres-projets.html">
                                     Other projects
                                 </a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="/en/glossary.html">
+                                <a class="footer__link" href="/fr/glossaire.html">
                                     Glossary
                                 </a>
                             </li>
@@ -331,7 +331,7 @@
                     </li>
 
                     <li class="footer__group">
-                        <a class="footer__group-link" href="/en/contact.html">Contact</a>
+                        <a class="footer__group-link" href="/fr/contact.html">Contact</a>
                     </li>
 
                 </ul>

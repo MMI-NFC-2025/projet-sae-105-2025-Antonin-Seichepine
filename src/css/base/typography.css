@@ -73,17 +73,16 @@ p {
     font-style: italic;
 }
 
-/* Slightly tighten EN typography to match FR layout when strings are longer */
-html[lang="en"] .hero__subtitle,
-html[lang="en"] .section__intro,
-html[lang="en"] .section__chapo {
+.hero__subtitle,
+.section__intro,
+.section__chapo {
     font-size: clamp(1rem, 2.6vw, var(--fs-intro));
 }
 
-html[lang="en"] .hero__title {
+.hero__title {
     font-size: clamp(2rem, 5vw, var(--fs-h2));
 }
 
-html[lang="en"] .card-article__title {
+.card-article__title {
     font-size: clamp(0.95rem, 2.4vw, var(--fs-ui-sm));
 }
