@@ -42,3 +42,6 @@
 @import "pages/vulgarisation.css";
 @import "pages/atomic-power.css";
 @import "pages/other-projects.css";
+
+/* Responsive */
+@import "responsive/mobile.css";
