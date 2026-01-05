@@ -1,0 +1,69 @@
+/* Bandeau violet pour "L’esprit du projet" (même style que "Qui sont elles") */
+.page--about .section--spirit {
+    background: transparent;
+}
+
+.page--about .section--spirit .section__title {
+    color: var(--color-primary);
+}
+
+.page--about .section--spirit .section__band {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    margin-top: 1.2rem;
+    padding: 2.6rem 0 2.3rem;
+}
+
+.page--about .section--spirit .section__band .wrapper {
+    width: min(100%, 32rem);
+}
+
+.page--about .section--spirit .card-feature {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    text-align: left;
+    color: inherit;
+}
+
+/* Bloc "Les autres projets" aligné sur le Matilda de l'accueil */
+.page--about .section--others .wrapper {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+.page--about .section--others .card-feature {
+    width: 100%;
+    border-radius: 0;
+    padding: 2.4rem clamp(1.5rem, 4vw, 3rem);
+    box-shadow: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page--about .section--others .card-feature__text {
+    max-width: 46rem;
+    margin: 0 auto 1.05rem;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .page--about .section--others .card-feature {
+        padding: 1.7rem 1.05rem;
+    }
+
+    .page--about .section--others .card-feature__text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0 auto 0.75rem;
+        max-width: 28rem;
+        padding: 0 0.25rem;
+    }
+
+    .page--about .section--others .btn--cta-index {
+        width: 100%;
+        justify-content: center;
+    }
+}

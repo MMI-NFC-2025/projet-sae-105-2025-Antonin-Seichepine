@@ -12,6 +12,15 @@
     border-color: var(--color-primary-soft) !important;
 }
 
+.btn--outline.btn--cta-index-outline:hover,
+.btn--outline.btn--cta-index-outline:focus-visible {
+    background: var(--color-primary-soft) !important;
+    color: var(--color-text-invert) !important;
+    border-color: var(--color-primary-soft) !important;
+    box-shadow: none;
+    transform: none;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;

@@ -1,0 +1,81 @@
+/* Bandeau violet pour "Qui sont elles" (même logique que la bio Lise) */
+.page--women-science .section--who {
+    background: transparent;
+}
+
+.page--women-science .section--who .section__title {
+    color: var(--color-primary);
+}
+
+.page--women-science .section--who .section__band {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    margin-top: 1.2rem;
+    padding: 2.6rem 0 2.3rem;
+}
+
+.page--women-science .section--who .section__band .wrapper {
+    width: min(100%, 32rem);
+}
+
+.page--women-science .section--who .card-feature {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    text-align: left;
+    color: inherit;
+}
+
+/* Centrer le texte d’intro de "Leurs héritages" */
+.page--women-science [aria-labelledby="legacy-title"] .section__text {
+    text-align: center;
+}
+
+/* Matilda/Origin blocks aligned with home Matilda */
+.page--women-science .section--matilda-block .wrapper,
+.page--women-science .section--origin .wrapper {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+.page--women-science .section--matilda-block .card-feature,
+.page--women-science .section--origin .card-feature {
+    width: 100%;
+    border-radius: 0;
+    padding: 2.4rem clamp(1.5rem, 4vw, 3rem);
+    box-shadow: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page--women-science .section--matilda-block .card-feature__text,
+.page--women-science .section--origin .card-feature__text {
+    max-width: 46rem;
+    margin: 0 auto 1.05rem;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    .page--women-science .section--matilda-block .card-feature,
+    .page--women-science .section--origin .card-feature {
+        padding: 1.7rem 1.05rem;
+    }
+
+    .page--women-science .section--matilda-block .card-feature__text,
+    .page--women-science .section--origin .card-feature__text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0 auto 0.75rem;
+        max-width: 28rem;
+        padding: 0 0.25rem;
+    }
+
+    .page--women-science .section--matilda-block .btn--cta-index,
+    .page--women-science .section--origin .btn--cta-index {
+        width: 100%;
+        justify-content: center;
+    }
+}

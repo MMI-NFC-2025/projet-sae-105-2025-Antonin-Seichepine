@@ -17,7 +17,7 @@
 
 .section__title {
     font-family: var(--font-title);
-    font-size: 1.25rem;
+    font-size: 1.85rem;
     font-weight: var(--fw-black);
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -40,4 +40,16 @@
 
 .section--about {
     background: var(--color-bg-main);
+}
+
+/* FR global section sizing aligned with home reference */
+html[lang="fr"] .section__title {
+    font-size: 1.85rem;
+    letter-spacing: 0.06em;
+}
+
+@media (max-width: 480px) {
+    html[lang="fr"] .section__title {
+        font-size: 1.45rem;
+    }
 }

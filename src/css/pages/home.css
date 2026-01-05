@@ -1,11 +1,116 @@
+/* Home hero boost (FR only, match larger mock) */
+html[lang="fr"] .page--home .hero {
+    padding: 5.6rem 0 4.2rem;
+}
+
+html[lang="fr"] .page--home .hero__inner {
+    gap: 2.1rem;
+}
+
+html[lang="fr"] .page--home .hero__figure {
+    width: 22rem;
+}
+
+html[lang="fr"] .page--home .hero__title {
+    font-size: clamp(3.4rem, 8vw, 4.6rem);
+    letter-spacing: 0.06em;
+}
+
+html[lang="fr"] .page--home .hero__subtitle {
+    font-size: 1.3rem;
+    line-height: 1.65;
+}
+
+html[lang="fr"] .page--home .hero__actions {
+    margin-top: 0.4rem;
+}
+
+html[lang="fr"] .page--home .hero__more {
+    margin-top: 0.45rem;
+}
+
+html[lang="fr"] .page--home .quote__text {
+    font-size: 1.35rem;
+    line-height: 1.55;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+html[lang="fr"] .page--home .section__title {
+    font-size: 1.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+html[lang="fr"] .page--home .section--matilda .wrapper {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+html[lang="fr"] .page--home .section--matilda .card-feature {
+    width: 100%;
+    border-radius: 0;
+    padding: 2.4rem clamp(1.5rem, 4vw, 3rem);
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+html[lang="fr"] .page--home .section--matilda .card-feature__text {
+    max-width: 46rem;
+    margin: 0 auto 1.05rem;
+    text-align: center;
+}
+
+html[lang="fr"] .page--home .section--articles .section__inner {
+    margin-bottom: 1.8rem;
+}
+
+html[lang="fr"] .page--home .cards {
+    gap: 2.1rem;
+}
+
 /* Home-only typography tweaks (match mobile mock) */
 @media (max-width: 480px) {
     .page--home .hero {
         padding: 2.4rem 0 1.7rem;
     }
 
+    .page--home .section__inner {
+        align-items: center;
+        text-align: center;
+    }
+
+    .page--home .section__intro,
+    .page--home .section__text {
+        text-align: center;
+    }
+
+    .page--home .section .btn {
+        align-self: center;
+    }
+
+    .page--home .section__text {
+        text-align: center;
+    }
+
+    .page--home .cards {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+    }
+
+    .page--home .card-article,
+    .page--home .card-article--maquette {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .page--home .card-article__title {
+        text-align: center;
+    }
+
     .page--home .hero__inner {
-        gap: 1.1rem;
+        gap: 1.6rem;
     }
 
     .page--home .hero__actions {
@@ -18,9 +123,9 @@
     }
 
     .page--home .hero__title {
-        font-size: 1.65rem;
+        font-size: 2.15rem;
         font-weight: var(--fw-black);
-        letter-spacing: 0.08em;
+        letter-spacing: 0.06em;
         color: var(--color-primary);
     }
 
@@ -54,6 +159,12 @@
         color: var(--color-primary);
     }
 
+    html[lang="fr"] .page--home .section__title {
+        font-size: 1.45rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
     .page--home .card-article__title {
         font-size: 0.95rem;
         font-weight: var(--fw-bold);
@@ -74,5 +185,59 @@
 
     .page--home .card-article__link::before {
         margin: 0.55rem 0 0.3rem;
+    }
+
+    html[lang="fr"] .page--home .quote__text {
+        font-size: 1.15rem;
+        letter-spacing: 0.08em;
+        line-height: 1.5;
+    }
+
+    html[lang="fr"] .page--home .section--matilda .card-feature {
+        padding: 1.7rem 1.05rem;
+    }
+
+    html[lang="fr"] .page--home .section--matilda .card-feature__text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0 auto 0.75rem;
+        max-width: 28rem;
+        padding: 0 0.25rem;
+    }
+
+    html[lang="fr"] .page--home .section--matilda .btn--cta-index {
+        width: 100%;
+        justify-content: center;
+    }
+
+    html[lang="fr"] .page--home .hero {
+        padding: 3.6rem 0 2.8rem;
+    }
+
+    html[lang="fr"] .page--home .hero__inner {
+        gap: 1.6rem;
+    }
+
+    html[lang="fr"] .page--home .hero__figure {
+        width: 16.5rem;
+    }
+
+    html[lang="fr"] .page--home .hero__title {
+        font-size: 2.9rem;
+        letter-spacing: 0.06em;
+    }
+
+    html[lang="fr"] .page--home .hero__subtitle {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    html[lang="fr"] .page--home .hero__actions {
+        margin-top: 0.35rem;
+    }
+
+    html[lang="fr"] .page--home .hero__more {
+        margin-top: 0.4rem;
+        gap: 0.8rem;
     }
 }
