@@ -23,7 +23,7 @@
     .page--article-femmes-de-science .wrapper,
     .page--article-cinema .wrapper,
     .page--article-fission .wrapper {
-        width: min(100%, 21.5rem);
-        padding: 0 1rem;
+        width: min(100%, 28rem);
+        padding: 0 1.25rem;
     }
 }

@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : SEICHEPINE
+- PRÉNOM : Antonin
+- GROUPE : B1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : 

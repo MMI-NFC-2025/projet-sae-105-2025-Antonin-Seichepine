@@ -24,10 +24,26 @@
     }
 
     .main .card-feature .btn {
+        width: 100%;
         max-width: 100%;
         white-space: normal;
         text-align: center;
         flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .form--contact .form__submit {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        align-self: stretch;
+    }
+
+    .form--contact .form__input,
+    .form--contact .form__textarea {
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     main img,
