@@ -106,6 +106,21 @@
     color: var(--color-primary-soft);
 }
 
+.page--article .article-section[aria-labelledby^="see-also"] .section__title {
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin: 0 0 0.6rem;
+}
+
+.page--article .article-section[aria-labelledby^="see-also"] .cards {
+    justify-content: center;
+}
+
+.page--article .article-section[aria-labelledby^="see-also"] {
+    margin-bottom: 2.4rem;
+}
+
 .page--article-lise .article-section__subtitle,
 .page--article-lumieres-feminines .article-section__subtitle,
 .page--article-cinema .article-section__subtitle,
@@ -170,6 +185,14 @@
     box-shadow: none;
 }
 
+.page--article-femmes-de-science .article-section__cta .section__title,
+.page--article-lumieres-feminines .article-section__cta .section__title {
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin: 0;
+}
+
 .page--article-femmes-de-science .article-section__cta-text,
 .page--article-lumieres-feminines .article-section__cta-text {
     text-transform: uppercase;
@@ -177,6 +200,7 @@
     font-weight: var(--fw-black);
     color: var(--color-primary);
     text-align: center;
+    font-size: 0.92rem;
 }
 
 .page--article-femmes-de-science .article-section__cta .btn,
@@ -203,6 +227,7 @@
 }
 
 @media (max-width: 480px) {
+
     .page--article-lise .article-hero,
     .page--article-lumieres-feminines .article-hero,
     .page--article-fission .article-hero {

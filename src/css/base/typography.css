@@ -52,6 +52,11 @@ p {
     margin: 0;
 }
 
+strong {
+    color: var(--color-cta-pink);
+    font-weight: var(--fw-bold);
+}
+
 .section__intro,
 .section__chapo,
 .hero__subtitle {
