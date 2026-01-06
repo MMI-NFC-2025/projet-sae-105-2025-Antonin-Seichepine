@@ -65,7 +65,12 @@
 .page--article-fission .article-hero__caption {
     margin-top: 0.5rem;
     font-size: 0.82rem;
-    color: rgba(40, 19, 65, 0.75);
+    color: var(--color-primary);
+}
+
+.page--article .article-hero__caption,
+.page--article .article-figure__caption {
+    text-align: center;
 }
 
 .page--article-lise .article__inner,
@@ -158,7 +163,7 @@
 .page--article-fission .article-figure__caption {
     margin-top: 0.45rem;
     font-size: 0.82rem;
-    color: rgba(40, 19, 65, 0.75);
+    color: var(--color-primary);
 }
 
 .page--article-femmes-de-science .article-section__kicker,
