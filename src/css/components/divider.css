@@ -33,3 +33,18 @@
     transform: translateX(-50%);
     /* centrage visuel */
 }
+
+.page--article-lumieres-feminines .divider,
+.page--article-fission .divider {
+    padding: 1.6rem 0;
+}
+
+.page--article-femmes-de-science .divider {
+    padding: 1.6rem 0 1.4rem;
+}
+
+@media (max-width: 480px) {
+    .page--home .divider {
+        padding: 1.35rem 0;
+    }
+}

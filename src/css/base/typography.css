@@ -91,3 +91,18 @@ strong {
 .card-article__title {
     font-size: clamp(0.95rem, 2.4vw, var(--fs-ui-sm));
 }
+
+@media (max-width: 480px) {
+    main h1,
+    main h2,
+    main h3,
+    main h4,
+    main p,
+    main li,
+    main .card-article__title,
+    main .section__title,
+    main .hero__title {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+}

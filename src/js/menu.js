@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return url.hash ? url.hash.slice(1) : null;
     };
 
-    // Smooth scroll for same-page anchor links.
+    // Smooth scroll 
     document.addEventListener('click', (event) => {
         const link = event.target.closest('a[href]');
         if (!link || link.target === '_blank') return;

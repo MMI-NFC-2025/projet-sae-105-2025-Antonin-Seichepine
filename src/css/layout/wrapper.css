@@ -2,6 +2,15 @@
     background: var(--color-bg-main);
 }
 
+.page--others {
+    background: var(--color-bg-main);
+}
+
+.page--others .main {
+    position: relative;
+    overflow: hidden;
+}
+
 .wrapper {
     width: min(100%, 28rem);
     margin: 0 auto;
@@ -18,6 +27,22 @@
 }
 
 @media (max-width: 480px) {
+    .main {
+        --gutter-mobile: 1.25rem;
+    }
+
+    .page--article-lise .main,
+    .page--article-lumieres-feminines .main,
+    .page--article-femmes-de-science .main,
+    .page--article-cinema .main,
+    .page--article-fission .main {
+        --gutter-mobile: 1rem;
+    }
+
+    .wrapper {
+        box-sizing: border-box;
+    }
+
     .page--article-lise .wrapper,
     .page--article-lumieres-feminines .wrapper,
     .page--article-femmes-de-science .wrapper,

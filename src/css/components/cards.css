@@ -218,7 +218,9 @@
 
 .page--article-lise .cards,
 .page--article-lumieres-feminines .cards,
-.page--article-fission .cards {
+.page--article-femmes-de-science .cards,
+.page--article-fission .cards,
+.page--article-cinema .cards {
     background: transparent;
     padding: 0;
 }
@@ -229,4 +231,124 @@
 .page--article-fission .cards__item,
 .page--article-cinema .cards__item {
     background: transparent;
+}
+
+.page--article-femmes-de-science .cards {
+    gap: 1.05rem;
+}
+
+.page--article-cinema .cards {
+    gap: 1.1rem;
+}
+
+.page--article-fission .card-article {
+    background: var(--color-primary);
+    border-radius: 1.3rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+.page--article-fission .card-article__img {
+    border-radius: 1.3rem 1.3rem 0 0;
+}
+
+.page--home .cards {
+    gap: 2.1rem;
+}
+
+.page--others .others-list {
+    display: grid;
+    gap: 2.6rem;
+    margin: 1.6rem 0 0;
+    padding: 0;
+    list-style: none;
+    justify-items: center;
+}
+
+.page--others .others-card {
+    display: grid;
+    gap: 0.35rem;
+    text-align: center;
+}
+
+.page--others .others-card__title {
+    font-family: var(--font-title);
+    font-weight: var(--fw-black);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: 0.98rem;
+}
+
+.page--others .others-card__meta {
+    margin: 0;
+    color: rgba(40, 19, 65, 0.75);
+    font-size: 0.9rem;
+}
+
+.page--others .others-card__cta {
+    margin-top: 0.35rem;
+    background: var(--color-text-main);
+    color: var(--color-text-invert);
+    border: none;
+    min-width: 11rem;
+    border-radius: 0.55rem;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .page--others .others-list {
+        gap: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page--home .cards {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        gap: 1.35rem;
+    }
+
+    .page--home .card-article,
+    .page--home .card-article--maquette {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .page--home .card-article__title {
+        text-align: center;
+        font-size: 0.95rem;
+        font-weight: var(--fw-bold);
+        letter-spacing: 0.02em;
+    }
+
+    .page--home .card-feature {
+        padding: 1.55rem 1.35rem;
+    }
+
+    .page--home .card-feature__text {
+        margin-bottom: 1rem;
+    }
+
+    .page--home .card-article__link::before {
+        margin: 0.55rem 0 0.3rem;
+    }
+
+    .main .cards {
+        box-sizing: border-box;
+        padding-left: var(--gutter-mobile);
+        padding-right: var(--gutter-mobile);
+        grid-template-columns: minmax(0, 340px);
+        justify-content: center;
+    }
+
+    .main .card-feature .btn {
+        width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
 }

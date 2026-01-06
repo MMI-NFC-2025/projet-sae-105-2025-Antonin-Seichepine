@@ -52,3 +52,11 @@
     font-display: swap;
 }
 
+@media (max-width: 480px) {
+    main img,
+    main video,
+    main iframe {
+        max-width: 100%;
+    }
+}
+
