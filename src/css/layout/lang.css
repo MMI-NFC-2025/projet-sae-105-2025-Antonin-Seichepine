@@ -1,0 +1,53 @@
+.lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.lang__link,
+.lang__sep {
+    color: var(--color-text-invert);
+}
+
+.lang__link {
+    text-decoration: none;
+    opacity: 0.65;
+    transition: opacity 0.2s ease;
+}
+
+.lang__link:hover,
+.lang__link:focus-visible {
+    opacity: 1;
+}
+
+.lang__link--active,
+.lang__link[aria-current="page"] {
+    opacity: 1;
+}
+
+html:lang(fr) .lang__link:not([lang="en"]) {
+    opacity: 1;
+}
+
+html:lang(fr) .lang__link[lang="en"] {
+    opacity: 0.65;
+}
+
+html:lang(en) .lang__link[lang="en"] {
+    opacity: 1;
+}
+
+html:lang(en) .lang__link:not([lang="en"]) {
+    opacity: 0.65;
+}
+
+html:lang(fr) .lang__link[lang="en"]:hover,
+html:lang(fr) .lang__link[lang="en"]:focus-visible,
+html:lang(en) .lang__link:not([lang="en"]):hover,
+html:lang(en) .lang__link:not([lang="en"]):focus-visible {
+    opacity: 1;
+}

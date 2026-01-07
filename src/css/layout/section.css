@@ -170,6 +170,84 @@
     text-align: center;
 }
 
+.page--home .section--articles .section__inner {
+    margin-bottom: 1.8rem;
+}
+
+.page--matilda .section--about .section__inner {
+    text-align: center;
+    align-items: center;
+}
+
+.page--matilda .section--about .section__footer {
+    justify-content: center;
+}
+
+.page--glossary .section--cta .section__inner {
+    text-align: center;
+}
+
+.page--glossary .section--cta .section__footer {
+    justify-content: center;
+}
+
+.page--others .section--univers {
+    background: transparent;
+}
+
+.page--others .section--univers .section__inner {
+    text-align: center;
+    align-items: center;
+}
+
+.page--others .section--univers .section__title {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.page--others .section--univers .section__band {
+    margin-top: 1.2rem;
+    padding: 0;
+}
+
+.page--others .section--univers .section__band .wrapper {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+.page--others #sites .section__inner {
+    text-align: center;
+    align-items: center;
+}
+
+.page--others #sites .section__title {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.page--others .section--cta .section__inner {
+    text-align: center;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.page--others .section--cta .section__title {
+    color: var(--color-primary);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.page--others .section--cta .btn {
+    min-width: 10rem;
+}
+
+.page--women-science [aria-labelledby="legacy-title"] .section__text {
+    text-align: center;
+}
+
 @media (max-width: 480px) {
     .page--home .section--matilda .card-feature,
     .page--women-science .section--matilda-block .card-feature,
@@ -198,5 +276,28 @@
     .page--about .section--others .btn--cta-index {
         width: 100%;
         justify-content: center;
+    }
+
+    .page--home .section {
+        padding: 2.35rem 0;
+    }
+
+    .page--home .section__inner {
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+    }
+
+    .page--home .section__header {
+        gap: 0.45rem;
+    }
+
+    .page--home .section__intro,
+    .page--home .section__text {
+        text-align: center;
+    }
+
+    .page--home .section .btn {
+        align-self: center;
     }
 }

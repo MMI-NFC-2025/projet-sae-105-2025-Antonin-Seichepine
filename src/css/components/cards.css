@@ -297,9 +297,24 @@
     justify-content: center;
 }
 
+.page--others .section--univers .card-feature {
+    background: var(--color-primary);
+    color: var(--color-text-invert);
+    border-radius: 0;
+    padding: 2.1rem clamp(1.4rem, 4vw, 3rem);
+    box-shadow: none;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.65;
+}
+
 @media (max-width: 640px) {
     .page--others .others-list {
         gap: 2.2rem;
+    }
+
+    .page--others .section--univers .card-feature {
+        padding: 1.7rem 1.05rem;
     }
 }
 

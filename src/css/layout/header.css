@@ -54,36 +54,6 @@ img.brand {
     border-bottom: 0.18rem solid var(--color-primary-soft);
 }
 
-.lang {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-}
-
-.lang__link,
-.lang__sep {
-    color: var(--color-text-invert);
-}
-
-.lang__link {
-    text-decoration: none;
-    opacity: 0.9;
-    transition: opacity 0.2s ease;
-}
-
-.lang__link:hover,
-.lang__link:focus-visible {
-    opacity: 1;
-}
-
-.lang__link--active {
-    opacity: 1;
-}
-
 .menu-btn {
     position: relative;
     display: inline-flex;
