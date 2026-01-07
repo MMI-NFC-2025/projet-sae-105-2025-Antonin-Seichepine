@@ -57,3 +57,23 @@
         gap: 2.4rem;
     }
 }
+
+/* ============================= */
+/* Glossary – Voir plus link     */
+/* ============================= */
+
+.glossary__more {
+    display: inline-block;
+    margin-top: 0.5rem;
+
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.glossary__more:hover,
+.glossary__more:focus-visible {
+    text-decoration: underline;
+}
