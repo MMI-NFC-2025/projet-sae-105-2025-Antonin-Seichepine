@@ -33,6 +33,11 @@
     margin: 0;
 }
 
+.footer__note-link {
+    color: inherit;
+    text-decoration: none;
+}
+
 .footer__nav {
     width: 100%;
 }

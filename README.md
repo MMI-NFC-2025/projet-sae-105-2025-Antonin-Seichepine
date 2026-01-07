@@ -6,5 +6,5 @@
 - NOM : SEICHEPINE
 - PRÉNOM : Antonin
 - GROUPE : B1
-- URL du site :
-- URL FIGMA : 
+- URL du site : http://lumina.antonin-seichepine.fr/fr/
+- URL FIGMA : https://www.figma.com/design/BmUPOzyLCy6H2DmfsVaYaz/Maquettes-projet-individuel-%E2%80%94-pr%C3%A9nom-NOM?node-id=704-119&t=qxBJmpmeerkfVnt4-1

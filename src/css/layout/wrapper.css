@@ -52,3 +52,23 @@
         padding: 0 1.25rem;
     }
 }
+
+@media (max-width: 520px) {
+    .page--article-lise .main,
+    .page--article-lumieres-feminines .main,
+    .page--article-femmes-de-science .main,
+    .page--article-cinema .main,
+    .page--article-fission .main {
+        --gutter-mobile: 1rem;
+    }
+
+    .page--article-lise .wrapper,
+    .page--article-lumieres-feminines .wrapper,
+    .page--article-femmes-de-science .wrapper,
+    .page--article-cinema .wrapper,
+    .page--article-fission .wrapper {
+        box-sizing: border-box;
+        width: min(100%, 28rem);
+        padding: 0 1.25rem;
+    }
+}
